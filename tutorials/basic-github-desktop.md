@@ -1,6 +1,6 @@
-# The Basics of GitHub and GitHub Desktop
+# Basic Version Control with GitHub Desktop
 
-In this course we will be using our `cart253` __Git repository__ to store all our coursework. So what is Git? What is a repository? What is GitHub Desktop for? How do we actually use all this stuff? And why should we?
+In this course we will be using "version control". We'll achieve this via our `cart253` __Git repository__ to store all our coursework. So what is version control? What is Git? What is a repository? What is GitHub Desktop for? How do we actually use all this stuff? And why should we?
 
 ## Why?
 
@@ -8,13 +8,13 @@ For many tasks, just having a file that you edit and save repeatedly over time i
 
 But most of us have had a situation in which we want to keep a series of __versions__ of a file. Mostly it's because if we screw up, we can more easily go back to a version that was still good. Maybe we're working on a complicated image in PhotoShop and we end up with a series of files called `cool-pic-1.psd`, `cool-pic-2.psd`, `cool-pic-2b.psd`, `cool-pic-3.psd`, and so on. The set of files end up as a kind of __history__ of the final file.
 
-With __programming__, this idea of keeping track of the history of a coding project over time is very, very important. In part for the same reason that it's good to be able to __undo__ things by going back in history. But also because it's good to be able to __see__ that history to understand the project, especially if you're working with other people.
+With __programming__, this idea of keeping track of the history of a coding project over time is very, very important. It's called __version control__. In part, it's important because it's good to be able to __undo__ things by going back in history. But it's also important because it's good to be able to __see__ that history to understand the project. It's especially useful if you're working with other people.
 
-Git and other "version control software" is so popular and so important in the programming world that it is __essentially__ that you understand how it works and how to use it. It will be part of getting a job later, as well as making your life better forever.
+Git and other version control software is so popular and so important in the programming world that it is __essential__ that you understand how it works and how to use it. It will be part of getting a job later, as well as making your life better forever.
 
 ## What is Git? A repository? GitHub Desktop?
 
-__Git__ is software that helps to automatically keep track of the history of versions of our files. For any project, we create a __Git repository__ (often called a "repo") which is like a folder that tracks the history of everything that happens in it. We use __git__ on the command-line or graphical tools like __GitHub Desktop__ to make the tracking work.
+__Git__ is software that helps to automatically keep track of the history of versions of our files. For any project, we create a __Git repository__ (often called a "repo") which is like a folder that tracks the history of everything that happens in it. We will use __GitHub Desktop__ to manage our repository easily.
 
 ## How does the tracking process work?
 

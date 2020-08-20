@@ -60,10 +60,10 @@ Each week will include a number of lecture videos and notes made by the instruct
 Each week will include a short programming activity covering the topic of the week. Students will complete the activity themselves alongside a video of the instructor doing the same work.
 
 ### Tutorials
-Each week will include one hour of tutorial time with the instructor in a tutorial group during the standard class hours. This tutorials will include Q&A about the topics of the week, the activity, as well as any other points of discussion or programming examples needed.
+Each week will include one hour of tutorial time with the instructor in a tutorial group on Discord during the standard class hours. This tutorials will include Q&A about the topics of the week, the activity, as well as any other points of discussion or programming examples needed.
 
 ### TA support sessions
-Each week will include one hour of live technical support and Q&A with the TA in the tutorial groups.
+Each week will include one hour of live technical support and Q&A on Discord with the TA in the tutorial groups.
 
 ### Exercises
 Most weeks will include an evaluated programming exercise for students to demonstrate their mastery of the topic(s) covered that week.
@@ -72,20 +72,26 @@ Most weeks will include an evaluated programming exercise for students to demons
 There will be two graded projects during the course. Each will be used as an opportunity for students to practice and develop their programming skills with room to express their own ideas.
 
 ### Office hours
-The instructor will be available for further hours during the week explicit to support students with programming topics, activities, exercises, and projects.
+The instructor will be live on Discord for further hours during the week on Discord explicitly to support students with programming topics, activities, exercises, and projects.
 
 
 ## Expected skills
 
 Students are _not_ expected to have any programming experience. However, students are expected to have the desire and willingness to learn and push themselves to learn programming, and to engage deeply with thinking about creating interactive digital media through code.
 
+## Moodle
+
+[Moodle](https://moodle.concordia.ca/) will be used to host lecture videos as well as to submit assignments and to receive grades for them.
 
 ## GitHub
 
-GitHub will replace Moodle for some course content. You are on GitHub now! The course GitHub repository will contain example code, lecture notes, course information, and more. Students will be able to post questions and issues with GitHub's issue tracker as needed.
+[GitHub](https://www.github.com) will replace Moodle for some course content. You are on GitHub now! The course GitHub repository will contain example code, lecture notes, course information, and more. Students will be able to post questions and issues with GitHub's issue tracker as needed.
 
 Students will create their own repository on GitHub to save, track, and present their coursework. (Actual submission will be via Moodle, for privacy.)
 
+## Discord
+
+[Discord](https://discord.com/) will be used as our common space for this course. It will include general channels for everyone to hang out and chat, as well as specialized channels for tutorial groups and office hours.
 
 ## Evaluation
 
@@ -93,17 +99,17 @@ Specific evaluation requirements will be provided when assigned.
 
 * Weekly exercises (10%)
    * 8 exercises worth 1.25% each
-* Projects (70%)
-  * Project 1 (25%)
+* Projects (65%)
+  * Project 1 (20%)
   * Project 2 (45%)
-* Participation (20%)
+    - Proposal (10%)
+    - Project (35%)
+* Participation (25%)
    * Participation includes attending tutorial sessions, being present on the Discord, asking questions, contributing to discussions, sharing ideas, and coming to office hours (even if it's just to show off your work!)
-
 
 ## French
 
 Students have the right to write in French at Concordia. Pippin can read French relatively well, but cannot offer substantive feedback on writing skill itself. Given that this is a programming course, you are welcome to name variables and functions in French as well as to write comments in French.
-
 
 ## Policy
 

@@ -25,15 +25,15 @@
 
 ## Before class
 - __Join__ the course Discord (invitation link will be emailed)
-- __Watch__ "01 - Hello, World! - Introducing CART253" on Moodle
+- __Watch__ "01 - Introducing CART253" on Moodle
 - __Read__ the [Course Outline](./course-outline.md) and the Course Schedule (this page)
 - __Complete__ the [Course Software Setup](../tutorials/software.md) text tutorial
 - Create your class repository
-  - __Watch__ "01 - Hello, World! - Creating a Class Repository" on Moodle
+  - __Watch__ "01 - Creating a Class Repository on GitHub" on Moodle
   - and/or __Complete__ the [Creating a Class Repository](../tutorials/github-repository.md) text tutorial
 - Get started with Git and GitHub Desktop
-  - __Watch__ "01 - Hello, World! - Basic Git with GitHub Desktop" on Moodle
-  - and/or __Complete__ the [Basic Git with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
+  - __Watch__ "01 - Version Control" on Moodle
+  - and/or __Complete__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
 
 ## During class
 - 13:30: Real-time introductions and discussion on Zoom (link will be emailed the morning of class)
