@@ -8,9 +8,7 @@ Department of Design and Computation Arts
 
 ### Contact
 [pippin.barr@concordia.ca](mailto:pippin.barr@concordia.ca)  
-(Send emails with a subject line of "[CART 253] Your subject here")  
 [www.pippinbarr.com](http://www.pippinbarr.com/)  
-Office: EV 6.743  
 
 ### Office hours
 tbd.
@@ -28,6 +26,3 @@ Our home base through the course with links to slides, notes, exercises, and pro
 
 ### [Resources](course-information/resources.md)
 A set of helpful resources if you want to extend yourself.
-
-### [Course Software](course-information/software.md)
-Simple instructions for installing the course software on your own computer if you plan to use it.
