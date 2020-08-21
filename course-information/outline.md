@@ -32,8 +32,7 @@ tbd.
 
 ## TAs
 
-Section A: Samuel Paré-Chouinard  
-Section B: Dana Ryashy
+tbd.
 
 
 ## Territorial acknowledgment
