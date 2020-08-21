@@ -24,5 +24,8 @@ The basic nature of the course in terms of objectives, evaluation, and expectati
 ### [Schedule](course-information/schedule.md)
 Our home base through the course with links to slides, notes, exercises, and projects for each week.
 
+### [Class Structure](course-information/class-structure.md)
+Information about how the live portion of the course will be run during class hours.
+
 ### [Resources](course-information/resources.md)
 A set of helpful resources if you want to extend yourself.

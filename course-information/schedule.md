@@ -38,8 +38,8 @@ Week of 7 September 2020
   - __Read__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
 
 ## During class
-- 13:30: Real-time introductions and discussion on Zoom (link will be emailed the morning of class)
-- Afterwards: Discussion and technical support for course software and Git on Discord
+- 13:30: Introductions with everyone in #start-of-class channel on Discord (join the chat and voice channels!)
+- Afterwards: Discussion and technical support for course software and Git
 
 ## Homework
 - Follow the "before class" activities listed for next week
@@ -66,9 +66,10 @@ Week of 14 September 2020
 - __Complete__ [Activity 0 - Draw an Alien](#)
 
 ## During class
-- __Discord__ with everyone for #start-of-class discussion at 13:30
-- __Discord__ with instructor in your [tutorial group](#) at scheduled time
-- __Discord__ with TA in your [tutorial group](#) at scheduled time
+- 13:30: Q&A with everyone in #start-of-class channel on Discord
+- Afterwards:
+  - Meet with instructor in your [tutorial group](./class-structure.md#tutorial-schedule) channel on Discord at scheduled time
+  - Meet with TA in your [tutorial group](./class-structure.md#tutorial-schedule) channel on Discord at scheduled time
 
 ## Homework
 - Follow the "before class" activities listed for next week
