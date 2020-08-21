@@ -30,10 +30,10 @@
 - __Complete__ the [Course Software Setup](../tutorials/software.md) text tutorial
 - Create your class repository
   - __Watch__ "01 - Creating a Class Repository on GitHub" on Moodle
-  - and/or __Complete__ the [Creating a Class Repository](../tutorials/github-repository.md) text tutorial
+  - __Read__ the [Creating a Class Repository](../tutorials/github-repository.md) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01 - Version Control" on Moodle
-  - and/or __Complete__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
+  - __Read__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
 
 ## During class
 - 13:30: Real-time introductions and discussion on Zoom (link will be emailed the morning of class)
