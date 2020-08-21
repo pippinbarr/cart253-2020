@@ -18,6 +18,8 @@
 
 # Hello, World!
 
+Week of 7 September 2020
+
 ## Objectives
 - Get to know each other and feel comfortable in this online world
 - Understand the course content, approach, and evaluation
@@ -41,21 +43,42 @@
 
 ## Homework
 - Follow the "before class" activities listed for next week
+- Write down your questions to discuss in general discussion and tutorial group
 
 ---
 
 # Drawing
+
+Week of 14 September 2020
 
 ## Objectives
 - Writing basic instructions/function calls with arguments in JavaScript
 - Drawing shapes on the canvas using the coordinate system
 - Playing with colors
 
-__Coming soon!__
+## Before class
+- __Watch__ "02 - Why and how to learn to code" ([Lecture notes](#))
+- __Watch__ "02 - Working with code in Atom" ([Lecture notes](#))
+- __Watch__ "02 - Drawing shapes" ([Lecture notes](#))
+- __Watch__ "02 - Using colors" ([Lecture notes](#))
+- __Watch__ "02 - Commenting your code" ([Lecture notes](#))
+- __Watch__ "02 - The JavaScript console" ([Lecture notes](#))
+- __Complete__ [Activity 0 - Draw an Alien](#)
+
+## During class
+- __Discord__ with everyone for #start-of-class discussion at 13:30
+- __Discord__ with instructor in your [tutorial group](#) at scheduled time
+- __Discord__ with TA in your [tutorial group](#) at scheduled time
+
+## Homework
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in general discussion and tutorial group
 
 ---
 
 # Variables
+
+Week of 21 September 2020
 
 ## Objectives
 - Understanding how time passes in a p5 program
@@ -68,6 +91,9 @@ __Coming soon!__
 
 # Conditionals
 
+Week of 28 September 2020
+
+
 ## Objectives
 - Writing if-statements to control what happens in your programs
 - Including mouse and keyboard input in a program
@@ -78,6 +104,8 @@ __Coming soon!__
 ---
 
 # Functions
+
+Week of 5 October 2020
 
 ## Objectives
 - Using functions to organize your code
@@ -90,6 +118,8 @@ __Coming soon!__
 
 # Project 1 Studio
 
+Week of 12 October 2020
+
 ## Objectives
 - Displaying images and text
 - Playing sounds
@@ -100,6 +130,8 @@ __Coming soon!__
 
 # Object-Oriented Programming
 
+Week of 19 October 2020
+
 ## Objectives
 - Writing classes to organize your code into more complex objects
 
@@ -108,6 +140,8 @@ __Coming soon!__
 ---
 
 # Arrays
+
+Week of 26 October 2020
 
 ## Objectives
 - Using arrays to store collections of data
@@ -120,6 +154,8 @@ __Coming soon!__
 
 # Inheritance
 
+Week of 2 November 2020
+
 ## Objectives
 - Understanding inheritance as a way to make more complex class structures
 - Taking advantage of polymorphism
@@ -129,6 +165,8 @@ __Coming soon!__
 ---
 
 # Libraries
+
+Week of 9 November 2020
 
 ## Objectives
 - Knowing the difference between JavaScript and its libraries
@@ -141,17 +179,23 @@ __Coming soon!__
 
 # Project 2 Studio I
 
+Week of 16 November 2020
+
 __Coming soon!__
 
 ---
 
 # Project 2 Studio II
 
+Week of 23 November 2020
+
 __Coming soon!__
 
 ---
 
 # Project 2 Studio III
+
+Week of 30 November 2020
 
 __Coming soon!__
 
