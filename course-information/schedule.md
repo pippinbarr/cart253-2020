@@ -46,11 +46,21 @@
 
 # Drawing
 
+## Objectives
+- Writing basic instructions/function calls with arguments in JavaScript
+- Drawing shapes on the canvas using the coordinate system
+- Playing with colors
+
 __Coming soon!__
 
 ---
 
 # Variables
+
+## Objectives
+- Understanding how time passes in a p5 program
+- Using variables to make your program change over time
+- Fun with random numbers and mapping numbers
 
 __Coming soon!__
 
@@ -58,11 +68,21 @@ __Coming soon!__
 
 # Conditionals
 
+## Objectives
+- Writing if-statements to control what happens in your programs
+- Including mouse and keyboard input in a program
+- Controlling repetition with loops
+
 __Coming soon!__
 
 ---
 
 # Functions
+
+## Objectives
+- Using functions to organize your code
+- Using functions with parameters and return values to write reusable code
+- Understanding the value of modularity and reuse
 
 __Coming soon!__
 
@@ -70,11 +90,18 @@ __Coming soon!__
 
 # Project 1 Studio
 
+## Objectives
+- Displaying images and text
+- Playing sounds
+
 __Coming soon!__
 
 ---
 
 # Object-Oriented Programming
+
+## Objectives
+- Writing classes to organize your code into more complex objects
 
 __Coming soon!__
 
@@ -82,17 +109,31 @@ __Coming soon!__
 
 # Arrays
 
+## Objectives
+- Using arrays to store collections of data
+- Understanding how to use for-loops and arrays
+- Storing objects in arrays
+
 __Coming soon!__
 
 ---
 
 # Inheritance
 
+## Objectives
+- Understanding inheritance as a way to make more complex class structures
+- Taking advantage of polymorphism
+
 __Coming soon!__
 
 ---
 
 # Libraries
+
+## Objectives
+- Knowing the difference between JavaScript and its libraries
+- Discovering new libraries to use with p5
+- Learning how to encounter a new library
 
 __Coming soon!__
 
