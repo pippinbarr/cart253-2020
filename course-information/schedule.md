@@ -3,7 +3,7 @@
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
-- Week 4 - [Conditionals](#conditionals) - if this then that
+- Week 4 - [Conditionals](#conditionals) - programs that react
 - Week 5 - [Functions](#functions) - modularity and reuse
 - Week 6 - [Project 1 Studio](#project-1-studio) - support for project 1
 - Week 7 - [Object-Oriented Programming](#object-oriented-programming) - thinking of code as a collection of objects
