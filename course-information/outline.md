@@ -96,7 +96,7 @@ Students will create their own repository on GitHub to save, track, and present 
 
 ## Discord
 
-[Discord](https://discord.com/) will be used as our common space for this course. It will include general channels for everyone to hang out and chat, as well as channels for class time and "offices" for the instructor and the TAs.
+[Discord](https://discord.com/) will be used as our common space for this course. It will include general channels for everyone to hang out and chat, as well as channels for class time and "offices" for the instructor and the TAs. You will need to use your real name as your nickname on the Discord.
 
 ## Evaluation
 
