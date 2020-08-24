@@ -64,11 +64,12 @@ Each week will include a number of lecture videos and notes made by the instruct
 ### Activities
 Each week will include a short programming activity covering the topic of the week. Students will complete the activity themselves alongside a video of the instructor doing the same work.
 
-### Tutorials
-Each week will include one hour of tutorial time with the instructor in a tutorial group on Discord during the standard class hours. These tutorials will include Q&A about the topics of the week and the activity, as well as any other points of discussion or programming examples as needed.
+### Class structure
+Class time will be divided into a "start of class" period beginning at the start of the class during which all students will attend a group voice and text chat on Discord with the instructor for Q&A about course material and the exercises/activities/projects. See the [Class Structure](./class-structure.md) page for more information.
 
-### TA support sessions
-Each week will include one hour of live technical support and Q&A on Discord with the TA in tutorial groups.
+Attendance of the start of class period is required and students are ideally expected to contact the instructor ahead of time with questions of interest or examples they would like to see covered during this discussion.
+
+After the start of class period, there will be studio time during which the instructor and TA will be available for specific student requests for assistance via the Discord. Attendance for this period is not mandatory but is very strongly encouraged.
 
 ### Exercises
 Most weeks will include an evaluated programming exercise for students to demonstrate mastery of the topic(s) covered that week.
@@ -95,7 +96,7 @@ Students will create their own repository on GitHub to save, track, and present 
 
 ## Discord
 
-[Discord](https://discord.com/) will be used as our common space for this course. It will include general channels for everyone to hang out and chat, as well as specialized channels for tutorial groups and office hours.
+[Discord](https://discord.com/) will be used as our common space for this course. It will include general channels for everyone to hang out and chat, as well as channels for class time and "offices" for the instructor and the TAs.
 
 ## Evaluation
 
@@ -109,7 +110,7 @@ Specific evaluation requirements will be provided when assigned.
     - Proposal (10%)
     - Project (35%)
 - Participation (25%)
-   - Participation includes attending tutorial sessions, completing coursework, being present on the Discord, asking questions, contributing to discussions, sharing ideas, and coming to office hours (even if it's just to show off your work!)
+   - Participation includes attending class, completing coursework, being present on the Discord, asking questions, contributing to discussions, sharing ideas, and coming to office hours (even if it's just to show off your work!)
 
 ## French
 

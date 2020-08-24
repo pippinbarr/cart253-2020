@@ -1,54 +1,34 @@
 # Class structure
 
+## Start of class period
 
-## Start of class
+At __13:30__ on the day of class we will always meet in the start-of-class section of the Discord. Think of this as showing up to class on time.
 
-At 13:30 on the day of class we will always meet in the #start-of-class channel
+- __Open the `#start-of-class-voice` channel__ so you can talk and hear what's going on (sometimes we will also turn on our webcams and screenshare as needed)
+- __Keep the `#start-of-class-chat` channel open__ so you can type in questions or other material while we're meeting
 
-## Tutorials
+During this period of class we will discuss any questions related to the week's subject matter. By the time you get to class you will have
 
-During class time we will meet in tutorial groups in order to improve the student-instructor ratio for questions and discussion. All students will be assigned to a tutorial group at the start of the course and will meet in this tutorial group with the instructor and the TA separately every week.
+- Watched all the __lecture videos__ and read through the __lecture notes__
+- Completed or at least attempted the __weekly activity__
+- __Thought of specific questions__ and emailed or Discord messaged them to the instructor (or written them down to ask during class)
 
-Your tutorial group will have its own channel on the course Discord, which is where you will meet for tutorials. You are also free to use this channel for discussions amongst yourselves as a tutorial group at other times.
+## Co-working period
 
-### Tutorials with instructor
+Once we're finished with the start of class discussion portion of the day, we will move over to co-working on the current exercises and projects as relevant for the remaining time. Attendance during this period isn't mandatory, but be aware it is one of your best opportunities to get help from the instructor and the TA both for specific problems and for larger conversations about the course material.
 
-Tutorials with the instructor are intended to cover questions about course topics, the activities, exercises, and projects. Very specific technical problems can be discussed if there is time, but the priority will be on making sure everyone understands the ideas behind programming. It would be a good idea to write down questions and thoughts ahead of time for discussion.
+### General chat
 
-### Tutorials with TA
+While co-working you are welcome to chat to each other in the Discord via text in `#general-chat` or via voice in `#general-voice`.
 
-Tutorials with the TA will focus on technical support, with students free to work quietly and ask questions of the TA as needed. It would be a good idea to write down questions over the week as you encounter them, so you are ready to discuss with the TA.
+### Getting help
 
-### Tutorial schedule by group
+If you need help try the following to get attention:
 
-Your tutorial group will be emailed to you and will also be available on the Moodle.
+- Speak up in the voice channel
+- Include the instructor or TA's name in a Discord message (e.g. "Hey @Pippin, can you help me?")
+- Send the instructor or TA a direct message (right-click on their name/icon)
 
-#### Tūī
+The instructor or TA can then set up a private chat/voice/video/screenshare with you to go through your questions as needed.
 
-- Instructor tutorials on Tuesdays at 14:30-15:20
-- TA tutorials on Tuesdays at 15:30-16:20
-
-#### Kākāpō
-
-- Instructor tutorials on Tuesdays at 15:30-16:20
-- TA tutorials on Tuesdays at 16:30-17:20
-
-#### Weka
-
-- TA tutorials on Tuesdays at 14:30-15:20
-- Instructor tutorials on Tuesdays at 16:30-17:20
-
-#### Kiwi
-
-- Instructor tutorials on Thursdays at 14:30-15:20
-- TA tutorials on Thursdays at 15:30-16:20
-
-#### Ruru
-
-- Instructor tutorials on Thursdays at 15:30-16:20
-- TA tutorials on Thursdays at 16:30-17:20
-
-#### Kererū
-
-- TA tutorials on Thursdays at 14:30-15:20
-- Instructor tutorials on Thursdays at 16:30-17:20
+(Helping each other with your work is encouraged, too!)
