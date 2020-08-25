@@ -55,6 +55,7 @@ Week of 14 September 2020
 - Writing basic instructions/function calls with arguments in JavaScript
 - Drawing shapes on the canvas using the coordinate system
 - Playing with colors
+- Using Git and GitHub with code
 
 ## Before class
 - __Read__ the [Why and how to learn to code](../modules/02/why-and-how-to-learn-to-code.md)
@@ -63,7 +64,7 @@ Week of 14 September 2020
 - __Watch__ "02 - Drawing colors" (and __read__ the [Lecture notes](../modules/02/drawing-colors.md))
 - __Watch__ "02 - Commenting your code" (and __read__ the [Lecture notes](../modules/02/commenting-your-code.md))
 - __Watch__ "02 - The JavaScript console" (and __read__ the [Lecture notes](../modules/02/the-javascript-console.md))
-- __Complete__ the [Draw an Alien](../activities/draw-an-alien.md) activity (__watch__ "02 - Draw an alien" video on Moodle to see Pippin doing it)
+- __Complete__ [Activity 02: Draw an Alien](../activities/02-draw-an-alien.md) (__watch__ "02 - Draw an alien" video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A with everyone in #start-of-class channel on Discord

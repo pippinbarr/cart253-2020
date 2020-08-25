@@ -1,4 +1,4 @@
-# Activity: Draw an Alien {
+# Activity 02: Draw an Alien {
 
 ## Objectives
 
@@ -16,7 +16,7 @@ First we will want to start a fresh project using the p5 template project for th
 1. Download [template-p5-project.zip](https://pippinbarr.github.io/cart253-2020/templates/template-p5-project.zip) and unzip it
 2. Rename the folder from `template-p5-project` to `draw-an-alien`
 3. Move the folder into your `cart253` repository folder inside a new `activities` folder
-4. In GitHub Desktop, commit with a message like "Started the draw an alien activity" and push
+4. In GitHub Desktop, commit with a message like "Activity 02: Started the draw an alien activity" and push
 
 This is how we should __always__ start any new project, whether it's an experimental sandbox for lecture topics, an activity like this, or our final project.
 
@@ -106,7 +106,7 @@ We now have a __very convincing alien__ on our screen. Try not to run away in fe
 
 1. Save your work if you haven't already
 2. Go to GitHub Desktop and make sure the changes are there
-3. Write a commit message like "Activity - Drew an amazing alien" and click "Commit to master"
+3. Write a commit message like "Activity 02: Drew an amazing alien" and click "Commit to master"
 4. Click "Push origin" to upload it all
 
 ---

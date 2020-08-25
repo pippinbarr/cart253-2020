@@ -19,12 +19,9 @@ While learning to program it's a __very__ good idea to follow along and try thin
 
 1. __Download and unzip__ the template project again if you need to (![template-p5-project.zip](https://pippinbarr.github.io/cart253-2020/templates/template-p5-project.zip))
 2. __Rename__ the main folder from `template-p5-project` to something like `drawing-experiments`
-3. __Move__ the folder into your `cart253` repository folder, maybe making an `experiments` folder to store it in for organization
-4. __Open__ the `drawing-experiments` folder in Atom so you're ready to work on it as a project
+3. __Open__ the `drawing-experiments` folder in Atom so you're ready to work on it as a project
 
-This basic process is a very good habit to get into!
-
-__Note__: Now that the `drawing-experiments` project folder is inside your `cart253` repository, when you work on it and save changes, you should remember to go into GitHub Desktop and __commit__ and __push__ your changes so they become part of the repository. It's fine to just do this __once__ at the end of the modules.
+__Note__: if you want to, you could move your `drawing-experiments` folder into your `cart253` repository inside a `sandboxes` folder and then commit and push your changes as you work. This way you could keep track of your progress as you try things out. This isn't required for these "sandbox" projects, but could be good practice.
 
 ---
 
