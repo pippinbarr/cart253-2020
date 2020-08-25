@@ -43,7 +43,7 @@ Week of 7 September 2020
 
 ## Homework
 - Follow the "before class" activities listed for next week
-- Write down your questions to discuss in general discussion and tutorial group
+- Write down your questions to discuss in the start of class discussion
 
 ---
 
@@ -63,17 +63,15 @@ Week of 14 September 2020
 - __Watch__ "02 - Drawing colors" (and __read__ the [Lecture notes](../modules/02/drawing-colors.md))
 - __Watch__ "02 - Commenting your code" (and __read__ the [Lecture notes](../modules/02/commenting-your-code.md))
 - __Watch__ "02 - The JavaScript console" (and __read__ the [Lecture notes](../modules/02/the-javascript-console.md))
-- __Complete__ [Activity 0 - Draw an Alien](#)
+- __Complete__ the [Draw an Alien](../activities/draw-an-alien.md) activity (__watch__ "02 - Draw an alien" video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A with everyone in #start-of-class channel on Discord
-- Afterwards:
-  - Meet with instructor in your [tutorial group](./class-structure.md#tutorial-schedule) channel on Discord at scheduled time
-  - Meet with TA in your [tutorial group](./class-structure.md#tutorial-schedule) channel on Discord at scheduled time
+- Afterwards: co-working with instructor and TA support
 
 ## Homework
 - Follow the "before class" activities listed for next week
-- Write down your questions to discuss in general discussion and tutorial group
+- Write down your questions to discuss in the start of class discussion
 
 ---
 
