@@ -57,12 +57,12 @@ Week of 14 September 2020
 - Playing with colors
 
 ## Before class
-- __Watch__ "02 - Why and how to learn to code" ([Lecture notes](#))
-- __Watch__ "02 - Working with code in Atom" ([Lecture notes](#))
-- __Watch__ "02 - Drawing shapes" ([Lecture notes](#))
-- __Watch__ "02 - Using colors" ([Lecture notes](#))
-- __Watch__ "02 - Commenting your code" ([Lecture notes](#))
-- __Watch__ "02 - The JavaScript console" ([Lecture notes](#))
+- __Read__ the [Why and how to learn to code](../modules/02/why-and-how-to-learn-to-code.md)
+- __Watch__ "02 - Working with code in Atom" (and __read__ the [Lecture notes](../modules/02/working-with-code-in-atom.md))
+- __Watch__ "02 - Drawing shapes" (and __read__ the [Lecture notes](#))
+- __Watch__ "02 - Using colors" (and __read__ the [Lecture notes](#))
+- __Watch__ "02 - Commenting your code" (and __read__ the [Lecture notes](#))
+- __Watch__ "02 - The JavaScript console" (and __read__ the [Lecture notes](#))
 - __Complete__ [Activity 0 - Draw an Alien](#)
 
 ## During class
