@@ -102,34 +102,7 @@ We'll talk more about the `background()` instruction later.
 
 ---
 
-## Shapes
-
-One of the simplest and most satisfying things we can do with p5.js is __draw shapes__ on the canvas. To do so we need to know the special names of the different instructions to do this.
-
-To learn those names, we can look in the p5.js Reference under the [Shape](https://p5js.org/reference/#group-Shape) category. Go have a look now. There are quite a few!
-
-Let's try some out to get the idea.
-
----
-
-## Getting to the `point()`
-
-Let's use the `point()` function to tell p5 to draw a single pixel in a specific location on the canvas. Here's some code to draw a pixel at (5,2) in a tiny little 100x100 canvas!
-
-```javascript
-function setup() {
-  background(200,200,200);
-  point(5,2);
-}
-```
-
-If we save and check out the results in our browser, we can see a tiny little dot on the screen, just a single pixel. You might have to move your face closer to the screen to even see it!
-
-So `point(5,2)` is telling our program to draw a single point (a pixel) at the location specified by the numbers `(5,2)`. It clearly works, but what does it all mean?
-
----
-
-## The canvas
+## The pixels
 
 Computer screens are divided up into _pixels_ ("Picture Elements"). If you can zoom your screen, you can even see the individual pixels!
 
@@ -178,6 +151,33 @@ So, to specify the location of a pixel on the screen (or in our canvas) we give 
 So the pixel at coordindate (5,2) is 6 pixels along to the right from the left edge and 3 pixels down from the __top__ edge. Remember, again, that we're counting from 0.
 
 That's why the little dot in our program is close to the __top__ of the canvas, because the `2` we used for the y-coordinate is close to `0`, which is the top of the canvas.
+
+---
+
+## Shapes
+
+One of the simplest and most satisfying things we can do with p5.js is __draw shapes__ on the canvas. To do so we need to know the special names of the different instructions to do this.
+
+To learn those names, we can look in the p5.js Reference under the [Shape](https://p5js.org/reference/#group-Shape) category. Go have a look now. There are quite a few!
+
+Let's try some out to get the idea.
+
+---
+
+## Getting to the `point()`
+
+Let's use the `point()` function to tell p5 to draw a single pixel in a specific location on the canvas. Here's some code to draw a pixel at (5,2) in a tiny little 100x100 canvas!
+
+```javascript
+function setup() {
+  background(200,200,200);
+  point(5,2);
+}
+```
+
+If we save and check out the results in our browser, we can see a tiny little dot on the screen, just a single pixel. You might have to move your face closer to the screen to even see it!
+
+So `point(5,2)` is telling our program to draw a single point (a pixel) at the location specified by the numbers `(5,2)`. It clearly works, but what does it all mean?
 
 ---
 
@@ -518,7 +518,7 @@ Each of these has its own documentation page that explains the way to use it to 
 
 ---
 
-## Different ways to draw the same shapes
+## Drawing modes
 
 There are different ways to think about drawing a shape. Consider a rectangle, which we could draw by
 
@@ -605,10 +605,12 @@ All the rectangles are being drawn according to the `rectMode(CENTER)`. If we wa
 function setup() {
   createCanvas(500,500);
   background(127,255,127);
+
   rectMode(CENTER);
   rect(250,250,100,100);
   rect(250,250,90,90);
   rect(250,250,80,80);
+  
   rectMode(CORNER);
   rect(0,0,200,200);
   rect(300,300,200,200);
