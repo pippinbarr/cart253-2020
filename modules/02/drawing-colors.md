@@ -2,7 +2,7 @@
 
 ---
 
-## Make it grey
+## Color my world!
 
 The points, lines, and shapes we've drawn have had a black outline and a white fill on a white background. Those are the __default__ settings for how p5 will color things in for us.
 
@@ -10,9 +10,9 @@ But we can specify what __color__ p5 will use for these with yet more functions.
 
 The main functions we need to read about and use are:
 
-- `background(r,g,b);` sets the background shade
-- `fill(r,g,b);` sets the fill shade
-- `stroke(r,g,b);` sets the line shade (includes the lines around the edges of shapes)
+- `background();` fills the background
+- `fill();` sets the fill color
+- `stroke();` sets the line color (includes the lines around the edges of shapes)
 
 Like the shape modes, the coloring instructions `fill` and `stroke` apply to all drawing instructions __after__ them.
 
