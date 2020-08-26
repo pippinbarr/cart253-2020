@@ -177,48 +177,6 @@ In this case, the explanation is right there in the error message: "bckground is
 
 ---
 
-## `console.log()`
-
-- One last thing, that will become much more helpful as we move forward
-- It is possible to send ourselves __messages__ in the JavaScript console from inside our program
-- We use a function called `console.log()` to do it, like this:
-
-```javascript
-console.log("Help! I'm stuck inside a program!");
-```
-
-- If we put that in our program, we will see that message pop up when it runs!
-
----
-
-```javascript
-function setup() {
-  console.log("In setup() function.");
-  console.log("Creating the canvas.");
-  createCanvas(500,500);
-  console.log("Setting the background and fill.");
-  background(255,200,200);
-  fill(0);
-  console.log("Drawing a circle.");
-  ellipseMode(CENTER);
-  ellipse(250,250,200,200);
-}
-
-function draw() {
-}
-```
-
----
-
-## `console.log()`
-
-- So `console.log()` gives us a way of sending ourselves messages about what's going on
-- While the program is actually running
-- Pretty neat!
-- This will be a major ally in debugging down the line, so stay tuned
-
----
-
 ## Debugging!
 
 - We now know the basic process for debugging in JavaScript
@@ -228,7 +186,6 @@ function draw() {
 - We interpret the errors
 - We fix the errors
 - We win at life???
-- (We use `console.log()`!)
 
 ---
 
