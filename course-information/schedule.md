@@ -27,14 +27,14 @@ Week of 7 September 2020
 
 ## Before class
 - __Join__ the course Discord (invitation link will be emailed)
-- __Watch__ "01 - Introducing CART253" on Moodle
+- __Watch__ "01 - Introducing CART253" (38:33) on Moodle
 - __Read__ the [Course Outline](./course-outline.md) and the Course Schedule (this page)
 - __Complete__ the [Course Software Setup](../tutorials/software.md) text tutorial
 - Create your class repository
-  - __Watch__ "01 - Creating a Class Repository on GitHub" on Moodle
+  - __Watch__ "01 - Creating a Class Repository on GitHub" (16:44) on Moodle
   - __Read__ the [Creating a Class Repository](../tutorials/github-repository.md) text tutorial
 - Get started with Git and GitHub Desktop
-  - __Watch__ "01 - Version Control" on Moodle
+  - __Watch__ "01 - Basic Version Control" (32:20) on Moodle
   - __Read__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
 
 ## During class
@@ -59,12 +59,12 @@ Week of 14 September 2020
 
 ## Before class
 - __Read__ the [Why and how to learn to code](../modules/02/why-and-how-to-learn-to-code.md)
-- __Watch__ "02 - Working with code in Atom" (and __read__ the [Lecture notes](../modules/02/working-with-code-in-atom.md))
-- __Watch__ "02 - Drawing shapes" (and __read__ the [Lecture notes](../modules/02/drawing-shapes.md))
-- __Watch__ "02 - Drawing colors" (and __read__ the [Lecture notes](../modules/02/drawing-colors.md))
-- __Watch__ "02 - Commenting your code" (and __read__ the [Lecture notes](../modules/02/commenting-your-code.md))
-- __Watch__ "02 - The JavaScript console" (and __read__ the [Lecture notes](../modules/02/the-javascript-console.md))
-- __Complete__ [Activity 02: Draw an Alien](../activities/02-draw-an-alien.md) (__watch__ "02 - Draw an alien" video on Moodle to see Pippin doing it)
+- __Watch__ "02 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](../modules/02/working-with-code-in-atom.md))
+- __Watch__ "02 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](../modules/02/drawing-shapes.md))
+- __Watch__ "02 - Drawing colors" (21:02) (and __read__ the [Lecture notes](../modules/02/drawing-colors.md))
+- __Watch__ "02 - Commenting your code" (13:36) (and __read__ the [Lecture notes](../modules/02/commenting-your-code.md))
+- __Watch__ "02 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](../modules/02/the-javascript-console.md))
+- __Complete__ [Activity 02: Draw an Alien](../activities/02-draw-an-alien.md) (__watch__ "02 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A with everyone in #start-of-class channel on Discord
