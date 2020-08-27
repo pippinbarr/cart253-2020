@@ -115,7 +115,7 @@ We now have a __very convincing alien__ on our screen. Try not to run away in fe
 
 Now that we have pushed our changes to GitHub.com we can view our work online. For example, Pippin's are at
 
-https://pippinbarr.github.io/cart253/activities/draw-an-alien/
+https://pippinbarr.github.io/cart253/activities/02-draw-an-alien/
 
 Make the appropriate substitutions to that URL to match your username, repository name, activities folder, and folder name and you'll be able to see yours too!
 
