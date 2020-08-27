@@ -1,3 +1,6 @@
+#### Guides
+- [Style Guide](../guides/style-guide.md)
+
 #### Links
 
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
