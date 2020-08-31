@@ -32,13 +32,13 @@ Week of 7 September 2020
 - __Join__ the course Discord (invitation link will be emailed)
 - __Watch__ "01 - Introducing CART253" (38:33) on Moodle
 - __Read__ the [Course Outline](./course-outline.md) and the Course Schedule (this page)
-- __Complete__ the [Course Software Setup](../tutorials/software.md) text tutorial
+- __Complete__ the [Course Software Setup](../modules/01[^f600]/software.md) text tutorial
 - Create your class repository
   - __Watch__ "01 - Creating a Class Repository on GitHub" (16:44) on Moodle
-  - __Read__ the [Creating a Class Repository](../tutorials/github-repository.md) text tutorial
+  - __Read__ the [Creating a Class Repository](../modules/01/github-repository.md) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01 - Basic Version Control" (32:20) on Moodle
-  - __Read__ the [Basic Version Control with GitHub Desktop](../tutorials/basic-github-desktop.md) text tutorial
+  - __Read__ the [Basic Version Control with GitHub Desktop](../modules/01/basic-github-desktop.md) text tutorial
 
 ## During class
 - 13:30: Introductions with everyone in #start-of-class channel on Discord (join the chat and voice channels!)
@@ -84,11 +84,22 @@ Week of 14 September 2020
 Week of 21 September 2020
 
 ## Objectives
+- Using variables to give names to numbers
 - Understanding how time passes in a p5 program
 - Using variables to make your program change over time
 - Fun with random numbers and mapping numbers
 
 __Coming soon!__
+
+## Before class
+- __Watch__ "03 - Introducing variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-variables.md))
+- __Watch__ "03 - Creating variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/creating-variables.md))
+- __Watch__ "03 - Changing variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/changing-variables.md))
+- __Watch__ "03 - Introducing JavaScript Objects" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-javascript-objects.md))
+- __Watch__ "03 - Debugging variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
+- __Watch__ "03 - Random numbers" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
+- __Watch__ "03 - Map and Constrain" (coming soon) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
+
 
 ---
 
