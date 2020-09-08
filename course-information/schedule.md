@@ -99,6 +99,16 @@ __Coming soon!__
 - __Watch__ "03 - Debugging variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
 - __Watch__ "03 - Random numbers" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
 - __Watch__ "03 - Map and Constrain" (coming soon) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
+- __Complete__ [Activity 03: Moving Pictures](../activities/03-moving-pictures.md) (__watch__ "03 - Moving Pictures" (coming soon) video on Moodle to see Pippin doing it)
+
+## During class
+- 13:30: Q&A in #start-of-class Discord channels
+- Afterwards: Studio time in #studio Discord channels
+
+## Homework
+- __Complete__ [Exercise 01: I Like to Move It Move It](../exercises/01-i-like-to-move-it-move-it.md) and submit on Moodle by the deadline for your section
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in the start of class discussion
 
 
 ---

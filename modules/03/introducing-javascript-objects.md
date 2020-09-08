@@ -24,13 +24,13 @@ function draw() {
 }
 ```
 
-It works well, it's easy to understand, but one thing that is less than ideal is how we have four __separate__ variables that all deal with our moving circle.
+It works well, it's easy to understand, but one thing that is less than ideal is how we have four __separate variables__ that __all deal with with the same thing__: our moving circle.
 
 ---
 
 ## Enter the object
 
-JavaScript has a really nice way to organize variables that are about the same "thing", like our circle. It's called an __object__ and we could transform our circle variables into an object like this:
+JavaScript has a really nice way to organize variables that are about the same "thing", like our circle. It's called an __object__ and we can transform our circle variables into an object like this:
 
 ```javascript
 let circleX = 0;
@@ -92,21 +92,30 @@ function draw() {
 }
 ```
 
-Again, this code will run in __exactly the same way__, but it's now that much more tidy.
+Again, this code will run in __exactly the same way__, but it's now that much more tidy. We call this way of using the properties inside objets __"dot notation"__.
+
+That's literally it in terms of the syntax and use of objects!
 
 ---
 
 ## Why the object?
 
-There are a few reasons to feel excited about JavaScript objects and to use them.
+There are reasons to feel excited about JavaScript objects and to use them!
 
 - They let us __organize related data__ together (like all the properties of our circle), and being organized is good
-- 
+- They let us __think about our programming in terms of cohesive objects__ rather than sets of related but individual variables (a "circle" rather than the circle's x, its y, its size, and its speed)
 - They are the gateway to __object-oriented programing__, an approach to programming we will talk about later in the course
+
+In short, if you ever find yourself needing multiple variables, all related to the __same thing__... __use a JavaScript Object__ instead!
 
 ---
 
 ## Summary
+
+- JavaScript Objects allow us to group related information/data in our code
+- JavaScript Objects are tidy
+- JavaScript Objects mean we can think about our code in terms of different objects with different purposes
+- JavaScript Objects are great!
 
 ---
 
