@@ -1,4 +1,4 @@
-# Random numbers {
+# Introducing random numbers {
 
 ---
 

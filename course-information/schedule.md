@@ -89,8 +89,6 @@ Week of 21 September 2020
 - Using variables to make your program change over time
 - Fun with random numbers and mapping numbers
 
-__Coming soon!__
-
 ## Before class
 - __Watch__ "03 - Introducing variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-variables.md))
 - __Watch__ "03 - Creating variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/creating-variables.md))
@@ -98,7 +96,7 @@ __Coming soon!__
 - __Watch__ "03 - Introducing JavaScript Objects" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-javascript-objects.md))
 - __Watch__ "03 - Debugging variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
 - __Watch__ "03 - Random numbers" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
-- __Watch__ "03 - Map and Constrain" (coming soon) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
+- __Watch__ "03 - Map and constrain" (coming soon) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
 - __Complete__ [Activity 03: Moving Pictures](../activities/03-moving-pictures.md) (__watch__ "03 - Moving Pictures" (coming soon) video on Moodle to see Pippin doing it)
 
 ## During class
