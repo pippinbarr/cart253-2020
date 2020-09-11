@@ -32,9 +32,9 @@ Your program should at a __minimum__
 
 ## Submission
 
-Submission will take place on the __Moodle__. Go to the appropriately named __exercise__ on the Moodle and then submit your work there.
+Submission will take place on __Moodle__. Go to the appropriately named __exercise__ on the Moodle and then submit your work there.
 
-Your submission should just be plain text that includes:
+Your submission should just be plain text that includes (substituting your GitHub username and any difference in the folder names):
 
 1. A link to your exercise code (e.g. https://www.github.com/pippinbarr/cart253/exercises/exercise1/)
 2. A link to your project on the web (e.g. https://pippinbarr.github.io/cart253/exercises/exercise1/)

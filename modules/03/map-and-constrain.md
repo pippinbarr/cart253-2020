@@ -4,9 +4,9 @@
 
 ## Ranges
 
-A lot of the time in programming we're dealing with __numbers__, often stored in our __variables__ and use with various __functions__ to make something interesting happen (like drawing an ellipse or setting a fill color).
+A lot of the time in programming we're dealing with __numbers__, often stored in our __variables__ and used with various __functions__ to make something interesting happen (like drawing an ellipse or setting a fill color).
 
-Most of the time these numbers can be thought of in terms of a sensible __range__ of values that make sense.
+Most of the time these numbers can be thought of in terms of a sensible __range__ of values they should be in.
 
 A fill color number is in the range between `0` and `255`, for example. `fill(0)` is black, and `fill(255)` is white. Any number outside this range won't make sense. `fill(312737219)` will just end up being white, since `255` is the highest it can be.
 
@@ -46,7 +46,7 @@ function draw() {
 }
 ```
 
-This works! Notice how the circle changes its shade as we move the mouse horizontally. It's black (`0`) when we move the mouse all the way to the left, and it gets bright as we move the mouse to the right.
+This works! Notice how the circle changes its shade as we move the mouse horizontally. It's black (`0`) when we move the mouse all the way to the left, and it gets brighter as we move the mouse to the right.
 
 __But__ it becomes white once the mouse moves past position `255` on the canvas, because then `mouseX` is `255` and that's the highest number `fill()` understands.
 
@@ -75,7 +75,7 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  circle.fill = map(mouseX,0,width,0,255); // Calculate the fill shade based on the mouse's y position
+  circle.fill = map(mouseX,0,width,0,255); // Calculate the fill shade based on the mouse's x position
   fill(circle.fill); // Apply the fill
   ellipse(circle.x, circle.y, circle.size);
 }
@@ -95,8 +95,8 @@ This is where we use `map()` to convert the pixel coordinate in `mouseX` (a numb
 
 You can see that we provide `map()` with __five arguments__ so it can do its job:
 1. The __value to convert__ (in this case it's the number in `mouseX` so we write `mouseX`, we almost always use a variable here)
-2. The __start__ of the range the value is __from__ (in this case that's `0`, the far left of the screen)
-3. The __end__ of the range the value is __from__ (in this case that's `width`, the far right of the screen)
+2. The __start__ of the range the value is __from__ (for `mouseX` that's `0`, the far left of the screen)
+3. The __end__ of the range the value is __from__ (for `mouseX` that's `width`, the far right of the screen)
 4. The __start__ of the range you want to convert __to__ (in this case that's `0`, representing black for `fill()`)
 5. The __end__ of the range the value is __from__ (in this case that's `255`, representing white for `fill()`)
 
@@ -134,7 +134,7 @@ function draw() {
 
 There are __two extra tricks__ going on with this one
 
-1. Notice how we told `map()` that the __from__ range for `mouseY` is `height`-`0` - that's the reverse of how we normally think of it, but it helps because it means that as the mouse goes __up__ (toward `0` on the y axis, remember), it gets __bigger__ (toward `400` in the __to__ range)
+1. Notice how we told `map()` that the __from__ range for `mouseY` is `height`-`0` - that's the reverse of how we normally think of it, but it helps because it means that as the mouse goes __up__ (toward `0` on the y axis, remember), the circle size gets __bigger__ (toward `400` in the __to__ range)
 2. Notice how our __to__ range for the circle's size doesn't start at `0` - it doesn't have to! This gives us much better control of the effect of our mapping, because we can use any range at all!
 
 ---
@@ -146,7 +146,7 @@ Let's make the circle move across the screen and map its fill color to its x coo
 ```javascript
 let backgroundShade = 0;
 let circle = {
-  x: 0, // Back to 0 to it starts on the left
+  x: 0, //  0 so it starts on the left
   y: 250,
   size: 100,
   fill: 0,
@@ -223,9 +223,9 @@ And that's what constrain does! It's a simple bit of bookkeeping, but it can be 
 ## Summary
 
 - It's fun to use variables in different places in our code (like the mouse position used as a color or a circle's position as its size)
-- But to do so it's best if we __map__ between the two ranges involves (like from the mouse position, which is within the canvas, to a color, which is between `0` and `255`)
+- But to do so it's best if we __map__ between the two ranges involved (like from the mouse position, which is within the canvas, to a color, which is between `0` and `255`)
 - The `map()` function does that!
-- And its friend, the `constrain()` function it could for just making sure a variable is within a specific range
+- And its friend, the `constrain()` function is good for just making sure a variable is within a specific range
 
 ---
 

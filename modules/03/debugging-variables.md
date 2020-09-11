@@ -34,10 +34,13 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 }
 ```
+
+Note: Here we're changing `circleX` __before__ we draw the circle with `ellipse()`. It doesn't matter __too__ much whether we make this change before or after doing the drawing, to some extent it's just a matter of preference. You can use either, but it's probably a little more common to change variables __before__ drawing things that depend on them.
 
 ---
 
@@ -57,8 +60,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 }
 ```
 
@@ -89,8 +93,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circlY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circlY,circleSize);
 }
 ```
 
@@ -119,8 +124,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 }
 ```
 
@@ -136,7 +142,7 @@ In cases where we think the variable name looks correct in the error message, we
 
 ## Seeing inside variables with `console.log()`
 
-For other kinds of variable errors, we need the help of our trusty friend `console.log()`, because when things go wrong with variable we often want to __see what's inside them__. We need to make sure we have the JavaScript Console open for this to work!
+For other kinds of variable errors, we need the help of our trusty friend `console.log()`, because when things go wrong with variables we often want to __see what's inside them__. We need to make sure we have the JavaScript Console open for this to work!
 
 If we want to see what's inside `circleX` while our program is running, for example, we can add a `console.log()` inside our `draw()` function like this:
 
@@ -153,8 +159,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 
   console.log(circleX); // NEW!
 }
@@ -162,7 +169,7 @@ function draw() {
 
 As you can see, we call the `console.log()` function and we give it the variable as an argument, this tells it to print out the value inside the variable every time `draw()` executes. If you run this, you'll see it first print out `0`, then `1`, then `2` and so on as `circleX` goes up in value each time when we add `circleSpeed`.
 
-Each `console.log()` output in the JavaScript is telling us the __value__ in `circleX` at that moment. Which means that it's telling us __where the circle is__ over time (on the horizontal axis), which is fun.
+Each `console.log()` output in the JavaScript is telling us the __value__ in `circleX` at that moment. Which also means that it's telling us __where the circle is__ over time (on the horizontal axis), which is fun.
 
 We can see it voyage off the edge of the canvas and disappear, but we still get our `console.log()` outputs telling us where it is, even when it's gone! Deep.
 
@@ -187,8 +194,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 
   console.log("circleX is " + circleX); // NEW!
   console.log("circleY is " + circleY); // NEW!
@@ -231,15 +239,16 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 
   console.log(`circleX is ${circleX}`); // NEW!
   console.log(`circleY is ${circleY}`); // NEW!
 }
 ```
 
-It's the same basic idea, written in a slightly different way. The whole thing to be printed is in "backtick" quote marks (usually to the left of `1` on your keyboard), and the variable to displah is written inside curly brackets after a `$` (dollar) sign.
+It's the same basic idea, written in a slightly different way. The whole thing to be printed is in "back-tick" quote marks (the key usually to the left of `1` on your keyboard), and the variable to display is written inside curly brackets after a `$` (dollar) sign.
 
 You can use either, they do the same thing. I have a personal preference for the template string.
 
@@ -264,16 +273,17 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 }
 ```
 
-Here I've forgotten to put a value in `circleY`, so when I run the code, it doesn't show the ellipse I'm trying to drawn (it has an undefined y coordinate, so it can't be drawn).
+Here I've forgotten to put a value in `circleY`, so when I run the code, it doesn't show the ellipse I'm trying to draw (it has an undefined y coordinate, so it can't be drawn).
 
 It's unfortunate, but this doesn't break the program or give an error message. However, a __lot__ of the time these sorts of issues are caused by weird values in our variables, so a major strategy is to __print out the variables__.
 
-In larger project we'd need to think about which variable might be the problem, but here we can print them all (here I'm using one big template string)...
+In larger projects we'd need to think about which variable might be the problem, but here we can print them all (here I'm using one big template string)...
 
 ```javascript
 let backgroundShade = 0;
@@ -288,8 +298,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 
   console.log(`circleX: ${circleX}, circleY: ${circleY}, circleSize: ${circleSize}, circleSpeed: ${circleSpeed}`);
 }
@@ -320,8 +331,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circleX,circleY,circleSize);
+
   circleX = circleX + circleSpeed;
+  ellipse(circleX,circleY,circleSize);
 
   console.log(`circleX: ${circleX}, circleY: ${circleY}, circleSize: ${circleSize}, circleSpeed: ${circleSpeed}`);
 }
@@ -329,7 +341,7 @@ function draw() {
 
 Now we see `circleSpeed` is `undefined`, as expected, but this has the follow-on effect of making `circleX` into `NaN`! That's because we take `circleX` which is a number, and add `undefined` to it, which gives us `NaN`.
 
-Just like with `undefined`, trying to draw an ellipse when on of the arguments is `NaN` leads to no ellipse, but also no error message.
+Just like with `undefined`, trying to draw an ellipse when one of the arguments is `NaN` leads to no ellipse, but also no error message.
 
 Here we should see `NaN` and immediately suspect that `undefined` is sneaking into some math. From there we can track it down to `circleSpeed`, which is `undefined`, and realize we forgot to give it a value at the beginning.
 
@@ -341,7 +353,7 @@ Phew!
 
 You'll be able to get along just fine with `console.log()` for this course, and probably for the rest of your life, but if you want to, you can also track the content of variables using the built in "Debugger" in your browser.
 
-In __Chrome__ go to the JavaScript Console (which you have open, right!), and in the menu at the top of the console select "Sources" instead of "Console".
+In __Chrome__ go to the JavaScript Console (which you have open, right!?!?), and in the menu at the top of the console select "Sources" instead of "Console".
 
 There is a __lot__ of stuff going on here, but for now go to the bottom right and choose "Watch". From there you can click the little `+` button to add variable names one by one. You just click the `+`, then type in a variable name from the program, and it will tell you the value of the variable.
 

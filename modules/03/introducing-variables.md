@@ -32,7 +32,7 @@ function draw() {
   background(255,0,0);
   // Draw a square in the centre of the canvas
   rectMode(CENTER);
-  rect(250,250,400,400);
+  rect(250,250,100,100);
 }
 ```
 
@@ -68,7 +68,7 @@ function draw() {
   background(255,0,0);
   // Draw a square at the mouse position
   rectMode(CENTER);
-  rect(mouseX,mouseY,400,400); // Using the variables for the position!
+  rect(mouseX,mouseY,100,100); // Using the variables for the position!
 }
 ```
 
@@ -94,7 +94,7 @@ function setup() {
 function draw() {
   // Draw a square at the mouse position
   rectMode(CENTER);
-  rect(mouseX,mouseY,400,400); // Using the variables for the position!
+  rect(mouseX,mouseY,100,100); // Using the variables for the position!
 }
 ```
 
@@ -141,7 +141,7 @@ function draw() {
   background(mouseX,mouseY,0);
   // Draw a square in the centre of the canvas
   rectMode(CENTER);
-  rect(250,250,400,400);
+  rect(250,250,100,100);
 }
 ```
 
@@ -179,7 +179,7 @@ function draw() {
   background(255,0,0);
   // Draw a square in the centre of the canvas
   rectMode(CENTER);
-  rect(width/2,height/2,400,400); // We're dividing the width and height by two to find the center
+  rect(width/2,height/2,100,100); // We're dividing the width and height by two to find the center
 }
 ```
 
@@ -196,7 +196,7 @@ function draw() {
   background(255,0,0);
   // Draw a square in the centre of the canvas
   rectMode(CENTER);
-  rect(width/2,height/2,400,400); // Still centered!
+  rect(width/2,height/2,100,100); // Still centered!
 }
 ```
 
@@ -216,7 +216,7 @@ function draw() {
   background(255,0,0);
   // Draw a square in the centre of the canvas
   rectMode(CENTER);
-  rect(width/2,height/2,400,400);
+  rect(width/2,height/2,100,100);
 }
 ```
 

@@ -40,7 +40,7 @@ We can partly solve this issue by using __comments__ to explain the code, but we
 
 We've already seen variables like `mouseX` and `mouseY` are built into p5 for us. These are so helpful because they give a __name__ to a particular number in our program (the x and y position of the mouse in this case.)
 
-And so, a huge part of programming is about __creating our own variables__ in order to give __names__ to the values in our program (for us, this is generally numbers).
+And so, a huge part of programming is about __creating our own variables__ in order to give __names__ to the values in our program (for now, this is generally numbers).
 
 To work with variables there are three main ideas:
 
@@ -234,7 +234,7 @@ A variable name:
 
 `circleX` is good, `ç!®çl€X` is not. (It contains illegal symbols.)
 
-- Must only __begin with a letter, a $ or a ___. (But unless you have a __really good reason__, just don't use the $ or _ symbols in your variable names.)
+- Must only __begin with a letter, a $ or a \___. (But unless you have a __really good reason__, just don't use the $ or _ symbols in your variable names.)
 
 `twelthOfMay` is good, `12thOfMay` is not. (It starts with a number.)
 

@@ -12,7 +12,7 @@
 
 The idea for this activity will be to make a simple abstract animation:
 
-_Two circles, the right one bigger and more transparent than the left, come in from either side of the screen, growing as they do so. They stop in the centre while still growing. The background goes from black to red._
+_Two circles, the left one bigger and more transparent than the right, come in from either side of the screen, growing as they do so. They stop in the centre while still growing. The background goes from black to red._
 
 There are many different and reasonable ways to interpret this, so feel free to go your own way! The steps discussed below are just one approach designed to use the ideas we've been seeing.
 
@@ -35,7 +35,7 @@ Remember, too, that it's a nice idea to commit (and push) throughout the activit
 
 ## Make a plan
 
-If you want to go totally off road and draw an alien completely of your own devising, go for it. It's still a good idea to have a plan though! Remember that when we draw we're drawing in layers from the back to the front, layering them on top of each other. So here's a possible plan for an alien:
+If you want to go totally off road and just wing it, feel free, but generally it's still a good idea to have a plan. Here's one:
 
 - First we'll figure out what variables we need
 - Then we'll set up the canvas
@@ -49,7 +49,7 @@ Quite a lot to think about, but we'll take it step by step
 
 ## Set up our variables
 
-The key with working out our variable is about knowing what may need to __change__ during our program. Anything that __will change__ or that is a number we need to use in a function should be a variable.
+The key with working out our variables is about knowing what may need to __change__ during our program. Anything that __will change__ or that is a number we need to use in a function should be a variable.
 
 We can think about the project in terms of three key "things": the background color, the first circle, and the second circle.
 
@@ -99,7 +99,7 @@ __Okay!__ We now have the basic variables set up to make our program work.
 
 ## Set the canvas size and set no stroke
 
-The first thing we want to do is specify the dimensions of our canvas. We'll do all our drawing in `setup()` so just keep all your instructions in there.
+The first thing we want to do is specify the dimensions of our canvas. We'll do this in `setup()`:
 
 1. Use the `createCanvas()` function to set the dimensions of your canvas to 500x500
 2. Use `noStroke()` to remove stroke from our shapes (just for aesthetics)
@@ -112,7 +112,7 @@ We want to use our `bg` variable to set the background color with `background()`
 
 1. At the top of `draw()` add a comment that says "Background"
 2. Use the `background()` function to set the background color using the `r`, `g`, and `b` properties of the `bg` object
-3. Add some amount (maybe `1`?) to the `bg` object's `r` property so that it gets bigger for the next frame
+3. Add some amount (maybe `1`?) to the `bg` object's `r` property so that it gets redder for the next frame
 
 When you run the program you should now see the screen get more red over time!
 
@@ -162,7 +162,7 @@ When your run your program you should see `circle1` move to the right, then stop
 
 We want to do the same things for our second circle, with some small differences. So, just before the `fill()` for your second circle:
 
-1. Add a __negative__ number to `circle2`'s `x` property to make it move __left__ (maybe `1` again?)
+1. Add a __negative__ number to `circle2`'s `x` property to make it move __left__ (maybe `-1`?)
 2. Use `constrain()` to limit that property to be between `width / 2` (the center) and `width` (the right)
 
 Now the two circles should both move toward the centre, then stop (overlapping) in the middle. Quite satifying!
@@ -173,7 +173,7 @@ Now the two circles should both move toward the centre, then stop (overlapping) 
 
 We want the circles to get bigger. For `circle1` we'll do that by adding to its `size` directly. We also want it to stop growing when it's the same width as the canvas.
 
-1. After your code for `circle1`'s position, add a positive number to `circle1`'s `size` property (maybe `0.25`?)
+1. After your code for changing `circle1`'s x property, add a positive number to `circle1`'s `size` property (maybe `0.25`?)
 2. After adding to the `size` use `constrain()` to limit the circle's `size` property to be between `0` and `width`
 
 Now the first circle moves and grows, and stops growing when it's the same width as the canvas!
@@ -184,9 +184,9 @@ Now the first circle moves and grows, and stops growing when it's the same width
 
 We could use the same approach to make the second circle grow (just adding to its `size`), but instead let's make the size of our second circle __relative__ to the first circle. We can do that by setting its size to a __fraction__ of the first circle's size.
 
-1. After your code for `circle2`'s position, set its `size` property to be the `size` property of the __first__ circle multiplies by `0.9` (or some other fraction).
+1. After your code for changing `circle2`'s x position, set its `size` property to be the `size` property of the __first__ circle multiplied by `0.9` (or some other fraction).
 
-Both circles grow now! `circle1` grows because we add to its `size` and `circle2` grows because its `size` it relative to `circle1`'s. This also means `circle2` __stops__ growing when `circle1` does. Nice.
+Both circles grow now! `circle1` grows because we add to its `size` and `circle2` grows because its `size` is relative to `circle1`'s. This also means `circle2` __stops__ growing when `circle1` does. Nice.
 
 ---
 
@@ -196,7 +196,7 @@ Now our program does what we said it would do!
 
 However, there are things we could do to make it better. Most importantly, there are a few __numbers__ in our instructions that would be better if they were converted to variables/properties or otherwise removed. So for tidying up, let's do the following:
 
-1. Instead of adding a number to the `bg` object's `r` property, try using `map()` top map the `r` property based on `circle1`'s `size`. Remember, we want the canvas to be __red__ by the time the circle grows to match the `width`
+1. Instead of adding a number to the `bg` object's `r` property, try using `map()` to map the `r` property based on `circle1`'s `size`. Remember, we want the canvas to be __red__ by the time the circle grows to match the `width`
 2. Instead of adding a positive number to `circle1`'s `x` position, give the circle a `speed` property with the same number and add that instead
 3. Do the same for `circle2`'s `x` position (but set its `speed` to a negative number)
 4. Instead of adding a positive number to `circle1`'s `size`, give it a `growth` property with that number and add that instead
@@ -204,7 +204,7 @@ However, there are things we could do to make it better. Most importantly, there
 
 After all this the program does the same thing, but it's much neater.
 
-A further good thing to do, of course, is to add __comments__ everywhere to make the code nice and readable.
+A further good thing to do, of course, is to add __more comments__ everywhere to make the code nice and readable.
 
 ---
 

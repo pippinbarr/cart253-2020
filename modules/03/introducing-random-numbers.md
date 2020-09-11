@@ -19,8 +19,9 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circle.x,circle.y,circle.size);
+
   circle.x = circle.x + circle.speed;
+  ellipse(circle.x,circle.y,circle.size);
 }
 ```
 
@@ -74,10 +75,11 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
+
+  circle.x = circle.x + circle.speed;
   circle.fill = random(0, 255); // Get a random fill for our circle!
   fill(circle.fill); // Apply our circle's random fill
   ellipse(circle.x, circle.y, circle.size);
-  circle.x = circle.x + circle.speed;
 }
 ```
 
@@ -106,9 +108,10 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  ellipse(circle.x, circle.y, circle.size);
+
   circle.speed = random(-5, 5);
   circle.x = circle.x + circle.speed;
+  ellipse(circle.x, circle.y, circle.size);
 }
 ```
 
@@ -136,10 +139,11 @@ function setup() {
 
 function draw() {
   background(backgroundShade);
-  circle.y = random(0, height);
-  ellipse(circle.x, circle.y, circle.size);
+  
   circle.speed = random(-5, 5);
   circle.x = circle.x + circle.speed;
+  circle.y = random(0, height);
+  ellipse(circle.x, circle.y, circle.size);
 }
 ```
 
