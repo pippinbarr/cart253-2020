@@ -124,7 +124,7 @@ Students have the right to write in French at Concordia. Pippin can read French 
 
 ## Costs
 
-- See the [Department Syllabus](dcart-syllabus-2020.pdf) for Department-specific costs such as the Department fee and CDA fee. In brief, however, Department and CDA fees have been waived for the Fall 2020 semester.
+- See the [Department Syllabus](dcart-syllabus-fall-2020.pdf) for Department-specific costs such as the Department fee and CDA fee. In brief, however, Department and CDA fees have been waived for the Fall 2020 semester.
 - All software students are expected to use in the class will be free.
 
 
@@ -133,14 +133,14 @@ Students have the right to write in French at Concordia. Pippin can read French 
 The practical work done in this class will take place on your own computer, with course software installed on it by you. The instructor is significantly more experienced with macOS, but will work to support Windows and even Linux as needed. This course does not require a significantly powerful machine beyond the ability to run a web browser.
 
 
-## [Course Schedule](./Course-Schedule.md)
+## [Course Schedule](./schedule.md)
 
 (Click through for week-by-week information about what we will cover in the course.)
 
 
-## [Design and Computation Arts Syllabus](dcart-syllabus-2020.pdf) ___TO BE UPDATED___
+## [Design and Computation Arts Syllabus](./dcart-syllabus-fall-2020.pdf)
 
-(Click through for the standard information from D/CART that is to be included as part of all course outlines.)
+(Click through for the standardized information from D/CART that is included as part of all course outlines.)
 
 ## Behaviour
 
