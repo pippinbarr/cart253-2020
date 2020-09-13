@@ -390,8 +390,10 @@ The same ideas exist for subtract (`-=`), multiplication (`*=`), and division (`
 
 ## Summary
 
-
-
+- Variables are already amazing because they let us name values in our program
+- But __changing__ variables unlocks dynamic, exciting programs!
+- We can change number variables with standard math (addition, subtraction, etc.)
+- The more numbers we turn into variables, the more we can __control__ the parts of our program
 
 ---
 
