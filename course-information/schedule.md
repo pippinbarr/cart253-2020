@@ -90,14 +90,14 @@ Week of 21 September 2020
 - Fun with random numbers and mapping numbers
 
 ## Before class
-- __Watch__ "03 - Introducing variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-variables.md))
-- __Watch__ "03 - Creating variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/creating-variables.md))
-- __Watch__ "03 - Changing variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/changing-variables.md))
-- __Watch__ "03 - Introducing JavaScript Objects" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-javascript-objects.md))
-- __Watch__ "03 - Debugging variables" (coming soon) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
-- __Watch__ "03 - Random numbers" (coming soon) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
-- __Watch__ "03 - Map and constrain" (coming soon) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
-- __Complete__ [Activity 03: Moving Pictures](../activities/03-moving-pictures.md) (__watch__ "03 - Moving Pictures" (coming soon) video on Moodle to see Pippin doing it)
+- __Watch__ "03 - Introducing variables" (26:00) (and __read__ the [Lecture notes](../modules/03/introducing-variables.md))
+- __Watch__ "03 - Creating variables" (25:00) (and __read__ the [Lecture notes](../modules/03/creating-variables.md))
+- __Watch__ "03 - Changing variables" (20:20) (and __read__ the [Lecture notes](../modules/03/changing-variables.md))
+- __Watch__ "03 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](../modules/03/introducing-javascript-objects.md))
+- __Watch__ "03 - Debugging variables" (22:47) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
+- __Watch__ "03 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
+- __Watch__ "03 - Map and constrain" (16:54) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
+- __Complete__ [Activity 03: Moving Pictures](../activities/03-moving-pictures.md) (__watch__ "03 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A in #start-of-class Discord channels
