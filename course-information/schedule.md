@@ -71,7 +71,7 @@ Week of 14 September 2020
 - __Complete__ [Activity 02: Draw an Alien](../activities/02-draw-an-alien.md) (__watch__ "02 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
-- 13:30: Q&A with everyone in #start-of-class channel on Discord
+- 13:30: Q&A with everyone in #start-of-class channel on Discord ([Discussion notes](../modules/02/discussion.md))
 - Afterwards: co-working with instructor and TA support
 
 ## Homework
