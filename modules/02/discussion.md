@@ -17,3 +17,5 @@
 - __Studio__
 
 ## Tuesday notes
+
+- [Black Room](https://cass.itch.io/blackroom) by Cassie McQuater is an example of a game/experience that uses resizing your browser window as meaningful input.
