@@ -1,5 +1,8 @@
 # Style Guide
 
+1. [Commenting](#commenting)
+2. [Variables](#variable-naming)
+
 ## Commenting
 
 We write comments in our code to __explain__ it to ourselves and to others. If your code is still confusing to you or others with comments in it, you need to think about writing better comments!
@@ -76,4 +79,38 @@ function setup() {
   // Draw the mouth
   ellipse(250,300,50,50);
 }
+```
+
+---
+
+## Variables
+
+### Naming variables
+
+Naming variables involves both __technical__ constraints as well as __style__ rules.
+
+1. Your variable name must clearly __describe__ or __explain__ the value stored in it (`circleX` for your circle's x position, not `flimFlam`, `cX`)
+2. You variable name should be written using __camel case__, starting with a lowercase letter and capitalizing each new word (`secretGardenPassword`, not `secretgardenpassword`, not `secret_garden_password`)
+3. Variable names can only contain __letters and numbers__ (and `$` and `_`, but avoid them). (`starDensity`, not `*density`, not `%starDenity%`)
+4. Variable names must be __unique__. You cannot reuse variable names from your own code or from p5. (`mouseImageX`, not `mouseX` because it is used by p5; `classStatus`, but not `class` because it is a JavaScript reserved word)
+5. Variable names are __case sensitive__. (`circleX` is not the same as `circlex`)
+
+### Use JavaScript objects
+
+Whenever you find yourself needed more than one variable that relates to the same "thing" in your code (like a circle you are animating), you should use a JavaScript object instead of individual variables.
+
+```javascript
+// Yes!
+let circle = {
+  x: 0,
+  y: 0,
+  size: 100,
+  speed: 1
+};
+
+// No.
+let circleX = 0;
+let circleY = 0;
+let circleSize = 100;
+let circleSpeed = 1;
 ```
