@@ -1,5 +1,6 @@
 #### Guides
 - [Style Guide](../guides/style-guide.md)
+- [Debugging Guide](../guides/debugging-guide.md)
 
 #### Links
 
