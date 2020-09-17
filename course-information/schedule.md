@@ -1,6 +1,6 @@
 #### Guides
-- [Style Guide](../guides/style-guide.md)
-- [Debugging Guide](../guides/debugging-guide.md)
+- [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
+- [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
 
 #### Links
 
@@ -32,14 +32,14 @@ Week of 7 September 2020
 ## Before class
 - __Join__ the course Discord (invitation link will be emailed)
 - __Watch__ "01-1 - Introducing CART253" (38:33) on Moodle
-- __Read__ the [Course Outline](./outline.md) ([PDF](./outline.md.pdf)) and the Course Schedule (this page)
-- __Complete__ the [Course Software Setup](../modules/01/software.md) text tutorial
+- __Read__ the [Course Outline](https://pippinbarr.github.io/cart253-2020/course-information/outline.html)  and the Course Schedule (this page)
+- __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/modules/01/software.html) text tutorial
 - Create your class repository
   - __Watch__ "01-2 - Creating a Class Repository on GitHub" (16:44) on Moodle
-  - __Read__ the [Creating a Class Repository](../modules/01/github-repository.md) text tutorial
+  - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/modules/01/github-repository.html) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01-3 - Basic Version Control" (32:20) on Moodle
-  - __Read__ the [Basic Version Control with GitHub Desktop](../modules/01/basic-github-desktop.md) text tutorial
+  - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/modules/01/basic-github-desktop.html) text tutorial
 
 ## During class
 - 13:30: Introductions with everyone in #start-of-class channel on Discord (join the chat and voice channels!)
@@ -62,16 +62,16 @@ Week of 14 September 2020
 - Using Git and GitHub with code
 
 ## Before class
-- __Read__ the [Why and how to learn to code](../modules/02/why-and-how-to-learn-to-code.md)
-- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](../modules/02/working-with-code-in-atom.md))
-- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](../modules/02/drawing-shapes.md))
-- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](../modules/02/drawing-colors.md))
-- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](../modules/02/commenting-your-code.md))
-- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](../modules/02/the-javascript-console.md))
-- __Complete__ [Activity 02: Draw an Alien](../activities/02-draw-an-alien.md) (__watch__ "02-6 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
+- __Read__ the [Why and how to learn to code](https://pippinbarr.github.io/cart253-2020/modules/02/why-and-how-to-learn-to-code.html)
+- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/02/working-with-code-in-atom.html))
+- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/02/drawing-shapes.html))
+- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/02/drawing-colors.html))
+- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/02/commenting-your-code.html))
+- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/02/the-javascript-console.html))
+- __Complete__ [Activity 02: Draw an Alien](https://pippinbarr.github.io/cart253-2020/activities/02-draw-an-alien.html) (__watch__ "02-6 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
-- 13:30: Q&A with everyone in #start-of-class channel on Discord ([Discussion notes](../modules/02/discussion.md))
+- 13:30: Q&A with everyone in #start-of-class channel on Discord ([Discussion notes](https://pippinbarr.github.io/cart253-2020/modules/02/discussion.html))
 - Afterwards: co-working with instructor and TA support
 
 ## Homework
@@ -91,21 +91,21 @@ Week of 21 September 2020
 - Fun with random numbers and mapping numbers
 
 ## Before class
-- __Watch__ "03-1 - Introducing variables" (26:00) (and __read__ the [Lecture notes](../modules/03/introducing-variables.md))
-- __Watch__ "03-2 - Creating variables" (25:00) (and __read__ the [Lecture notes](../modules/03/creating-variables.md))
-- __Watch__ "03-3 - Changing variables" (20:20) (and __read__ the [Lecture notes](../modules/03/changing-variables.md))
-- __Watch__ "03-4 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](../modules/03/introducing-javascript-objects.md))
-- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](../modules/03/debugging-variables.md))
-- __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](../modules/03/introducing-random-numbers.md))
-- __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](../modules/03/map-and-constrain.md))
-- __Complete__ [Activity 03: Moving Pictures](../activities/03-moving-pictures.md) (__watch__ "03-8 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
+- __Watch__ "03-1 - Introducing variables" (26:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/introducing-variables.html))
+- __Watch__ "03-2 - Creating variables" (25:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/creating-variables.html))
+- __Watch__ "03-3 - Changing variables" (20:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/changing-variables.html))
+- __Watch__ "03-4 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/introducing-javascript-objects.html))
+- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/debugging-variables.html))
+- __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/introducing-random-numbers.html))
+- __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/map-and-constrain.html))
+- __Complete__ [Activity 03: Moving Pictures](https://pippinbarr.github.io/cart253-2020/activities/03-moving-pictures.html) (__watch__ "03-8 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A in #start-of-class Discord channels
 - Afterwards: Studio time in #studio Discord channels
 
 ## Homework
-- __Complete__ [Exercise 01: I Like to Move It Move It](../exercises/01-i-like-to-move-it-move-it.md) and submit on Moodle by the deadline for your section
+- __Complete__ [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html) and submit on Moodle by the deadline for your section
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
 
