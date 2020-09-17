@@ -46,13 +46,13 @@ function draw() {
 }
 ```
 
-It works. We have four segments of a caterpillar. If we wanted five, we'd add another ellipse. If we wanted 500, we'd add another 496. Which would __not__ be fun.
+It works. We have four segments of a caterpillar. If we wanted five, we'd add another ellipse. If we wanted 500, we'd add another 496. But that would __not be fun__ to do.
 
 ---
 
 ## Repetition is so repetitive!
 
-We can already see from the previous program how similar each ellipse is (only the x position changes), but what if we took it further and wrote it like this:
+We can already see from the previous program how similar each ellipse is (only the x position changes!). Let's take it a bit further and write the program a little differently to emphasize that:
 
 ```javascript
 let caterpillar = {
@@ -72,22 +72,27 @@ function draw() {
 
   // Our variable x tracks where to draw the next caterpillar piece
   let x = caterpillar.x;
+
+  // Draw the first ellipse
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
   x = x + 40;
 
+  // Draw the second ellipse
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
   x = x + 40;
 
+  // Draw the third ellipse
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
   x = x + 40;
 
+  // Draw the final ellipse
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
 }
 ```
 
 Now __that__ is repetitive! The lines of code that draw an ellipse and then increase `x` are __exactly the same__, over and over again!
 
-We could just keep pasting those two lines in to get more segments as needed, but something is wrong here...
+We could just keep pasting those two lines in to get more segments as needed, but __something is wrong__ here...
 
 ---
 
@@ -115,7 +120,7 @@ if (condition) {
   action();
 }
 
-// The imaginary action() will be executed UNTIL the condition is false
+// The imaginary action() will be executed FOR AS LONG AS the condition is true, over and over
 while (condition) {
   action();
 }
@@ -123,21 +128,27 @@ while (condition) {
 
 ---
 
-## Breaking down `while` loops
+## Breaking down loops
 
-We need __three things__ to write a good while loop:
+We need __three things__ to write a good loop:
 
-We need to know the __starting context__, the state of our program just before the `while` loop.
+First, we need to know the __starting context__, the state of things just before the `while` loop starts.
 
-> For our caterpillar this would be that we know we have drawn __zero__ segments of our caterpillar, we know how many segments it __should__ have, and we know the starting x position of the caterpillar.
+> For our caterpillar this would be
+> 1. we have drawn __zero__ segments of our caterpillar
+> 2. we know how many segments it __should__ have
+> 3. we know the starting x position of the caterpillar.
 
-We need to know the __condition__, the `true` or `false` condition that needs to be met to execute the code in the loop (just like the condition for an `if`-statement).
+Second, we need to know the __condition__, the `true` or `false` condition that needs to be met to execute the code in the loop (just like the condition for an `if`-statement).
 
-> For our caterpillar this would be that we have drawn __less than__ the desired number of segments of our caterpillar.
+> For our caterpillar this would be that "we have drawn __less than__ the desired number of segments of our caterpillar". For as long as that is TRUE, we should keep drawing segments.
 
-We need to know the __action(s)__ to take in the loop. This is the code we should execute if our condition is true. Importantly these actions should __eventually cause the loop to stop__! (We don't want the loop going on forever!)
+Third, we need to know the __action(s)__ to take in the loop. This is the code we should execute if our condition is true. Importantly these actions should __eventually cause the loop to stop__! That is, they should eventually __make the condition become false__. (We don't want the loop going on forever!)
 
-> For our caterpillar this would the action of __drawing__ a segment, __increasing__ the x position for the next one, and __increasing__ our record of the number of segments drawn.
+> For our caterpillar this would be:
+> 1. __drawing__ a segment,
+> 2. __increasing__ the x position to be ready to draw the next one
+> 3. __increasing__ our record of the number of segments drawn so far by one
 
 ---
 
@@ -145,17 +156,26 @@ We need to know the __action(s)__ to take in the loop. This is the code we shoul
 
 With all this in mind, we can change our caterpillar program. We need to
 
-- Include some new information (the number of segments in the caterpillar, the number drawn, and the current x position to draw at)
-- Write the while loop's condition (it should check if we have drawn enough segments)
-- Write the while loop's action (it should draw a segment, and then increase the next x position and the segments drawn)
+1. Include some new information
+  - the number of segments in the caterpillar,
+  - the number drawn,
+  - the current x position to draw a segment at
+2. Write the while loop's condition
+  - it should check if we have drawn enough segments
+3. Write the while loop's action. It should
+  - draw a segment
+  - increase the next x position
+  - update the segments drawn
+
+Let's do it...
 
 ```javascript
 let caterpillar = {
   x: 100,
   y: 250,
-  totalSegments: 10,
+  totalSegments: 10, // NEW: Need to know how many segments it has!
   segmentSize: 50,
-  segmentSpacing: 40,
+  segmentSpacing: 40, // NEW: better to have this as a property of the caterpillar
 }
 
 function setup() {
@@ -167,13 +187,20 @@ function draw() {
   noStroke();
   fill(100, 200, 100); // A nice green
 
+  // Note that the following two variables are DECLARED here in the draw() function.
+  // That's because they are TEMPORARY. We only need them right now for the while
+  // loop, so they don't need to be declared at the top.
+
+  // NEW!
   // Tracks where to draw the next caterpillar piece
   // Starts at the caterpillar's x position
   let x = caterpillar.x;
+  // NEW!
   // Tracks how many segments have been drawn so far
   // Starts at 0 (none!)
   let segmentsDrawn = 0;
 
+  // NEW!
   // Our while loop checks if the number of segments drawn is still less than the
   // total segments of the caterpillar. It will stop when the segments drawn is
   // equal to the total segments.
@@ -183,6 +210,9 @@ function draw() {
     // We increase the x position for the next segment
     x = x + caterpillar.segmentSpacing;
     // We add one to the segments drawn (because we just drew one)
+    // This is the thing that will eventually make our condition false, because
+    // segmentsDrawn gets bigger by one each time through the loop until it
+    // reaches the same number as the totalSegments property
     segmentsDrawn = segmentsDrawn + 1;
   }
 }
@@ -192,7 +222,9 @@ Quite a lot to take in here, but the most important thing to understand is that 
 
 Each time through the loop we increase `segmentsDrawn` by `1` and it eventually hits `10` and the `while` loop stops and the program moves on.
 
-### Adding one
+## Adding one
+
+We increased `segmentsDrawn` by one each time through our loop.
 
 ```javascript
 segmentsDrawn = segmentsDrawn + 1; // Add one to segmentsDrawn
@@ -218,7 +250,7 @@ You'll see the abbreviated versions quite often, so it's worth getting used to t
 
 ## `for` loops
 
-Using loops to do something a specific number of times (like drawing a specific number of segments) is __so popular__ that programming language have a specific kind of loop that compresses all the details down.
+Using loops to do something a specific number of times (like drawing a specific number of caterpillar segments) is __so popular__ that programming language have a specific kind of loop that compresses all the details down.
 
 It's called a `for` loop. The way it's written is really just a super compressed version of what you can do with a `while` loop.
 
@@ -244,14 +276,13 @@ for (let segmentsDrawn = 0; segmentsDrawn < caterpillar.totalSegments; segmentsD
 }
 ```
 
-Neither style of writing this loop is "better" than the other, but `for` loops are __very, very, very, very common__ in all programming, so it's important to adjust to them.
+Neither style of writing this loop is "better" than the other, but `for` loops are __very, very, very, very common__ in all programming, so it's important to love them.
 
 ---
 
 ## Breaking down the `for` loop
 
 ```javascript
-let x = caterpillar.x;
 for (let segmentsDrawn = 0; segmentsDrawn < caterpillar.totalSegments; segmentsDrawn++) {
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
   x = x + caterpillar.segmentSpacing;
@@ -260,18 +291,21 @@ for (let segmentsDrawn = 0; segmentsDrawn < caterpillar.totalSegments; segmentsD
 
 The `for` loop is compressing the three key pieces of information we need for a loop into its parentheses!
 
-1. `let segmentsDrawn = 0` is the __starting condition__ for our loop (no segments are drawn)
+1. `let segmentsDrawn = 0` is the __starting context__ for our loop (no segments are drawn)
 2. `segmentsDrawn < caterpillar.totalSegments` is the __condition__ we check in our loop (the loop keeps running while it is `true`)
 3. `segmentsDrawn++` is the action that makes sure the loop will finish (it increases `segmentsDrawn` by one until it reaches the number in `caterpillar.totalSegments`)
+
+A couple of notes:
+- Notice how the different parts of our loop information in the parentheses are separated by __semicolons__ (`;`), __not__ commas
+- In keeping with the loop information, the `segmentsDrawn++` happens __after__ the instructions in the curly brackets
 
 ---
 
 ## More compression
 
-In fact, a very big proportion of the time, you'll see `for` loops use `i` as the name for the variable that counts each time through the loop
+A very big proportion of the time, you'll see `for` loops use `i` as the name for the variable that counts each time through the loop:
 
 ```javascript
-let x = caterpillar.x;
 for (let i = 0; i < caterpillar.totalSegments; i++) {
   ellipse(x, caterpillar.y, caterpillar.segmentSize);
   x = x + caterpillar.segmentSpacing;
@@ -279,6 +313,40 @@ for (let i = 0; i < caterpillar.totalSegments; i++) {
 ```
 
 Here `i` stands for "iterator", it's the place we store the number of times we've been through the loop. It starts at `0` and counts up to `caterpillar.totalSegments`.
+
+---
+
+## A long, long caterpillar
+
+Part of the point of all this is we can draw __as many segments as we want__ because the computer just takes care of it. So just for fun, here is a `100` segment caterpillar (with smaller segments to fit on the screen):
+
+```javascript
+let caterpillar = {
+  x: 0,
+  y: 250,
+  totalSegments: 100,
+  segmentSize: 6,
+  segmentSpacing: 5
+}
+
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+  noStroke();
+  fill(100, 200, 100); // A nice green
+
+  let x = caterpillar.x;
+  for (let i = 0; i < caterpillar.totalSegments; i++) {
+    ellipse(x, caterpillar.y, caterpillar.segmentSize);
+    x = x + caterpillar.segmentSpacing;
+  }
+}
+```
+
+Imagine writing that without a loop! Yuck!
 
 ---
 
@@ -325,7 +393,7 @@ function draw() {
 
 ### "Star field"
 
-We can use loops to do all kinds of things. Consider the situation of wanting to draw a star-filled sky. We want to draw each star in a random position, and we want to draw a lot of them...
+Consider the situation of wanting to draw a star-filled sky. We want to draw each star in a random position, and we want to draw a lot of them...
 
 ```javascript
 // We need to know how many stars we want to draw in the sky
@@ -341,6 +409,7 @@ function draw() {
   // Black sky
   background(0);
   // randomSeed() lets us make random() predictable: it will generate the same sequence of numbers
+  // each time draw() is called
   randomSeed(0);
   // Our for loop counts from 0 to numStars
   for (let i = 0; i < numStars; i++) {

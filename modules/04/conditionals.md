@@ -46,19 +46,19 @@ What we often want is for our programs to __make decisions__ based on what's hap
 
 When we humans make decisions based on information about the world, we often are thinking something like this:
 
-> __"If the metro is still broken down in 10 minutes, then I'm going to get off and walk."__
+> __"If there is freezing rain, then I'm going to stay at home."__
 
 This is made up of two key parts.
 
 First, there's the __condition__ we're thinking about:
 
-> __If the metro is still broken down in 10 minutes...__
+> __If there is freezing rain...__
 
-This is what we are checking. We stand there on the metro checking whether the metro is running again yet and whether 10 minutes have passed. While this is __false__, we don't need to put our plan into action, but once it is __true__ we will act!
+This is what we are going to react to, so we need to check whether or not it's true. We look out the window or maybe tentatively step outside (and fall over). If there's no freezing rain then our condition is __false__, so we don't need to put our plan into action, but if it is __true__ we will act! By staying home!
 
-Second, then, there's the __action__ we're going to perform:
+So second, then, there's the __action__ we're going to perform:
 
-> __I'm going to get off and walk.__
+> __I'm going to stay at home.__
 
 This is what we will __do__ when the condition is true.
 
@@ -74,7 +74,7 @@ The __condition__ for a computer is anything that can be __true__ or __false__ (
 
 Consider our circle. Let's say we want it to jump back to the left side of the screen when it reaches the right side. We can express this as a decision:
 
-__If__ the circle has gone past the right side of the canvas (condition), __then__ move it back to the left side (action).
+__If__ the circle has gone past the right side of the canvas (condition), __then__ make it move it back toward the left side (action).
 
 How can the computer express that specific condition? Well, we need to check if the circle's __x position__ is greater than the __width__ of the canvas, which we can write in maths (with variables) as:
 
@@ -92,15 +92,13 @@ In order to combine checking our __condition__ with taking an __action__, we use
 
 ```javascript
 if (circle.x > width) {
-  circle.x = 0;
+  circle.speed = -circle.speed; // Change the speed from positive to negative!
 }
 ```
 
-If the condition in the parenthesis is __true__ (`circle.x` __is__ greater than `width`), then the block of code in the curly brackets will happen (setting `circle.x` back to `0`, which moves it to the left of the canvas).
+If the condition in the parenthesis is __true__ (`circle.x` __is__ greater than `width`), then the block of code in the curly brackets will happen (setting `circle.speed` to negative, which makes it move to the left).
 
-If the condition in the parentheses is __false__ (`circle.x` is __not__ greater than `width`), then the block of code in the curly brackets will __not__ happen.
-
-Simple as that!
+If the condition in the parentheses is __false__ (`circle.x` is __not__ greater than `width`), then the block of code in the curly brackets will __not__ happen and our circle will just calmly keep moving along.
 
 ---
 
@@ -128,15 +126,15 @@ function draw() {
 
   // If the circle is off the right side
   if (circle.x > width) {
-    // Move it back to the left
-    circle.x = 0;
+    // Send it back to the left by making its speed negative
+    circle.speed = -circle.speed;
   }
 
   ellipse(circle.x,circle.y,circle.size);
 }
 ```
 
-Eureka! The circle reaches the right side and then jumps back to the left! The program has made a decision! And it keeps working, because the circle moves back to the right again, then jumps back to the left again!
+Eureka! The circle reaches the right side and then __bounces__ back to the left! The program has made a decision! So much of what ever happens in a program needs some kind of decision making like this! `if`-statements are __super powerful__.
 
 ---
 
@@ -148,22 +146,24 @@ if (circle.x > width) {
 }
 ```
 
-So this is our if statement. Let's break it down:
+So this is our if statement. Let's break it down just to talk about the different pices:
 
 `if`
-- First we write the special word `if` which signals we are going to make a decision
+- First we write the special word `if`. This signals we are going to make a __decision__, first by asking a __question__ and then by taking action if the answer is "true".
 
 `(circle.x > width)`
-- Next we write our __condition__ inside __parentheses__
+- We write our __condition__ inside __parentheses__
 - Those parentheses __have to be there__ or it won't work
+- You could think of this as being like a question: "is the circle's x position greater than the width of the canvas?"
 
 `{ ... }`
 - Then we have a set of curly brackets to signal the action to take
-- The block of code written __inside__ these curly brackets will execute __if the condition is true__
+- The block of code written __inside__ these curly brackets will execute __only if the condition is true__
 
-`circle.x = 0;`
+`circle.speed = -circle.speed;`
 - This is our action inside the curly brackets
-- It sets the circle's x position back to `0`, which moves it back to the left
+- It sets the circle's speed to the negative of itself, which makes it move back to the left
+- We could add more lines in here if we wanted to
 
 The __condition__ can be anything we can think of, and the __action__ code can be as many lines of code as we like.
 
@@ -219,7 +219,16 @@ function draw() {
   // If the circle is off the right side
   if (circle.x > width) {
     // Move it back to the left
-    circle.x = 0;
+    circle.speed = -circle.speed;
+  }
+
+  // NEW: If the circle is off the left side
+  if (circle.x < 0) {
+    // Move it back to the right by making it the negative of itself again!
+    // This works because the circle will only go off the left if it is moving
+    // left, which means it would have a NEGATIVE speed, and if we make that NEGATIVE
+    // speed the negative of itself, we get a POSITIVE speed again!
+    circle.speed = -circle.speed;
   }
 
   // NEW: Use the circle's default fill
@@ -238,8 +247,8 @@ function draw() {
 Now the program makes many decisions about its little world.
 
 1. The background shade increases (to white) and our first if-statement decides to set it back to black (action) if it reaches exactly 255 (condition)
-2. The circle moves from left to right and our second if-statement decides to moves it back to 0 (action) if it moves past the right side (condition)
-3. The user moves the mouse and our third if-statement decides to use a red fill (action) if the cursor is in the left-hand side of the canvas (condition)
+2. The circle "bounces" (action) off the right and left sides of the canvas thanks to two if-statements, one that checks the right side (condition) and one that checks the left side (condition). 
+3. The user moves the mouse and our fourth if-statement decides to use a red fill (action) if the cursor is in the left-hand side of the canvas (condition)
 
 ---
 

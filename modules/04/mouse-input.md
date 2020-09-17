@@ -24,7 +24,7 @@ So far we've only looked at things that are __continuous__, like the position of
 
 But there are also things about the mouse that happen in a __single moment__, like the button being pressed down or released.
 
-These kinds of moments in a program are called __events__. And we have special functions that deal with them which we call __event handlers__ (because they handle events!).
+These kinds of moments in a program are called __events__. And we have special functions that deal with them which we call __event handlers__ (because they handle those events!).
 
 By way of example, let's look at the event handler function for pressing down the mouse button.
 
@@ -32,9 +32,9 @@ By way of example, let's look at the event handler function for pressing down th
 
 ## `mousePressed()`
 
-The `mousePressed()` function is like `setup()` and `draw()` in that it is __called automatically__ by p5 at the right moment, which is when the mouse button is pressed!
+The `mousePressed()` function is like `setup()` and `draw()` in that it is __called automatically__ by p5 at the right moment, which is the instant when the mouse button is pressed down!
 
-So when we add it to our program, we write it __after__ `draw()`, and the code we put inside it will be run at the moment the user clicks the mouse button...
+When we add it to our program, we will write it __after__ `draw()`, and the code we put inside it will be run at the moment the user clicks the mouse button...
 
 ```javascript
 // A circle object
@@ -65,7 +65,7 @@ function mousePressed() {
 
 So here we can click to position our circle object on the canvas.
 
-The `mousePressed()` function is __automatically called__ whenever the user pressed the mouse button down, and we can run any code we want when that happens!
+The `mousePressed()` function is __automatically called__ whenever the user presses the mouse button down, and we can run any code we want when that happens!
 
 ---
 
@@ -80,17 +80,19 @@ function setup() {
 }
 
 function draw() {
-  // If the light is on, the background is white
-  if (lightIsOn) {
-    background(255);
-  }
-  // Otherwise it is black
-  else {
-    background(0);
-  }
-  // Draw a black ellipse you can only see when the light is on!
-  fill(0);
+  background(255);
+
+  // Draw a red ellipse you can only see when the light is on!
+  fill(255,0,0);
   ellipse(250,250,100,100);
+
+  // If the light is off, draw a black rectangle on top of everything
+  // to hide it (make it "dark")
+  // Notice how we check if the light is NOT on by using ! in front of the variable
+  if (!lightIsOn) {
+    fill(0);
+    rect(0,0,width,height);
+  }
 }
 
 function mousePressed() {
@@ -106,7 +108,7 @@ function mousePressed() {
 
 ## More event handlers!
 
-There are many more event handlers for the mouse, all of which work according to the same idea. We add them to our code (again, usually __below__ `draw()`) and they will be called __when__ the event in question occurs. We have:
+There are many more event handlers for the mouse, all of which work according to the same idea. We add them to our code (again, usually __below__ `draw()`) and they will be called __when the event in question occurs__. We have:
 
 - `mousePressed()` (called when the mouse button is pressed down)
 - `mouseReleased()` (called when the mouse button is released)
@@ -116,7 +118,7 @@ There are many more event handlers for the mouse, all of which work according to
 - `mouseDragged()` (like `mouseMoved()` but only called if the mouse button is down too)
 - `mouseWheel()` (called when the mouse wheel is turns, or with two finger scrolling on a touchpad)
 
-All of these event handlers are discussed in the [Events](https://p5js.org/reference/#group-Events) category of the p5 Reference.
+All of these event handlers are documented in the [Events](https://p5js.org/reference/#group-Events) category of the p5 Reference.
 
 ---
 
@@ -141,19 +143,20 @@ function setup() {
 
 function draw() {
   // No background() so we can see it building up
+
   // Draw a line from the previous to the current mouse position
   // if the mouse is pressed
   if (mouseIsPressed) {
-    line(mouseX, mouseY, pmouseX, pmouseY);
+    line(pmouseX, pmouseY, mouseX, mouseY);
   }
 }
 ```
 
-And other ideas, like calculating how __fast__ the mouse is moving for example (the bigger the difference between the previous and current position, the faster it moved).
+We can also use this for other ideas, like calculating how __fast__ the mouse is moving for example (the bigger the difference between the previous and current position, the faster it moved).
 
 ### A draggable circle
 
-By way of example, here is a circle that can be dragged and changes size when we scroll...
+Let's use some other event handlers. Here is a circle that can be dragged and changes size when we scroll...
 
 ```javascript
 // Our circle object
@@ -180,6 +183,7 @@ function draw() {
   ellipse(circle.x, circle.y, circle.size);
 }
 
+// mousePressed() is called at the moment the user presses down a mouse button
 function mousePressed() {
   // Calculate the distance between the mouse position and the circle position
   let d = dist(mouseX, mouseY, circle.x, circle.y);
@@ -191,11 +195,14 @@ function mousePressed() {
   }
 }
 
+// mouseReleased() is called at the moment the user releases a mouse button
 function mouseReleased() {
   // If the mouse is released, we should stop dragging the circle
   circle.dragging = false;
 }
 
+// mouseDragged() is called every frame that the user is moving the mouse
+// with a button held down
 function mouseDragged() {
   // When the mouse is dragged (with the mouse button down), we check if the circle
   // is being dragged
@@ -206,6 +213,8 @@ function mouseDragged() {
   }
 }
 
+// mouseWheel() is called every frame that the user is scrolling with the scroll wheel on
+// a mouse or using their touchpad
 function mouseWheel(event) {
   // When the mouse wheel (or touchpad) is scrolled
   // event.delta contains the distance (in pixels) it scrolled
@@ -215,12 +224,6 @@ function mouseWheel(event) {
   circle.size = constrain(circle.size, circle.minSize, circle.maxSize);
 }
 ```
-
----
-
-## Summary
-
-- ...
 
 ---
 

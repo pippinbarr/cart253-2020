@@ -24,7 +24,7 @@ This is good, because as we have seen, knowing whether something is true or fals
 
 ## Built-in Boolean variables
 
-p5 provides a number of built-in variables that contain __Boolean values__. That is, variables that will be either `true` or `false` depending on the program's current state.
+p5 provides a number of built-in variables that contain __Boolean values__. That is, variables that can contain either `true` or `false` depending on what's happening.
 
 The two most immediately useful are `mouseIsPressed` and `keyIsPressed`.
 
@@ -40,7 +40,7 @@ function setup() {
 }
 
 function draw() {
-  if (mouseIsPressed) {
+  if (mouseIsPressed === true) {
     background(255);
   }
   else {
@@ -49,7 +49,7 @@ function draw() {
 }
 ```
 
-Here our `if`-statement's condition checks whether `mouseIsPressed` is `true`. If it is, the background is set to white (the light is on!), if it isn't then the `else` part applies, and the background is set to black (the light is off!).
+Here our `if`-statement's condition checks whether `mouseIsPressed` is equal to `true`. If it is, the background is set to white (the light is on!), if it isn't then the `else` part applies, and the background is set to black (the light is off!).
 
 Now if we hold down the mouse button on the canvas, it turns white! When we let go, it turns black!
 
@@ -63,7 +63,7 @@ function setup() {
 }
 
 function draw() {
-  if (keyIsPressed) {
+  if (keyIsPressed === true) {
     background(255);
   }
   else {
@@ -71,6 +71,32 @@ function draw() {
   }
 }
 ```
+
+---
+
+## Checking `true` and `false`
+
+Above, we used `mouseIsPressed === true` and `keyIsPressed === true` to check our conditions, but that wasn't actually necessary. When we're dealing with variables with `true` or `false` in them, we can literally just check the variable itself, e.g.
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  // We can just write mouseIsPressed and the if-statement will take its action
+  // if mouseIsPressed is true, and won't if it is false
+  // There no need to explicitly check if the variable is equal to true
+  if (mouseIsPressed) {
+    background(255);
+  }
+  else {
+    background(0);
+  }
+}
+```
+
+This way of checking variables in `if`-statement is much more common in programming, and indeed you will almost never see the other way.
 
 ---
 
@@ -92,7 +118,7 @@ function setup() {
 function draw() {
   if (mouseIsPressed) {
     background(255);
-    // We set our Boolean variable to true now, because we know the mouse was just pressed.
+    // We set our Boolean variable to true now, because we know the mouse was pressed.
     displayCircle = true;
   }
   else {
@@ -100,6 +126,8 @@ function draw() {
   }
 
   // We check our displayCircle variable and if it's true, we draw the circle!
+  // The circle will be displayed even after we let go of the mouse button, because
+  // displayCircle will STAY true
   if (displayCircle) {
     ellipse(width/2,height/2,100,100);
   }
@@ -113,7 +141,7 @@ Notice how our variable `displayCircle` __stays `true`__ even after we let go of
 ## Summary
 
 - `true` and `false` are very useful ideas in logic, life, and programming
-- p5 has built-in variables that use `true` or `false` to tell us whether the mouse is pressed, a key is down, and other things
+- p5 has built-in variables that use `true` or `false` to tell us whether the mouse is pressed (`mouseIsPressed`), a key is pressed (`keyIsPressed`), and other things
 - We can create our own Boolean variables to track specific ideas of our own
 
 ---
@@ -145,15 +173,15 @@ function draw() {
 }
 ```
 
-Notice how the `if`-statement still works, even though `displayCircle` is now `1` or `0` instead of `true` or `false`. That's because in many situations, JavaScript treats them as equivalent.
+Notice how the `if`-statement still works, even though `displayCircle` is now `1` or `0` instead of `true` or `false`. That's because in many situations, JavaScript treats them the same way.
 
 It's still __much better__ to use `true` and `false`, though. It's more readable, and less likely to lead to weird problems!
 
-This is also an instance where we can see the difference between `===` (which we use!) and `==` (which we don't use!):
+This is also an instance where we can see the difference between `===` (which we __do__ use!) and `==` (which we __don't__ use!):
 
 ```javascript
-1 == true // This is true.
-1 === true // This is false!
+1 == true // This is true! What??!??!
+1 === true // This is false! Much better.
 ```
 
 Given that `1` and `true` are __not actually the same thing__, using `===` is clearly the more sensible option.
