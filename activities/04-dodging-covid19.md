@@ -134,7 +134,18 @@ Now the program does everything we want functionally! COVID-19 moves across the 
 
 Let's add a background of static. Static can be displayed by drawing lots of `point()`s on the screen at random locations every frame. Because each new frame they change position, you end up with static! Because we want to draw a __lot__ of dots/points, we will use a __loop__ to achieve this.
 
-We will right this immediately after our `background()` instruction in `draw()`.
+We will write this immediately after our `background()` instruction in `draw()` (because we want to draw our static on top of the background, but behind `covid19` and `player`):
+
+1. Write a `for` loop that counts from `0` up to `1000` (the number of points of static to display)
+2. Inside the `for` loop's curly brackets:
+  1. Declare a variable `x` and assign it a random position between `0` and `width` (use `random()`!)
+  2. Declare a variable `y` and assign it a random position between `0` and `height`
+  3. Set the `stroke()` to white
+  4. Draw a `point()` at your `x` and `y`
+
+Hey presto! Static fizzing away against the background! Looks great! What happens if you display `5000` points of static? `10000`? `100000`???
+
+It would be nice to use a variable instead of that number for static, so declare a variable `staticAmount` at the top of your program and assign it `1000` (or your choice of number) and use that in the `for` loop instead.
 
 ---
 
@@ -142,17 +153,7 @@ We will right this immediately after our `background()` instruction in `draw()`.
 
 Now our program does what we said it would do!
 
-However, there are things we could do to make it better. Most importantly, there are a few __numbers__ in our instructions that would be better if they were converted to variables/properties or otherwise removed. So for tidying up, let's do the following:
-
-1. Instead of adding a number to the `bg` object's `r` property, try using `map()` to map the `r` property based on `circle1`'s `size`. Remember, we want the canvas to be __red__ by the time the circle grows to match the `width`
-2. Instead of adding a positive number to `circle1`'s `x` position, give the circle a `speed` property with the same number and add that instead
-3. Do the same for `circle2`'s `x` position (but set its `speed` to a negative number)
-4. Instead of adding a positive number to `circle1`'s `size`, give it a `growth` property with that number and add that instead
-5. Instead of setting `circle1`'s size with a fraction in the instruction, give `circle1` a `relativeSize` property set to that number and use that instead
-
-After all this the program does the same thing, but it's much neater.
-
-A further good thing to do, of course, is to add __more comments__ everywhere to make the code nice and readable.
+There's always more tweaking we might do, but this is pretty good. We should probably add comments, though, if we didn't while we were doing the work!
 
 ---
 
