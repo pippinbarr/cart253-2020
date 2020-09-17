@@ -32,7 +32,7 @@ Week of 7 September 2020
 ## Before class
 - __Join__ the course Discord (invitation link will be emailed)
 - __Watch__ "01-1 - Introducing CART253" (38:33) on Moodle
-- __Read__ the [Course Outline](./outline.md) and the Course Schedule (this page)
+- __Read__ the [Course Outline](./outline.md) ([PDF](./outline.md.pdf)) and the Course Schedule (this page)
 - __Complete__ the [Course Software Setup](../modules/01/software.md) text tutorial
 - Create your class repository
   - __Watch__ "01-2 - Creating a Class Repository on GitHub" (16:44) on Moodle
