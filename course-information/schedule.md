@@ -2,8 +2,11 @@
 - [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
 - [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
 
-#### Links
+#### Projects
+- Project 1. Assigned week of 28 September 2020. Due week of 12 October 2020. (Three weeks)
+- Project 2. Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
 
+#### Links
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
@@ -116,13 +119,12 @@ Week of 21 September 2020
 
 Week of 28 September 2020
 
+__Coming soon!__
 
 ## Objectives
 - Writing if-statements to control what happens in your programs
 - Including mouse and keyboard input in a program
 - Controlling repetition with loops
-
-__Coming soon!__
 
 ---
 
