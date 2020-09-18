@@ -177,7 +177,7 @@ Note how the hexadecimal code is __inside double quotes__, that's important.
 
 __Inside baseball:__ In hexadecimal you count from 0 to f, which is weird. That is, you count 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, e, d, f. So `f` is the highest "number" and 0 is still the lowest.
 
-A standard color representation in hexadecimal has 6 "numbers". The first two are the red, the second two are the green, the third two are the green. `00` is __none__ of a color, and `ff` is __all__ of a color. And everything in between.
+A standard color representation in hexadecimal has 6 "numbers". The first two are the red, the second two are the green, the third two are the blue. `00` is __none__ of a color, and `ff` is __all__ of a color. And everything in between.
 
 - `#ffffff` is __white__
 - `#000000` is __black__
