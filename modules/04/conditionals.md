@@ -2,7 +2,7 @@
 
 ---
 
-## In this module
+## In this module...
 
 - Computers making decisions
 - The `if`-statement

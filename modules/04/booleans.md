@@ -2,7 +2,7 @@
 
 ---
 
-## In this module
+## In this module...
 
 - `true` and `false` are Boolean values
 - Built-in Boolean variables

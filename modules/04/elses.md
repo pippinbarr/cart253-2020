@@ -2,7 +2,7 @@
 
 ---
 
-## In this module
+## In this module...
 
 - `else`
 - `else if`
