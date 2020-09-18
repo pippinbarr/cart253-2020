@@ -165,29 +165,6 @@ These are both straightforward ways to figure out the specific values for a colo
 
 ---
 
-## Hexadecimal colors
-
-You might notice that in many color pickers you see color values displayed as a set of numbers __and letters__ after a hash sign, like `#12FF08`. This is called the __hexadecimal__ representation of the color. It's still RGB, just in a slightly different representation. If you prefer to, you can use it in your code too if you want, as follows:
-
-```javascript
-background("#00FF00"); // Green
-```
-
-Note how the hexadecimal code is __inside double quotes__, that's important.
-
-__Inside baseball:__ In hexadecimal you count from 0 to f, which is weird. That is, you count 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, e, d, f. So `f` is the highest "number" and 0 is still the lowest.
-
-A standard color representation in hexadecimal has 6 "numbers". The first two are the red, the second two are the green, the third two are the blue. `00` is __none__ of a color, and `ff` is __all__ of a color. And everything in between.
-
-- `#ffffff` is __white__
-- `#000000` is __black__
-- `#ff0000` is __red__
-- `#abcdef` is __a surprisingly nice blue__
-
-Note that in CSS it's fairly standard to specify colors using this hexadecimal notation.
-
----
-
 ## No color
 
 You might want to make things transparent sometimes, that is give them _no color at all_, and you can do this with the following functions:
@@ -243,6 +220,31 @@ What a nice looking robot!
 - When we use `fill()` and `stroke()` they apply to __every shape__ after them (until we change the setting)
 - We can choose to display `noFill()` or `noStroke()`
 - We can use an __alpha value__ by adding one extra number to our RGB colors
+
+---
+
+## TMI?
+
+### Hexadecimal colors
+
+You might notice that in many color pickers you see color values displayed as a set of numbers __and letters__ after a hash sign, like `#12FF08`. This is called the __hexadecimal__ representation of the color. It's still RGB, just in a slightly different representation. If you prefer to, you can use it in your code too if you want, as follows:
+
+```javascript
+background("#00FF00"); // Green
+```
+
+Note how the hexadecimal code is __inside double quotes__, that's important.
+
+__Inside baseball:__ In hexadecimal you count from 0 to f, which is weird. That is, you count 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, e, d, f. So `f` is the highest "number" and 0 is still the lowest.
+
+A standard color representation in hexadecimal has 6 "numbers". The first two are the red, the second two are the green, the third two are the blue. `00` is __none__ of a color, and `ff` is __all__ of a color. And everything in between.
+
+- `#ffffff` is __white__
+- `#000000` is __black__
+- `#ff0000` is __red__
+- `#abcdef` is __a surprisingly nice blue__
+
+Note that in CSS it's fairly standard to specify colors using this hexadecimal notation.
 
 ---
 
