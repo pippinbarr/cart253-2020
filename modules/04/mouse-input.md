@@ -22,7 +22,7 @@ We already know useful mouse variables that come with p5. They are
 
 So far we've only looked at things that are __continuous__, like the position of the mouse, which is updated every frame of our program.
 
-But there are also things about the mouse that happen in a __single moment__, like the button being pressed down or released.
+But there are also things about the mouse that happen in a __single moment__, like the moment a button is pressed down or released.
 
 These kinds of moments in a program are called __events__. And we have special functions that deal with them which we call __event handlers__ (because they handle those events!).
 
@@ -154,9 +154,9 @@ function draw() {
 
 We can also use this for other ideas, like calculating how __fast__ the mouse is moving for example (the bigger the difference between the previous and current position, the faster it moved).
 
-### A draggable circle
+### A draggable, scalable circle
 
-Let's use some other event handlers. Here is a circle that can be dragged and changes size when we scroll...
+Let's use some other event handlers. Here is a circle that can be dragged and changes size when we scroll. Notice how all the "action" is taking place in the event handlers!
 
 ```javascript
 // Our circle object

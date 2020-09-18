@@ -13,7 +13,7 @@
 
 The idea for this activity will be to make a simple "simulation":
 
-_COVID-19, represented by a red circle, will move from the left side of the canvas to the right at a random y position. Each time it reaches the right side, it will reset to the left at a random y position. The player will control their own circle with the mouse position. If the COVID-19 circle touches the player circle, everything stops! In the background we see random static for visual flair and we don't see the mouse cursor._
+_COVID-19, represented by a red circle, will move from the left side of the canvas to the right at a random y position. Each time it reaches the right side, it will reset to the left at a random y position. The user will control their own circle with the mouse position. If the COVID-19 circle touches the user circle, everything stops! In the background we see random static for visual flair and we don't see the mouse cursor._
 
 As always, there are different and reasonable ways to approach this, so feel free to go your own way! The steps discussed below are one approach designed to use the ideas we've been seeing.
 
@@ -38,7 +38,7 @@ If you want to go totally off road and just wing it, feel free, but generally it
 
 1. Display the COVID-19 circle and move it across the screen, starting at a random y
 2. Make the COVID-19 circle move back to the left if it goes off the right side
-3. Display the player circle at the mouse location
+3. Display the user circle at the mouse location
 4. Check if the two circles overlap and, if they do, stop the program
 5. Display random static in the background for a visual flourish
 6. Hide the mouse cursor
@@ -97,22 +97,22 @@ Now when we run the program `covid19` should move across the screen at a random 
 
 ---
 
-## Enter the player
+## Enter the user
 
-Now we're ready for our player circle. This one is much simpler because it will always be drawn at the mouse location. First we need a variable for the player:
+Now we're ready for our user circle. This one is much simpler because it will always be drawn at the mouse location. First we need a variable for the user:
 
-1. Declare a `player` variable at the top of the script with properties `size` (maybe `100` again?) and `fill` (let's just use a single number like `255` here)
+1. Declare a `user` variable at the top of the script with properties `size` (maybe `100` again?) and `fill` (let's just use a single number like `255` here)
 
 We want this circle to be drawn where the mouse is, so in `draw()` __before__ the code that draws `covid19`:
 
-1. Set `player`'s `x` and `y` to the mouse position variables.
+1. Set `user`'s `x` and `y` to the mouse position variables.
 
-And we want to draw the player on the screen, so in `draw()` __after__ the code that draws `covid19`:
+And we want to draw the user on the screen, so in `draw()` __after__ the code that draws `covid19`:
 
-1. Set the `fill()` to the player's `fill` property
-2. Draw an `ellipse()` using the player's `x`, `y`, and `size`.
+1. Set the `fill()` to the user's `fill` property
+2. Draw an `ellipse()` using the user's `x`, `y`, and `size`.
 
-Now we should have a `player` circle that moves around with the mouse. Notice how it starts at `0,0` until we move the mouse? Annoying, but let's leave it alone this time.
+Now we should have a `user` circle that moves around with the mouse. Notice how it starts at `0,0` until we move the mouse? Annoying, but let's leave it alone this time.
 
 We're almost there!
 
@@ -120,13 +120,13 @@ We're almost there!
 
 ## Catching COVID-19!
 
-We want to check if the `covid19` circle touches the `player` circle, in which case the player catching COVID-19 and the "simulation" is over! We will need another `if`-statement. So, in `draw()` __after__ the code that updates `covid19` and `player`'s positions:
+We want to check if the `covid19` circle touches the `user` circle, in which case the user catching COVID-19 and the "simulation" is over! We will need another `if`-statement. So, in `draw()` __after__ the code that updates `covid19` and `user`'s positions:
 
-1. Declare a variable `d` (for distance) that calculates the distance between `covid19` and `player`'s positions, using the `dist()` function. Look up [`dist()`](https://p5js.org/reference/#/p5/dist) in the documentation!
-2. Write an `if`-statement that checks whether `d` (the distance) is __less than__ the radius of `covid19` plus the radius of `player` (the radius is __half__ the `size`). This is the mathematical way of checking whether two circles overlap!
+1. Declare a variable `d` (for distance) that calculates the distance between `covid19` and `user`'s positions, using the `dist()` function. Look up [`dist()`](https://p5js.org/reference/#/p5/dist) in the documentation!
+2. Write an `if`-statement that checks whether `d` (the distance) is __less than__ the radius of `covid19` plus the radius of `user` (the radius is __half__ the `size`). This is the mathematical way of checking whether two circles overlap!
 3. In the `if`-statement's code block (actions), use [`noLoop()`](https://p5js.org/reference/#/p5/noLoop) to stop the program!
 
-Now the program does everything we want functionally! COVID-19 moves across the screen repeatedly and for as long as the player avoids it, things carry on. If the two circles overlap, though, the program ends because you caught COVID-19!
+Now the program does everything we want functionally! COVID-19 moves across the screen repeatedly and for as long as the user avoids it, things carry on. If the two circles overlap, though, the program ends because you caught COVID-19!
 
 ---
 
@@ -134,7 +134,7 @@ Now the program does everything we want functionally! COVID-19 moves across the 
 
 Let's add a background of static. Static can be displayed by drawing lots of `point()`s on the screen at random locations every frame. Because each new frame they change position, you end up with static! Because we want to draw a __lot__ of dots/points, we will use a __loop__ to achieve this.
 
-We will write this immediately after our `background()` instruction in `draw()` (because we want to draw our static on top of the background, but behind `covid19` and `player`):
+We will write this immediately after our `background()` instruction in `draw()` (because we want to draw our static on top of the background, but behind `covid19` and `user`):
 
 1. Write a `for` loop that counts from `0` up to `1000` (the number of points of static to display)
 2. Inside the `for` loop's curly brackets:

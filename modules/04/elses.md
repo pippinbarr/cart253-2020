@@ -64,7 +64,7 @@ else {
 
 So we have our familiar `if`-statement that checks the condition (is the mouse in the left half of the canvas?) and carries out an action if it's __true__ (set the fill to red).
 
-But __after__ the closing curly bracket of the action, we add our `else`, followed by a different action in curly brackets (set the fill to blue). The action of the `else` will happen if the `if`'s condition is __false__ (which is when the mouse is in the __right__-hand side of the canvas).
+But __after__ the closing curly bracket of the action, we add our `else`, followed by a different action in curly brackets (set the fill to blue). The action of the `else` will happen when the `if`'s condition is __false__ (which is when the mouse is in the __right__-hand side of the canvas).
 
 ---
 
@@ -102,7 +102,7 @@ function draw() {
 }
 ```
 
-And it works! The circle is red while it's on the left, and blue while it's on the right.
+And it works! The circle is red while the mouse is on the left, and blue while it's on the right.
 
 ---
 
@@ -180,7 +180,7 @@ Disco time! Wave your mouse like you just don't care!
 
 ## Decisions within decisions
 
-Another common thing is wanting to make a decision based on __more than one piece of information__. So, for example we might make a decision like
+It is also common to make a decision based on __more than one piece of information__. So, for example we might make a decision like
 
 > "__If__ the café is open __and__ there is a table near the window __then__ I will go in."
 
@@ -192,17 +192,27 @@ In this case we only go into the café if __both__ those things are true.
 
 We can achieve this kind of decision by putting one `if`-statement __inside__ another one! This is called __nesting__ the `if`-statements.
 
-Consider the idea that we want to make our circle red if it is in the central third of the canvas. That is, if it is greater than the left third __and__ the less than the right third. We would write:
+Consider the idea that we want to make our circle red if it is in the central third of the canvas. That is, if its x position is greater than the left third __and__ less than the right third. We would write:
 
 ```javascript
+// Is the circle past the left third?
 if (circle.x > width/3) {
+  // Is the circle ALSO before the right third?
   if (circle.x < 2 * width/3) {
     fill(255,0,0);
   }
 }
 ```
 
-So the first `if`'s condition checks the first part of our condition (has the circle to the right the left third) and if it's __true__ then we get to the action inside the curly brackets, which is __another__ `if` which checks our second condition (is the circle the left of the right third), and if that is __true__ then we get to that `if`-statement's action, which is to set the fill to red. Phew!
+So the first `if`'s condition checks the first part of our condition (has the circle to the right the left third)...
+
+... and if it's __true__ then we get to the action inside the curly brackets...
+
+... which is __another__ `if` which checks our second condition (is the circle the left of the right third)...
+
+... and if that is __true__ then we get to that `if`-statement's action...
+
+... which sets the fill to red. Phew!
 
 We end up with a circle that is red only in the central third of our canvas.
 
@@ -265,6 +275,8 @@ if (circle.x > width/3 && circle.x < 2 * width/3) {
 }
 ```
 
+Notice how the above is __exactly__ the same as our previous nested if, it's just all done inside one `if`-statement because we can __combine__ the two conditions with `&&`.
+
 ### Or
 
 - We write the symbol for "or" as two "pipes": `||`.
@@ -279,6 +291,8 @@ if (circle.x < width/3 || circle.x > 2 * width/3) {
 }
 ```
 
+This circle is red if it's in the left or right third (but not when it's in the central third).
+
 ### Not
 
 - We write the symbol for "not" as an exclamation mark: `!`.
@@ -292,6 +306,8 @@ if (!(circle.x < width/2)) {
   fill(255,0,0);
 }
 ```
+
+This circle is red when it is __not__ in the left half, which means that it is red when the circle is in the right half!
 
 __Note__ that we needed __parentheses__ around the condition `(circle.x < width/2)` in order to use the `!` in front of it, because the `!` needs to apply to the __whole condition__.
 

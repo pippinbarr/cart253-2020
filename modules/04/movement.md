@@ -35,15 +35,19 @@ function draw() {
 }
 ```
 
-Here we're adding the circle's `speed` property to its `x` property, and that creates movement over time. It moves to the right if the `speed` is positive (because `x` gets bigger) and it moves to the left if the `speed` is negative (because `x` gets smaller). If `speed` were `0`... it wouldn't move!
+Here we're adding the circle's `speed` property to its `x` property, and that creates movement over time.
+
+It moves to the right if the `speed` is positive (because `x` gets bigger) and it moves to the left if the `speed` is negative (because `x` gets smaller).
+
+If `speed` were `0`... it wouldn't move!
 
 ---
 
 ## Velocity
 
-The correct name for the `speed` property in that program in physics is actually `velocity` (TMI?: speed is a __scalar__ and velocity is a __vector__).
+The correct name for the `speed` property in physics is actually `velocity` (TMI?: speed is a __scalar__ and velocity is a __vector__).
 
-Additionally, because the `circle` exists in __two__ dimensions, it's more common to think about it as having __two__ velocities, one in the horizon (x-axis) and one in the vertical (y-axis).
+Additionally, because the `circle` exists in __two__ dimensions, it's more common to think about it as having __two__ velocities, one in the horizontal (x-axis) and one in the vertical (y-axis).
 
 Let's change the program a little to account for all this...
 
@@ -71,7 +75,9 @@ function draw() {
 }
 ```
 
-The program behaves the same, but it now resembles a __standard__ way of writing a program that deals with movement. We have an object (`circle`) with a position (`x` and `y`) that can be changed according to its velocity (`vx` and `vy`). In `draw()`, every frame, we add the matching velocity to the matching position.
+The program behaves the same, but it now resembles a __standard__ way of writing a program that deals with movement.
+
+We have an object (`circle`) with a position (`x` and `y`) that can be changed according to its velocity (`vx` and `vy`). In `draw()`, every frame, we add the matching velocity to the matching position.
 
 ---
 
@@ -97,7 +103,7 @@ function draw() {
   background(backgroundShade);
 
   circle.x = circle.x + circle.vx;
-  circle.y = circle.y + circle.vy; // Using the new y velocity!
+  circle.y = circle.y + circle.vy;
 
   ellipse(circle.x,circle.y,circle.size);
 }
@@ -109,7 +115,7 @@ The circle still moves the right (because `vx` is `1`), but it now also moves __
 
 ## Taking control
 
-Now that the circle know how to move, we could allow the user to __control__ it with the mouse position. We could say that if the mouse is to the __right__ of the circle it should move right, if it's to the __left__ it should move left, and it it's __above__ the circle it should move up, and if it's __below__ the circle it should move down.
+Now that the circle knows how to move, we could allow the __user__ to control it with the mouse position. We could say that if the mouse is to the __right__ of the circle it should move right, if it's to the __left__ it should move left, and if it's __above__ the circle it should move up, and if it's __below__ the circle it should move down.
 
 Sounds like we need some `if`-statements!
 
@@ -237,15 +243,22 @@ Now it's also really easy to change how fast the circle moves, just change its `
 
 ### The jiggles
 
-So, why does the circle jiggle when we were controlling it with the mouse above?
+So, why did the circle jiggle when we were controlling it with the mouse above?
 
-Think about the situation as the circle's `x` position approaches `mouseX`. It gets closer and closer until it __equals__ `mouseX`. But then neither of the `if` conditions for the `x` position apply, so the `vx` stays the same and moves it __past__ `mouseX`. And then the __other__ condition applies, which makes it move back the other way. And then the same thing happens, it overshoots `mouseX` and has to go back. And so on.
+Think about the situation as the circle's `x` position approaches `mouseX`...
+- It gets closer and closer until it __equals__ `mouseX`.
+- But then __neither__ of the `if` conditions for the `x` position apply, so the `vx` stays the same and moves it __past__ `mouseX`.
+- And then the __other__ condition applies, which makes it move back the other way.
+- And then the same thing happens, it overshoots `mouseX` and has to go back.
+- And so on.
 
 Jiggly.
 
 ### Acceleration
 
 For completeness, here is a more complex version of the same program that includes acceleration! It's more complicated! But it is so, so satisfying to play around with!
+
+It's also kind of the "same thing" as the velocity version, with just one extra layer of variables added.
 
 ```javascript
 let backgroundShade = 0;

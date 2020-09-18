@@ -12,7 +12,7 @@
 
 ## Booleans!
 
-The ideas of __true__ and __false__ are known as __Boolean values__. They're named after a logician called George Boole, who was an important figure in the world of mathematics and logic.
+The ideas of __true__ and __false__ are known as __Boolean values__. They're named after a logician called [George Boole](https://en.wikipedia.org/wiki/George_boole), who was an important figure in the world of mathematics and logic.
 
 We use these exact ideas in programming, too, where we write them as `true` and `false`. (Sometimes people write `true` as `1` and `false` as `0`, but that's not a very good habit, even if it's how computers actually represent true/false underneath it all.)
 
@@ -96,7 +96,7 @@ function draw() {
 }
 ```
 
-This way of checking variables in `if`-statement is much more common in programming, and indeed you will almost never see the other way.
+This way of checking variables in `if`-statement is __much more common__, and indeed you will almost never see the other way.
 
 ---
 
@@ -108,7 +108,7 @@ For example, we could have a variable that tracks whether we have __ever__ press
 
 ```javascript
 // Here is our Boolean variable, it starts as false because we don't want
-// to show our circle until they click down the mouse
+// to show our circle until they click down the mouse for the first time.
 let displayCircle = false;
 
 function setup() {
@@ -119,6 +119,7 @@ function draw() {
   if (mouseIsPressed) {
     background(255);
     // We set our Boolean variable to true now, because we know the mouse was pressed.
+    // Effectively displayCircle is true after the FIRST TIME the user clicks the mouse.
     displayCircle = true;
   }
   else {
@@ -127,7 +128,9 @@ function draw() {
 
   // We check our displayCircle variable and if it's true, we draw the circle!
   // The circle will be displayed even after we let go of the mouse button, because
-  // displayCircle will STAY true
+  // displayCircle will STAY true.
+  // So this boolean basically means we can make the circle appear the first time
+  // the mouse is clicked.
   if (displayCircle) {
     ellipse(width/2,height/2,100,100);
   }

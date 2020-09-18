@@ -54,7 +54,7 @@ First, there's the __condition__ we're thinking about:
 
 > __If there is freezing rain...__
 
-This is what we are going to react to, so we need to check whether or not it's true. We look out the window or maybe tentatively step outside (and fall over). If there's no freezing rain then our condition is __false__, so we don't need to put our plan into action, but if it is __true__ we will act! By staying home!
+This is what we will react to. So, we need to check whether or not it's true. We look out the window or maybe tentatively step outside (and fall over?!). If there's no freezing rain then our condition is __false__, so we don't need to put our plan into action, but if it is __true__ we will act! By staying home!
 
 So second, then, there's the __action__ we're going to perform:
 
@@ -82,7 +82,7 @@ How can the computer express that specific condition? Well, we need to check if 
 circle.x > width
 ```
 
-This will be __true__ if `circle.x` is greater than `width`, and __false__ otherwise.
+This will be __true__ if `circle.x` is greater than `width`, and __false__ otherwise. Visually, this means it is __true__ if the circle has moved past the right edge of the canvas (the `width`), and __false__ if it hasn't got there yet.
 
 ---
 
@@ -142,7 +142,7 @@ Eureka! The circle reaches the right side and then __bounces__ back to the left!
 
 ```javascript
 if (circle.x > width) {
-  circle.x = 0;
+  circle.speed = -circle.speed;
 }
 ```
 
@@ -162,7 +162,7 @@ So this is our if statement. Let's break it down just to talk about the differen
 
 `circle.speed = -circle.speed;`
 - This is our action inside the curly brackets
-- It sets the circle's speed to the negative of itself, which makes it move back to the left
+- It sets the circle's speed to the negative of itself. Given that `circle.speed` is __positive__ as it moves from the left to the right, this will make it __negative__, which means it will move from the right to the left.
 - We could add more lines in here if we wanted to
 
 The __condition__ can be anything we can think of, and the __action__ code can be as many lines of code as we like.
@@ -247,7 +247,7 @@ function draw() {
 Now the program makes many decisions about its little world.
 
 1. The background shade increases (to white) and our first if-statement decides to set it back to black (action) if it reaches exactly 255 (condition)
-2. The circle "bounces" (action) off the right and left sides of the canvas thanks to two if-statements, one that checks the right side (condition) and one that checks the left side (condition). 
+2. The circle "bounces" (action) off the right and left sides of the canvas thanks to two if-statements, one that checks the right side (condition) and one that checks the left side (condition).
 3. The user moves the mouse and our fourth if-statement decides to use a red fill (action) if the cursor is in the left-hand side of the canvas (condition)
 
 ---

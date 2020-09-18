@@ -195,6 +195,7 @@ function draw() {
   // Tracks where to draw the next caterpillar piece
   // Starts at the caterpillar's x position
   let x = caterpillar.x;
+
   // NEW!
   // Tracks how many segments have been drawn so far
   // Starts at 0 (none!)
@@ -218,7 +219,9 @@ function draw() {
 }
 ```
 
-Quite a lot to take in here, but the most important thing to understand is that our `while` loop is essentially just __counting__ from `0` (which is what `segmentsDrawn` starts at) up to `10` (which is what `caterpillar.totalSegments` contains).
+Quite a lot to take in here, but the most important thing to understand is that our `while` loop is essentially __counting__.
+
+It counts from `0` (which is what `segmentsDrawn` starts at) up to `10` (which is what `caterpillar.totalSegments` contains).
 
 Each time through the loop we increase `segmentsDrawn` by `1` and it eventually hits `10` and the `while` loop stops and the program moves on.
 
@@ -248,11 +251,42 @@ You'll see the abbreviated versions quite often, so it's worth getting used to t
 
 ---
 
+## Instant!
+
+A really important thing to realize about loops is they do their work essentially __instantly__. Consider this loop that draws circles all the way across the canvas...
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+  // Start at position 0
+  let x = 0;
+  // While our position is less than the width
+  while (x <= width) {
+    // Draw an ellipse
+    ellipse(x, height / 2, 50, 50);
+    // Increase the position
+    x = x + 50;
+  }
+}
+```
+
+Note that __all the circles__ are drawn __every frame__. That is, the `while` loop executes __within__ the frame, drawing all the circles to the canvas.
+
+Importantly, then, you __do not__ see the circles appear one by one. They appear all at once.
+
+So, we need to think of a loop as taking place kind of instantly (even though it's actually just happening __really, really, really fast__ within a single frame).
+
+---
+
 ## `for` loops
 
-Using loops to do something a specific number of times (like drawing a specific number of caterpillar segments) is __so popular__ that programming language have a specific kind of loop that compresses all the details down.
+Using loops to do something a specific number of times (like drawing a specific number of caterpillar segments) is __so popular__ that programming languages have a specific kind of loop that compresses all the details down.
 
-It's called a `for` loop. The way it's written is really just a super compressed version of what you can do with a `while` loop.
+It's called a `for` loop. The way it's written is really just a super compressed version of what we've been doing with a `while` loop.
 
 So our `while` loop was
 
@@ -293,17 +327,17 @@ The `for` loop is compressing the three key pieces of information we need for a 
 
 1. `let segmentsDrawn = 0` is the __starting context__ for our loop (no segments are drawn)
 2. `segmentsDrawn < caterpillar.totalSegments` is the __condition__ we check in our loop (the loop keeps running while it is `true`)
-3. `segmentsDrawn++` is the action that makes sure the loop will finish (it increases `segmentsDrawn` by one until it reaches the number in `caterpillar.totalSegments`)
+3. `segmentsDrawn++` is the action that makes sure the loop will finish (it increases `segmentsDrawn` by one, so that it eventually reaches the number in `caterpillar.totalSegments` and the loop stops)
 
 A couple of notes:
 - Notice how the different parts of our loop information in the parentheses are separated by __semicolons__ (`;`), __not__ commas
-- In keeping with the loop information, the `segmentsDrawn++` happens __after__ the instructions in the curly brackets
+- In keeping with the way our loops have worked, the `segmentsDrawn++` part happens __after__ the instructions in the curly brackets are executed
 
 ---
 
 ## More compression
 
-A very big proportion of the time, you'll see `for` loops use `i` as the name for the variable that counts each time through the loop:
+A large proportion of the time, you'll see `for` loops use `i` as the name for the variable that counts each time through the loop:
 
 ```javascript
 for (let i = 0; i < caterpillar.totalSegments; i++) {
@@ -324,7 +358,7 @@ Part of the point of all this is we can draw __as many segments as we want__ bec
 let caterpillar = {
   x: 0,
   y: 250,
-  totalSegments: 100,
+  totalSegments: 100, // ONE HUNDRED SEGMENTS!!!
   segmentSize: 6,
   segmentSpacing: 5
 }
@@ -345,6 +379,8 @@ function draw() {
   }
 }
 ```
+
+So we can draw 100 segments by literally changing one number. All the loop code remains the same!
 
 Imagine writing that without a loop! Yuck!
 
@@ -422,6 +458,8 @@ function draw() {
 }
 ```
 
+What happens if you remove `randomSeed(0)`? Well, `random()` would start generating completely random numbers every frame, so the points get drawn anywhere each frame, and so you get static!
+
 ---
 
 ### Even more caterpillar compression
@@ -436,7 +474,7 @@ for (let i = 0; i < caterpillar.totalSegments; i++) {
 
 Here we draw each segment at an x position of `caterpillar.x + i * caterpillar.segmentSpacing`. That is the __starting__ x position (`caterpillar.x`) plus the number of the current segment being drawn (`i`) multiplied by the spacing of the segments (`caterpillar.segmentSpacing`).
 
-When `i` is `0` for the first segment, we don't add any spacing. When `i` is `1` for the second segment, we add one spacing unit. When `i` is `2` for the third segment, we add two space units, and so on.
+When `i` is `0` for the first segment, we don't add any spacing. When `i` is `1` for the second segment, we add one spacing unit. When `i` is `2` for the third segment, we add two spacing units, and so on.
 
 Whether you __want__ to go to this kind of level of efficiency is up to you. Again, you'll see it in the wild, so it's worth understanding.
 
