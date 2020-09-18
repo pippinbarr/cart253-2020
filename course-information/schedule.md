@@ -119,12 +119,28 @@ Week of 21 September 2020
 
 Week of 28 September 2020
 
-__Coming soon!__
-
 ## Objectives
 - Writing if-statements to control what happens in your programs
 - Including mouse and keyboard input in a program
 - Controlling repetition with loops
+
+## Before class
+- __Watch__ "04-1 - Conditionals" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/conditionals.html))
+- __Watch__ "04-2 - Elses" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/elses.html))
+- __Watch__ "04-3 - Booleans" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/booleans.html))
+- __Watch__ "04-4 - Loops" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops.html))
+- __Watch__ "04-5 - Mouse input" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/mouse-input.html))
+- __Watch__ "04-6 - Movement" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/movement.html))
+- __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-7 - Dodging COVID-19" (coming soon) video on Moodle to see Pippin doing it)
+
+## During class
+- 13:30: Q&A in #start-of-class Discord channels
+- Afterwards: Studio time in #studio Discord channels
+
+## Homework
+- __Complete__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) and submit on Moodle by the deadline for your section
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in the start of class discussion
 
 ---
 
