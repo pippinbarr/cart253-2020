@@ -36,7 +36,7 @@ Submission will take place on __Moodle__. Go to the appropriately named __exerci
 
 Your submission should just be plain text that includes (substituting your GitHub username and any difference in the folder names):
 
-1. A link to your exercise code (e.g. https://www.github.com/pippinbarr/cart253/exercises/exercise1/)
+1. A link to your exercise code (e.g. https://github.com/pippinbarr/cart253/tree/master/exercises/exercise1/)
 2. A link to your project on the web (e.g. https://pippinbarr.github.io/cart253/exercises/exercise1/)
 
 ## Evaluation
