@@ -458,8 +458,8 @@ function draw() {
   pop();
 
   // Increase the angles to rotate over time
-  angle1 = angle1 + 0.01;
-  angle2 = angle2 + 0.05;
+  angleX = angleX + 0.01;
+  angleY = angleY + 0.05;
 }
 ```
 
