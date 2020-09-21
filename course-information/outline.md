@@ -31,9 +31,10 @@ Mondays, 14:00-15:00
 Wednesdays, 14:00-15:00  
 
 
-## TAs
+## TAs (see Moodle for contact details)
 
-tbd.
+Dana Ryashy (section A)
+Samuel Paré-Chouinard (section B)
 
 
 ## Territorial acknowledgment
