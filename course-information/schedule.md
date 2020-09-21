@@ -131,7 +131,8 @@ Week of 28 September 2020
 - __Watch__ "04-4 - Loops" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops.html))
 - __Watch__ "04-5 - Mouse input" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/mouse-input.html))
 - __Watch__ "04-6 - Movement" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/movement.html))
-- __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-7 - Dodging COVID-19" (coming soon) video on Moodle to see Pippin doing it)
+- __Watch__ "04-7 - Intermediate drawing" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
+- __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (coming soon) video on Moodle to see Pippin doing it)
 
 ## During class
 - 13:30: Q&A in #start-of-class Discord channels
