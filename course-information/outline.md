@@ -33,7 +33,7 @@ Wednesdays, 14:00-15:00
 
 ## TAs (see Moodle for contact details)
 
-Dana Ryashy (section A)
+Dana Ryashy (section A)  
 Samuel Paré-Chouinard (section B)
 
 
