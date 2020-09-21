@@ -125,14 +125,15 @@ Week of 28 September 2020
 - Controlling repetition with loops
 
 ## Before class
-- __Watch__ "04-1 - Conditionals" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/conditionals.html))
-- __Watch__ "04-2 - Elses" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/elses.html))
-- __Watch__ "04-3 - Booleans" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/booleans.html))
-- __Watch__ "04-4 - Loops" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops.html))
-- __Watch__ "04-5 - Mouse input" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/mouse-input.html))
-- __Watch__ "04-6 - Movement" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/movement.html))
-- __Watch__ "04-7 - Intermediate drawing" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
-- __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (coming soon) video on Moodle to see Pippin doing it)
+- __Watch__ "04-1 - Conditionals" (26:11) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/conditionals.html))
+- __Watch__ "04-2 - More conditionals" (20:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/elses.html))
+- __Watch__ "04-3 - Booleans" (12:06) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/booleans.html))
+- __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops.html))
+- __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/mouse-input.html))
+- __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/movement.html))
+- __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
+- __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
+- Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
 
 ## During class
 - 13:30: Q&A in #start-of-class Discord channels
