@@ -25,9 +25,10 @@ Milieux Institute for Arts, Culture, and Technology
 [www.pippinbarr.com](http://www.pippinbarr.com/)  
 
 
-## Office hours
+## Office hours (on Discord)
 
-tbd.
+Mondays, 14:00-15:00  
+Wednesdays, 14:00-15:00  
 
 
 ## TAs
