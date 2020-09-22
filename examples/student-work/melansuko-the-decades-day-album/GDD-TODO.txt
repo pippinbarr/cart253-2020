@@ -1,0 +1,96 @@
+GDD
+
+Melansuko: The Decades Day Album
+Author: Sylvain Tran
+
+TODOS
+21-11-2019: IMPLEMENT DRAGGING STUFF OVER PORTRAIT (No)
+21-11-2019: Really decide on the game mechanics on paper analogue version. (Yes)
+21-11-2019: Transfer the scene system from P2. (Yes)
+21-11-2019: Core: +Point and click static objects. Left and right movement. One map each side.
+Try callback functions (closure). Recursive functions. Array of: people (crowds), thoughts (physical text to banish), dialogue (A vs B branching)
+Decision game RPG, 10 years gaps, Ally's life skills (money, love, experience, confidence, morality, skill)
+Tutorial scene, depression or schizophrenia bar mechanic in each scene -- starts to see psychedelic stuff or
+blurry/pixelated version of scene when full until game over.
+
+23-11-2019: Implement the change scene condition for each state in the StateSystem and configFile.
+23-11-2019: Implement a mouseX, mouseY check to display different text "thoughts" around the visual elements of a state.
+26-11-2019: Slice of life bar and time counter, high school portrait
+28-11-2019: Add a little fake platformer for between scene transitions.
+
+Pitch:
+++Player can drag stuff and shove it down our character Allison, who is
+basically living the years of her life. This is a slice of life game. (No)
+++The real story is that the Ally believed that it was her mom that had amnesia (and potentially schizophrenia)
+and throughout the game is trying to gradually recover memories of "her lost daughter" after she sadly passed away.
+This is in fact a fabrication; the player eventually discovers that Ally is recalling her own memories, and the game
+follows her undergoing some futuristic amnesia therapy.
++Consider basing the game on real therapy methods.
+++Mechanics wise, the idea is to cancel the need for real movement by displaying an illusion
+of it, and having the character seemingly move while it is the background
+that moves, along with the events and encounters in her life that she witnesses. (Yes)
+++Idea of memories going around in a loop when people ruminate about their
+life. Also, Allison gets stuck in a vinyl.
+++Many different characters to illustrate the slice-of-life + surrealistic setting of this game
+++Perhaps some combat, fun task-mechanic to add in Ally's more turbulent life phases, RPG-style.
++Dialogue options for different endings and conversations.
++Tile-based? Turn-based combat...
+
+Summary:
+++Click to wash the dishes... follow Allison's estranged/neglected childhood
+++Levels are slices of life, common things.
+++Different kind of visualization of the main characters' emotions.
+++Trigonometry play for animations and some level obstacles
++Basic fake platformer ("big sprite game going through life obstacles")
+"some restricted jumping" and "task grabbing"
++Weird UI
+
+Characters:
++Mixin really weird ideas as follows:
++Melansuko, Ally's mother who is trapped washing dishes in a surrealistic
+looping vinyl.
++Coffee Spirit idea: taking the perspective of a coffee cup
+for a period of time.
++Ally's dad, who is an Honest Politician TM who has to manage public expectations
+and reach the platform's goals.
++The Mage Brother, who is trying to teach Ally and help her.
++Wealthy Princess Director kind of game: Guide spoiled Ally as she goes
+through the loss of her turtle and breaks up with her boyfriend.
++Finally, the AMBER Alert grandma hero, bored and watching TV. Call
+the cops when you spot anomalies in the news.
+
+Development Diary:
+===
+Extend the idea of the emotion visualization primarily.
+to react with player movement (Hot and Cold system)
+as she gets nearer to certain objects in the scene. (Cancelled idea)
+
+Or maybe she needs to put out a small fire in order to build
+some heat. Or maybe she needs to stop listen to the cacophony
+by journaling (press shift to begin journaling) repeatedly on place. (Maybe)
+
+Those would be "emotional memories" that the player has to collect. (No)
+
+The idea is that the player can play mini-games in each scene,
+such as click on certain areas of the environment to move them away
+or interact in some way or just enjoy watching the character's life. (Yes)
+===
+
+Font history: Zeyada:
+Zeyada is based on the handwriting of a warm and generous young mom.
+
+Her family sponsors an amazing Ethiopian young woman named Zeyada and pays for her to continue to be in school.
+This font has curls and curves and is not a typical cursive, nor a typical print. It is slightly connected, but
+not a traditional script in any way.
+
+// Dump code
+let walkLeft, walkRight;
+let allison = {
+  "image": null,
+  "x": 300,
+  "y": 540,
+  "animations": [walkLeft, walkRight]
+};
+
+//walkLeft = loadImage("assets/images/Allison-0002_walkLeft.png");
+//walkRight = loadImage("assets/images/Allison-0002_walkRight.png");

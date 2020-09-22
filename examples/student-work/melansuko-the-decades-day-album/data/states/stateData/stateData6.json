@@ -1,0 +1,22 @@
+{
+  "stateIndex": 6,
+  "stateName": "GangLife",
+  "bgColor": [0, 0, 0, 10],
+  "isCinematic": true,
+  "nbActors": 2,
+  "tSize": 42,
+  "textColor": 0,
+  "narrationPosX": 600,
+  "narrationPosY": 333,
+  "narration": ["I'm dealing weed."],
+  "startButton": "",
+  "startButtonPosX": 100,
+  "startButtonPosY": 453,
+  "exitButton": "",
+  "exitButtonPosX": 100,
+  "exitButtonPosY": 633,
+  "dialogue" : "",
+  "subtitles": "",
+  "translation": ["FR", "ENG"],
+  "sizeMultiplier": 5
+}

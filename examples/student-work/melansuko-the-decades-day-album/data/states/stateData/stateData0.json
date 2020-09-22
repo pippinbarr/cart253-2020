@@ -1,0 +1,22 @@
+{
+  "stateIndex": 0,
+  "stateName": "Main Menu",
+  "bgColor": [0, 0, 0, 10],
+  "isCinematic": true,
+  "nbActors": 2,
+  "tSize": 60,
+  "textColor": 255,
+  "narrationPosX": 500,
+  "narrationPosY": 333,
+  "narration": ["MELANSUKO: THE DECADES DAY ALBUM"],
+  "startButton": "\"Start Therapy.\"",
+  "startButtonPosX": 100,
+  "startButtonPosY": 453,
+  "exitButton": "\"Pinch yourself really hard.\"",
+  "exitButtonPosX": 100,
+  "exitButtonPosY": 633,
+  "dialogue" : "",
+  "subtitles": "",
+  "translation": ["FR", "ENG"],
+  "sizeMultiplier": 5
+}

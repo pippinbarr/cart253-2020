@@ -1,0 +1,130 @@
+{
+  "MainMenu": {
+    "stateIndex": 0,
+    "stateTag": "MainMenu",
+    "textObjectPath": "data/states/stateData/stateData0.json",
+    "currentState": "false",
+    "nextStateTag": "Tutorial",
+    "readyToChangeState": "false"
+  },
+  "Tutorial": {
+    "stateIndex": 1,
+    "stateTag": "Tutorial",
+    "textObjectPath": "data/states/stateData/stateData1.json",
+    "currentState": "true",
+    "nextStateTag": "BetweenLifeSlicesA",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesA": {
+    "stateIndex": 2,
+    "stateTag": "BetweenLifeSlicesA",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "Introduction",
+    "readyToChangeState": "false"
+  },
+  "Introduction": {
+    "stateIndex": 3,
+    "stateTag": "Introduction",
+    "textObjectPath": "data/states/stateData/stateData2.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesB",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesB": {
+    "stateIndex": 4,
+    "stateTag": "BetweenLifeSlicesB",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "AzayashiMall",
+    "readyToChangeState": "false"
+  },
+  "AzayashiMall": {
+    "stateIndex": 5,
+    "stateTag": "AzayashiMall",
+    "textObjectPath": "data/states/stateData/stateData3.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesC",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesC": {
+    "stateIndex": 6,
+    "stateTag": "BetweenLifeSlicesC",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "HighSchool",
+    "readyToChangeState": "false"
+  },
+  "HighSchool": {
+    "stateIndex": 7,
+    "stateTag": "HighSchool",
+    "textObjectPath": "data/states/stateData/stateData4.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesD",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesD": {
+    "stateIndex": 8,
+    "stateTag": "BetweenLifeSlicesD",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "FirstJob",
+    "readyToChangeState": "false"
+  },
+  "FirstJob": {
+    "stateIndex": 9,
+    "stateTag": "FirstJob",
+    "textObjectPath": "data/states/stateData/stateData5.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesE",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesE": {
+    "stateIndex": 10,
+    "stateTag": "BetweenLifeSlicesE",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "Judge",
+    "readyToChangeState": "false"
+  },
+  "Judge": {
+    "stateIndex": 11,
+    "stateTag": "Judge",
+    "textObjectPath": "data/states/stateData/stateData6.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesF",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesF": {
+    "stateIndex": 12,
+    "stateTag": "BetweenLifeSlicesF",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "HotelSpa",
+    "readyToChangeState": "false"
+  },
+  "HotelSpa": {
+    "stateIndex": 13,
+    "stateTag": "HotelSpa",
+    "textObjectPath": "data/states/stateData/stateData7.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesG",
+    "readyToChangeState": "false"
+  },
+  "BetweenLifeSlicesG": {
+    "stateIndex": 14,
+    "stateTag": "BetweenLifeSlicesG",
+    "textObjectPath": "data/states/stateData/stateData8.json",
+    "currentState": "false",
+    "nextStateTag": "Downtown",
+    "readyToChangeState": "false"
+  },
+  "Downtown": {
+    "stateIndex": 15,
+    "stateTag": "Downtown",
+    "textObjectPath": "data/states/stateData/stateData9.json",
+    "currentState": "false",
+    "nextStateTag": "BetweenLifeSlicesA",
+    "readyToChangeState": "false"
+  }
+}
