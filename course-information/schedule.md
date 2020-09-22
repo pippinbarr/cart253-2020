@@ -106,8 +106,10 @@ Week of 21 September 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
+  - [Style guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html) updated
+  - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/) is live
+  - Study groups
   - Discussion of variables topic
-  - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/) assigned
 2. #studio time in Discord channels
   - Help with course material so far
   - Support for [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html)
