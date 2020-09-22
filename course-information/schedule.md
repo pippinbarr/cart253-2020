@@ -1,16 +1,7 @@
-#### Guides
-- [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
-- [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
-
-#### Projects
-- Project 1. Assigned week of 22 September 2020. Due week of 12 October 2020. (Three weeks)
-- Project 2. Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
-- Example final projects from 2019
-  - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/)) by Martin Hanses
-  - [Maranta Leuconeura](https://pippinbarr.github.io/cart253-2020/examples/student-work/maranta-leuconeura/) ([code](../examples/student-work/maranta-leuconeura/)) by Anne Boutet
-  - [Melansuko: The Decades Day Album](https://pippinbarr.github.io/cart253-2020/examples/student-work/melansuko-the-decades-day-album/) ([code](../examples/student-work/melansuko-the-decades-day-album/)) by Sylvain Tran
-
 #### Contents
+- [Guides](#guides)
+- [Projects](#projects)
+
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
@@ -24,6 +15,18 @@
 - Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
 - Week 12 - [Project 2 Studio II](#project-2-studio-ii) - support for project 2
 - Week 13 - [Project 2 Studio III](#project-2-studio-iii) - support for project 2
+
+#### Guides
+- [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
+- [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
+
+#### Projects
+- [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Assigned week of 21 September 2020. Due week of 12 October 2020. (Three weeks)
+- Project 2. Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
+- Example final projects from 2019
+  - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/)) by Martin Hanses
+  - [Maranta Leuconeura](https://pippinbarr.github.io/cart253-2020/examples/student-work/maranta-leuconeura/) ([code](../examples/student-work/maranta-leuconeura/)) by Anne Boutet
+  - [Melansuko: The Decades Day Album](https://pippinbarr.github.io/cart253-2020/examples/student-work/melansuko-the-decades-day-album/) ([code](../examples/student-work/melansuko-the-decades-day-album/)) by Sylvain Tran
 
 ---
 
