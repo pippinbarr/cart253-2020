@@ -110,6 +110,7 @@ Week of 21 September 2020
 1. #start-of-class discussion in Discord channels
   - [Style guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html) updated
   - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/) is live
+  - [Example projects](#projects) (see top of schedule)
   - Study groups
   - Discussion of variables topic
 2. #studio time in Discord channels
