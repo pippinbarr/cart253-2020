@@ -1,7 +1,6 @@
 #### Contents
 - [Guides](#guides)
 - [Projects](#projects)
-
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
