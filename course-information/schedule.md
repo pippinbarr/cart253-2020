@@ -1,6 +1,6 @@
 #### Contents
-- [Guides](#guides)
-- [Projects](#projects)
+- [Guides](#guides) - high level guides
+- [Projects](#projects) - projects, due dates, and examples
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
