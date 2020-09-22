@@ -3,10 +3,12 @@
 - [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
 
 #### Projects
-- Project 1. Assigned week of 28 September 2020. Due week of 12 October 2020. (Three weeks)
+- Project 1. Assigned week of 22 September 2020. Due week of 12 October 2020. (Three weeks)
 - Project 2. Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
+- Example final projects from 2019
+  - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/))
 
-#### Links
+#### Contents
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Drawing](#drawing) - drawing shapes and colors
 - Week 3 - [Variables](#variables) - making things change
