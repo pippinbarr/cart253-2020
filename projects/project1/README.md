@@ -4,8 +4,8 @@
 - 20% of final grade (see guidelines at bottom)  
 
 #### Deadline
-- Section A (Thursdays): 11:59PM, 13 October 2020
-- Section B (Tuesdays): 11:59PM, 15 October 2020
+- Section A (Tuesdays): 11:59PM, 15 October 2020
+- Section B (Thursdays): 11:59PM, 13 October 2020
 
 ## Objectives
 
