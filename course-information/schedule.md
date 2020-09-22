@@ -150,6 +150,7 @@ Week of 28 September 2020
 - __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
+- Extra: __Watch__ "04-10 - Time" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/time.html))
 - __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
 
 ## During class
