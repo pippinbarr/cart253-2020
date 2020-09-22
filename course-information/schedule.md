@@ -102,13 +102,16 @@ Week of 21 September 2020
 - __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/introducing-random-numbers.html))
 - __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/03/map-and-constrain.html))
 - __Complete__ [Activity 03: Moving Pictures](https://pippinbarr.github.io/cart253-2020/activities/03-moving-pictures.html) (__watch__ "03-8 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
+- __Start__ [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html) (due after class)
 
 ## During class
-- 13:30: Q&A in #start-of-class Discord channels
-- Afterwards: Studio time in #studio Discord channels
+1. #start-of-class discussion in Discord channels
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Support for [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html)
+  - And anything else
 
 ## Homework
-- __Complete__ [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html) and submit on Moodle by the deadline for your section
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
 
@@ -134,13 +137,20 @@ Week of 28 September 2020
 - __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
+- __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
+
 
 ## During class
-- 13:30: Q&A in #start-of-class Discord channels
-- Afterwards: Studio time in #studio Discord channels
+1. #start-of-class discussion in Discord channels
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Support for [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html)
+  - And anything else
+
+## Due after class
+- [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html). Submit on Moodle by the deadline for your section
 
 ## Homework
-- __Complete__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) and submit on Moodle by the deadline for your section
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
 
