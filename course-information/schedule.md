@@ -106,15 +106,18 @@ Week of 21 September 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
+  - Discussion of variables topic
+  - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/) assigned
 2. #studio time in Discord channels
   - Help with course material so far
   - Support for [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html)
+  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
   - And anything else
 
 ## Homework
+- Begin work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
-
 
 ---
 
@@ -139,12 +142,13 @@ Week of 28 September 2020
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
 - __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
 
-
 ## During class
 1. #start-of-class discussion in Discord channels
+  - Discussion of conditionals topic
 2. #studio time in Discord channels
   - Help with course material so far
   - Support for [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html)
+  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
   - And anything else
 
 ## Due after class
@@ -152,6 +156,7 @@ Week of 28 September 2020
 
 ## Homework
 - Follow the "before class" activities listed for next week
+- Work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
 - Write down your questions to discuss in the start of class discussion
 
 ---
@@ -164,6 +169,12 @@ Week of 5 October 2020
 - Using functions to organize your code
 - Using functions with parameters and return values to write reusable code
 - Understanding the value of modularity and reuse
+- Displaying text
+
+## Homework
+- Follow the "before class" activities listed for next week
+- Work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
+- Write down your questions to discuss in the start of class discussion
 
 __Coming soon!__
 
@@ -174,7 +185,7 @@ __Coming soon!__
 Week of 12 October 2020
 
 ## Objectives
-- Displaying images and text
+- Completing work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
 - Playing sounds
 
 __Coming soon!__

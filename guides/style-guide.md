@@ -2,6 +2,8 @@
 
 1. [Commenting](#commenting)
 2. [Variables](#variable-naming)
+3. Indenting
+4. Version control
 
 ## Commenting
 
