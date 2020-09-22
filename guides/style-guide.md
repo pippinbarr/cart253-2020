@@ -1,9 +1,91 @@
 # Style Guide
 
-1. [Commenting](#commenting)
-2. [Variables](#variable-naming)
-3. Indenting
-4. Version control
+1. [Formatting](#formatting)
+2. [Commenting](#commenting)
+3. [Variables](#variable-naming)
+4. [Version control](#version-control)
+
+---
+
+## Formatting
+
+### Use a package
+
+__Use the `prettier-atom` package to format your code automatically!__ It won't do absolutely everything you need, but it will do most of it. In the settings, select "Format Code on Save" so that it happens automatically.
+
+There is another package called `atom-beauty` which you can install and use instead if you prefer it.
+
+### The basic ideas
+
+When programming, it's really important to keep our code nicely formatted. This is most of all so that we can read it easily ourselves, but also so that other people can read it too. This mostly means:
+
+- Using whitespace well (spaces to separate out parts of a line of code, extra space between functions or different chunks of code)
+- Indenting your code (making sure a line is indented to match the curly brackets it is within)
+- Ending instructions with a semicolon (`;`)
+
+Poorly formatted example:
+
+```javascript
+let circle={x:0,y:250,speed:1,size:100}
+function setup() {
+createCanvas(500,500)}
+function draw(){
+background(0);
+  circle.x=circle.x+circle.speed
+    ellipse(circle.x,circle.y,circle.size);
+
+
+
+
+}
+
+
+
+
+function mousePressed() {
+         circle.size=circle.size    + 10
+}
+```
+
+The above example makes many mistakes. For instance:
+- The object variable `circle` is all on one line with no whitespace and has no semicolon
+- No whitespace between the variable declaration and the `setup()` function
+- `createCanvas()` isn't indented and has no semicolon
+- The closing `}` for `setup()` is on the same line as `createCanvas()`
+- There is no space between the `setup()` function and the `draw()` function
+- `background(0)` is not indented correctly
+- `circle.x=circle.x+circle.speed` has no semicolon and would be better with spacing
+- The `ellipse()` instruction is indented too far
+- There is too much whitespace between the `ellipse()` and the closing `}` of `draw()`
+- There is too much whitespace between the `draw()` and `mousePressed()` functions
+- `circle.size=circle.size    + 10` is indented too far and has inconsistent spacing
+
+A correctly formatted version:
+
+```javascript
+let circle = {
+  x: 0,
+  y: 250,
+  speed: 1,
+  size: 100
+};
+
+function setup() {
+  createCanvas(500,500);
+}
+
+function draw() {
+  background(0);
+  circle.x = circle.x + circle.speed;
+  ellipse(circle.x,circle.y,circle.size);
+}
+
+function mousePressed() {
+  circle.size = circle.size + 10;
+}
+```
+
+---
 
 ## Commenting
 
@@ -116,3 +198,31 @@ let circleY = 0;
 let circleSize = 100;
 let circleSpeed = 1;
 ```
+
+---
+
+## Version control
+
+__Always use version control__ (Git and GitHub) with your programming projects. There is literally never a good reason not to use it.
+
+### Prefixes
+
+Because this class uses one repository for multiple projects, we will always put a __prefix in front of our commit messages__ to indicate which project they are for (e.g. "E1" for exercise 1 or "P2" for project 2).
+
+### Starting a project
+
+When you start a new project make sure to create an __initial commit__ that marks the start of the project (usually when you have just placed some template code in a folder named for the project).
+
+### Commit when you get a meaningful unit of work done
+
+We want to avoid projects where we commit once at the start and once at the end. The idea is to create a __history__ of our project through our commits and their commit messages.
+
+Therefore, each time you get a unit of work done, commit it with a message. This might be getting an image to display correctly on the canvas, making the mouse control a specific element successfully, or getting a sound effect to work.
+
+### Write meaningful commit messages
+
+Your commit messages should be fairly brief, but they should concisely describe exactly what you did since the previous commit. For example. `E2: Got the mouse controls working` or `P1: Now the snake moves according to a sine wave`.
+
+### Don't forget to push
+
+It's important to __push__ your work to the remote server to keep it extra safe. Don't forget. You don't have to push after every commit, but you should certainly push when you're stopping work for a while.
