@@ -26,7 +26,7 @@
   - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/)) by Martin Hanses
   - [Maranta Leuconeura](https://pippinbarr.github.io/cart253-2020/examples/student-work/maranta-leuconeura/) ([code](../examples/student-work/maranta-leuconeura/)) by Anne Boutet
   - [Melansuko: The Decades Day Album](https://pippinbarr.github.io/cart253-2020/examples/student-work/melansuko-the-decades-day-album/) ([code](../examples/student-work/melansuko-the-decades-day-album/)) by Sylvain Tran
-  - [Untitled geometry music](https://pippinbarr.github.io/cart253-2020/examples/student-work/untitled-geometry-music/) ([code](../examples/student-work/untitled-geometry-music/)) by Amanda Clément
+  - [Untitled geometry music](https://pippinbarr.github.io/cart253-2020/examples/student-work/untitled-geometry-music/index.html) ([code](../examples/student-work/untitled-geometry-music/)) by Amanda Clément
 
 ---
 
