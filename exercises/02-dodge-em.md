@@ -1,7 +1,11 @@
 # Exercise 02: Dodge-em {
 
-__Grade__: 1.25% of final grade (see guidelines at bottom)  
-__Deadline__: 11:59PM on the day of class on week of 5 October 2020.
+#### Grade
+- 1.25% of final grade (see guidelines at bottom)  
+
+#### Deadline
+- Section A (Thursdays): 11:59PM, 1 October 2020.
+- Section B (Tuesdays): 11:59PM, 29 September 2020.
 
 ## Objectives
 

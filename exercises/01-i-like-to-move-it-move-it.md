@@ -1,7 +1,11 @@
 # Exercise 01: I like to move it move it! {
 
-__Grade__: 1.25% of final grade (see guidelines at bottom)  
-__Deadline__: 11:59PM on the day of class on week of 21 September 2020.
+#### Grade
+- 1.25% of final grade (see guidelines at bottom)  
+
+#### Deadline
+- Section A (Thursdays): 11:59PM, 24 September 2020.
+- Section B (Tuesdays): 11:59PM, 22 September 2020.
 
 ## Objectives
 
