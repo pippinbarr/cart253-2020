@@ -131,9 +131,34 @@ else {
 }
 ```
 
-Our circle is always red now because we wrote a condition that can't be `false`. We can't move the mouse so that `mouseX` is __less than `0`__, and so the `else` of our `if`-statement can never happen.
+Our circle is __always red__ now because we wrote a condition that can't be `false`. We can't move the mouse so that `mouseX` is __less than `0`__, and so the `else` of our `if`-statement can never happen.
 
 You will generally be able to find these problems when you program just __won't do something you think you wrote the code for__. One thing to suspect is a poorly written condition.
+
+---
+
+## Invisibly always `true`!
+
+The previous example of a conditional with a condition that is always `true` was relatively easy to spot in our program because there's a __visual__ component: we notice that no matter where we move our mouse, the circle is red, and this tells us what's wrong.
+
+However, a lot of our lines of code (including conditionals) aren't necessarily things that are __visible__ on the screen. In these situations, if we suspect a conditional might be a problem, we can use `console.log()` to check whether or not a particular `if` or `else` is ever occuring. Imagine we're instead tracking whether the mouse is to the "left" or "right" on the canvas, but we get it wrong...
+
+```javascript
+let mouseIsLeft = undefined;
+
+if (mouseX > 0) {
+  console.log("Mouse is to the right...")
+  mouseIsLeft = true;
+}
+else {
+  console.log("Mouse is to the left...")
+  mouseIsLeft = false;
+}
+```
+
+Now when we run our program, even though we don't __see__ `mouseIsLeft` visually, we're going to see that no matter where we move our mouse, we __only ever see the second message__ ("Mouse is to the right..."). That will tell us that our conditional can never be `false`!
+
+Then we can examine our conditional and realize that its condition doesn't really check what we wanted and change it (to `mouseX > width/2` in this case).
 
 ---
 
@@ -158,6 +183,8 @@ Same issue. A condition that can't be `true` means that the `else` will always b
 
 - Syntax errors generally come from forgetting parentheses or curly brackets
 - Other errors are usually from poorly written conditions that don't mean what you wanted
+- If your error is something you can see/hear/experience when the program runs, focus on the figuring out the incorrect __behavior__ of the program to narrow down the culprit
+- If it isn't, use `console.log()` inside your conditionals to check what code is being run and what isn't
 
 ---
 
