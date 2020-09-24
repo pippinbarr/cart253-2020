@@ -21,7 +21,9 @@
 
 ## Brief
 
-Change the "looking for love" simulation from [Activity 05](../activities/05-looking-for-love.md). Ideally, you could think of how you want to change the meaning/nature of the simulation (maybe it could be about unrequited love? Or about unwanted love? Or platonic love? Or being a fan of a YouTuber? Or something else?). Make your changes to the simulation to make your meaning apparent. With the following requirements:
+Change the "looking for love" simulation from [Activity 05](../activities/05-looking-for-love.md). Ideally, you could think of how you want to change the meaning/nature of the simulation (maybe it could be about unrequited love? Or about unwanted love? Or platonic love? Or being a fan of a YouTuber? Or something else?). Make it __your__ simulation of love (or, if you like, change it to be about something completely different!).
+
+Make your changes to the simulation with the following requirements:
 
 1. __Allow the user to control one of the circles__
   - Anything goes, from clicking to position it, to having it follow the mouse, to using the arrow keys, to something else
