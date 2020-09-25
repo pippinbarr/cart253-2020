@@ -186,16 +186,16 @@ Week of 5 October 2020
 ## Before class
 
 ### Topics
-- __Watch__ "05-1 - Functions" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions.html))
-- __Watch__ "05-2 - Functions with parameters" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-parameters.html))
-- __Watch__ "05-3 - Functions with return values" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-return-values.html))
-- __Watch__ "05-4 - Text" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/text.html))
-- __Watch__ "05-5 - States" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/states.html))
-- __Watch__ "05-6 - Keyboard input" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/keyboard-input.html))
-- __Watch__ "05-7 - Automated movement" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/automated-movement.html))
+- __Watch__ "05-1 - Functions" (29:12) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions.html))
+- __Watch__ "05-2 - Functions with parameters" (24:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-parameters.html))
+- __Watch__ "05-3 - Functions with return values" (21:01) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-return-values.html))
+- __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/text.html))
+- __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/states.html))
+- __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/keyboard-input.html))
+- __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/automated-movement.html))
 
 ### Activity
-- __Complete__ [Activity 05: Looking for love](https://pippinbarr.github.io/cart253-2020/activities/05-looking-for-love.html) (__watch__ "05-8 - Looking for love" (coming soon) video on Moodle to see Pippin doing it)
+- __Complete__ [Activity 05: Looking for love](https://pippinbarr.github.io/cart253-2020/activities/05-looking-for-love.html) (__watch__ "05-8 - Looking for love" (44:15) video on Moodle to see Pippin doing it)
 
 ### Exercise
 - __Start__ [Exercise 03: Love, Actually](https://pippinbarr.github.io/cart253-2020/exercises/03-love-actually.html) (due after class)
