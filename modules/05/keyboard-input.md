@@ -255,6 +255,7 @@ function draw() {
 - So many letters and numbers!
 - We can use event functions like `keyPressed()` to react the moment a key is pressed
 - We can use `keyIsDown()` to respond continuously to pressed keys
+
 ---
 
 ## TMI?
