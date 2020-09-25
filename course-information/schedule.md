@@ -177,18 +177,32 @@ Week of 28 September 2020
 
 Week of 5 October 2020
 
-## Objectives
+## Key objectives
 - Using functions to organize your code
 - Using functions with parameters and return values to write reusable code
 - Understanding the value of modularity and reuse
-- Displaying text
+- Using "states" to organize your program
+
+## Before class
+
+### Topics
+- __Watch__ "05-1 - Functions" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions.html))
+- __Watch__ "05-2 - Functions with parameters" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-parameters.html))
+- __Watch__ "05-3 - Functions with return values" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/functions-with-return-values.html))
+- __Watch__ "05-4 - Text" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/text.html))
+- __Watch__ "05-5 - States" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/states.html))
+- __Watch__ "05-6 - Keyboard input" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/keyboard-input.html))
+- __Watch__ "05-7 - Automated movement" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/05/automated-movement.html))
+
+### Activity
+- __Complete__ [Activity 05: Looking for love](https://pippinbarr.github.io/cart253-2020/activities/05-looking-for-love.html) (__watch__ "05-8 - Looking for love" (coming soon) video on Moodle to see Pippin doing it)
+
+### Exercise
+- __Start__ [Exercise 03: Love, Actually](https://pippinbarr.github.io/cart253-2020/exercises/03-love-actually.html) (due after class)
 
 ## Homework
 - Follow the "before class" activities listed for next week
 - Work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
-- Write down your questions to discuss in the start of class discussion
-
-__Coming soon!__
 
 ---
 
