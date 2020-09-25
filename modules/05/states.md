@@ -112,19 +112,22 @@ To make our program respect the different states, we can use `if`-statements tha
 
 ```javascript
 if (state === `title`) {
-fill(255);
-text(titleString, width / 2, height / 2);
+  // Title
+  fill(255);
+  text(titleString, width / 2, height / 2);
 }
+else if (state === `animation`) {
+  // Animation
+  circle.x = circle.x + circle.vx;
+  circle.y = circle.y + circle.vy;
 
-// Animation
-circle.x = circle.x + circle.vx;
-circle.y = circle.y + circle.vy;
-
-ellipse(circle.x, circle.y, circle.size);
-
-// Ending
-fill(255, 0, 0);
-text(endingString, width / 2, height / 2)
+  ellipse(circle.x, circle.y, circle.size);
+}
+else if (state === `ending`) {
+  // Ending
+  fill(255, 0, 0);
+  text(endingString, width / 2, height / 2)
+}
 ```
 
 This works! Now the program only displays the __title__ state, not the __animation__ or the __ending__. And if we change the value in the `state` variable (by typing either `animation` or `ending` into its assignment), we see the other two states!
@@ -185,6 +188,7 @@ function draw() {
 
     ellipse(circle.x, circle.y, circle.size);
 
+    // NEW!
     // And we change to the ending state if the circle reaches the right side
     if (circle.x > width) {
       state = `ending`;
@@ -197,6 +201,7 @@ function draw() {
   }
 }
 
+// NEW!
 function keyPressed() {
   // If any key is pressed, we check if the current state is the title state
   if (state === `title`) {
