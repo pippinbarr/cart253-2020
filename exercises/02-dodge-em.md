@@ -30,7 +30,7 @@ Your program should:
 1. __Change the way the user controls their circle__
   - Idea: make the circle __follow__ the mouse instead of just teleport to its location (see [Movement lecture](../modules/04/movement.md#speed-returns), consider acceleration if you're feeling ambitious!)
   - Idea: make the user __drag__ the circle (see [Mouse input lecture](../modules/04/mouse-input.md#a-draggable-circle))
-  - Idea: let the user control the circle with the __keyboard__ (we'll talk about this next week, but you could look at the keyboard documentation in the [Events](https://p5js.org/reference/#group-Events) section of the p5 reference)
+  - (Optional idea: let the user control the circle with the __keyboard__ (we'll talk about this next week, but you could look at the keyboard documentation in the [Events](https://p5js.org/reference/#group-Events) section of the p5 reference))
 2. __Add at least one new `if`-statement__ (including at least an `else`) that changes the nature of the simulation
   - Idea: make the COVID-19 circle move vertically toward the user while it moves left to right
   - Idea: make the COVID-19 circle grow if it is close to the user and shrink (back to a minimum size) when it is further away
