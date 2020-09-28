@@ -156,6 +156,12 @@ Week of 28 September 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
+  - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/) is live
+  - p5 versus JavaScript?
+    - p5 provides a basic interaction template with `preload()`, `setup()`, `draw()` and event handlers (search `this._draw` in `p5.js` for example)
+    - p5 provides an interface to the (more complicated) [Canvas Rendering Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) (search `_main.default.Renderer2D.prototype.ellipse` in `p5.js` for example)
+    - p5 gives us a collection of useful math functions (search `prototype.random` in `p5.js` for example)
+    - And more...
   - Discussion of conditionals topic
 2. #studio time in Discord channels
   - Help with course material so far
