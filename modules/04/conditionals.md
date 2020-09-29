@@ -146,7 +146,7 @@ if (circle.x > width) {
 }
 ```
 
-So this is our if statement. Let's break it down just to talk about the different pices:
+So this is our if statement. Let's break it down just to talk about the different pieces:
 
 `if`
 - First we write the special word `if`. This signals we are going to make a __decision__, first by asking a __question__ and then by taking action if the answer is "true".
