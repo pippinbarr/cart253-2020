@@ -163,8 +163,9 @@ Week of 28 September 2020
     - p5 provides an interface to the (more complicated) [Canvas Rendering Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) (search `_main.default.Renderer2D.prototype.ellipse` in `p5.js` for example)
     - p5 gives us a collection of useful math functions (search `prototype.random` in `p5.js` for example)
     - And more...
-  - "TMI?"?
+  - "TMI?"? (Move them into separate "extras" notes?)
   - The (virtual) [C-LAB](https://clab.concordia.ca/) is a thing you should use!
+  - Queue Bot on Discord
   - Discussion of conditionals topic
   - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)?
 2. #studio time in Discord channels
