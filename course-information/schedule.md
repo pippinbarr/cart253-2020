@@ -145,7 +145,7 @@ Week of 28 September 2020
 - __Watch__ "04-2 - More conditionals" (20:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/elses.html))
 - __Watch__ "04-3 - Booleans" (12:06) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/booleans.html))
 - __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops.html))
-- __Watch__ "04-4b - Loops beyond counting" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops-beyond-counting.html))
+- __Watch__ "04-4b - Loops beyond counting" (14:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/loops-beyond-counting.html))
 - __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/mouse-input.html))
 - __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/movement.html))
 - __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/04/intermediate-drawing.html))
