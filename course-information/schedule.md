@@ -237,8 +237,8 @@ Week of 12 October 2020
 - Completing work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
 
 ## Before class
-- __Watch__ "06-1 - Basic sound" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/basic-sound.html))
-- __Watch__ "06-2 - `"use strict;"`" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/use-strict.html))
+- __Watch__ "06-1 - Basic sound" (14:55) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/basic-sound.html))
+- __Watch__ "06-2 - `"use strict;"`" (6:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/use-strict.html))
 
 ## During class
 1. #start-of-class discussion in Discord channels
