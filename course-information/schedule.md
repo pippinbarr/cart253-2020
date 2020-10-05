@@ -163,9 +163,8 @@ Week of 28 September 2020
     - p5 provides an interface to the (more complicated) [Canvas Rendering Context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) (search `_main.default.Renderer2D.prototype.ellipse` in `p5.js` for example)
     - p5 gives us a collection of useful math functions (search `prototype.random` in `p5.js` for example)
     - And more...
-  - "TMI?"? (Move them into separate "extras" notes?)
+  - "TMI?"?
   - The (virtual) [C-LAB](https://clab.concordia.ca/) is a thing you should use!
-  - Queue Bot on Discord
   - Discussion of conditionals topic
   - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)?
 2. #studio time in Discord channels
@@ -211,9 +210,22 @@ Week of 5 October 2020
 ### Exercise
 - __Start__ [Exercise 03: Love, Actually](https://pippinbarr.github.io/cart253-2020/exercises/03-love-actually.html) (due after class)
 
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of functions
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Support for the exercise as needed
+  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
+  - And anything else
+
+## Due after class
+- [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html). Submit on Moodle by the deadline for your section
+
 ## Homework
 - Follow the "before class" activities listed for next week
 - Work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
+- Write down your questions to discuss in the start of class discussion
 
 ---
 
@@ -223,9 +235,21 @@ Week of 12 October 2020
 
 ## Objectives
 - Completing work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
-- Playing sounds
 
-__Coming soon!__
+## Before class
+- __Watch__ "06-1 - Basic sound" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/basic-sound.html))
+- __Watch__ "06-2 - `"use strict;"`" (coming soon) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/06/use-strict.html))
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of sound, "use strict", and the project
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
+  - And anything else
+
+## Due after class
+- [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Submit on Moodle by the deadline for your section
 
 ---
 

@@ -1,3 +1,5 @@
+"use strict";
+
 /**************************************************
 Template p5 project
 Pippin Barr
