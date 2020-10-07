@@ -2,7 +2,7 @@
 - [Guides](#guides) - high level guides
 - [Projects](#projects) - projects, due dates, and examples
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
-- Week 2 - [Drawing](#drawing) - drawing shapes and colors
+- Week 2 - [Instructions](#drawing) - telling p5 to draw shapes and colors
 - Week 3 - [Variables](#variables) - making things change
 - Week 4 - [Conditionals](#conditionals) - programs that react
 - Week 5 - [Functions](#functions) - modularity and reuse
@@ -61,7 +61,7 @@ Week of 7 September 2020
 
 ---
 
-# Drawing
+# Instructions
 
 Week of 14 September 2020
 
