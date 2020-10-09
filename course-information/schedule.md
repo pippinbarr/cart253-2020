@@ -7,8 +7,8 @@
 - Week 4 - [Conditionals](#conditionals) - programs that react
 - Week 5 - [Functions](#functions) - modularity and reuse
 - Week 6 - [Project 1 Studio](#project-1-studio) - support for project 1
-- Week 7 - [Object-Oriented Programming](#object-oriented-programming) - thinking of code as a collection of objects
-- Week 8 - [Arrays](#arrays) - storing data in little boxes
+- Week 7 - [Arrays](#arrays) - storing data in little boxes
+- Week 8 - [Object-Oriented Programming](#object-oriented-programming) - thinking of code as a collection of objects
 - Week 9 - [Inheritance](#inheritance) - creating objects based on other objects
 - Week 10 - [Libraries](#libraries) - using other people's amazing code
 - Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
