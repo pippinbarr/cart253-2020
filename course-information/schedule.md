@@ -77,7 +77,7 @@ Week of 14 September 2020
 - __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/drawing-shapes.html))
 - __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/drawing-colors.html))
 - __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/commenting-your-code.html))
-- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/the-javascript-console.html))
+- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/the-javascript-console.html))
 - __Complete__ [Activity 02: Draw an Alien](https://pippinbarr.github.io/cart253-2020/activities/02-draw-an-alien.html) (__watch__ "02-6 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
@@ -105,7 +105,7 @@ Week of 21 September 2020
 - __Watch__ "03-2 - Creating variables" (25:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/creating-variables.html))
 - __Watch__ "03-3 - Changing variables" (20:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/changing-variables.html))
 - __Watch__ "03-4 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/introducing-javascript-objects.html))
-- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/debugging-variables.html))
+- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-variables.html))
 - __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/introducing-random-numbers.html))
 - __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/map-and-constrain.html))
 - __Complete__ [Activity 03: Moving Pictures](https://pippinbarr.github.io/cart253-2020/activities/03-moving-pictures.html) (__watch__ "03-8 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
@@ -152,7 +152,7 @@ Week of 28 September 2020
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
 - Extra: __Watch__ "04-10 - Time" (12:32) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/time.html))
-- Extra: __Watch__ "04-11 - Debugging conditionals" (18:37) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/debugging-conditionals.html))
+- Extra: __Watch__ "04-11 - Debugging conditionals" (18:37) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
 - __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
 
 ## During class
@@ -238,7 +238,40 @@ Week of 12 October 2020
 
 ## Before class
 - __Watch__ "06-1 - Basic sound" (14:55) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/sound-and-strictness/basic-sound.html))
-- __Watch__ "06-2 - `"use strict;"`" (6:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/sound-and-strictness/use-strict.html))
+- __Watch__ "06-2 - `"use strict;"`" (6:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/use-strict.html))
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of sound, "use strict", and the project
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
+  - And anything else
+
+## Due after class
+- [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Submit on Moodle by the deadline for your section
+
+---
+
+# Arrays
+
+Week of 19 October 2020
+
+## Objectives
+- Using arrays to store collections of data
+- Understanding how to use for-loops and arrays
+- Storing objects in arrays
+- Improving our debugging
+
+## Before class
+- __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate functions.html))
+- __Watch__ "07-2 - Introducing arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
+- __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
+- __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
+- __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html))
+- __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html))
+- __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html))
+- __Watch__ "07-4 - Debugging example" (coming soon) (and follow along with the [Debugging example code](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-example-code.html))
 
 ## During class
 1. #start-of-class discussion in Discord channels
@@ -255,23 +288,10 @@ Week of 12 October 2020
 
 # Object-Oriented Programming
 
-Week of 19 October 2020
-
-## Objectives
-- Writing classes to organize your code into more complex objects
-
-__Coming soon!__
-
----
-
-# Arrays
-
 Week of 26 October 2020
 
 ## Objectives
-- Using arrays to store collections of data
-- Understanding how to use for-loops and arrays
-- Storing objects in arrays
+- Writing classes to organize your code into more complex objects
 
 __Coming soon!__
 
