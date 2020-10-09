@@ -267,10 +267,10 @@ Week of 19 October 2020
 - __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
 - __Watch__ "07-2 - Introducing arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
 - __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
-- __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
-- __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html))
-- __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html))
-- __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html))
+- __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html)
+- __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html)
+- __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html)
+- __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html)
 - __Watch__ "07-4 - Debugging example" (coming soon) (and follow along with the [Debugging example code](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-example-code.html))
 
 ## During class
