@@ -220,7 +220,7 @@ Week of 5 October 2020
   - And anything else
 
 ## Due after class
-- [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html). Submit on Moodle by the deadline for your section
+- [Exercise 03: Love, Actually](https://pippinbarr.github.io/cart253-2020/exercises/03-love-actually.html). Submit on Moodle by the deadline for your section
 
 ## Homework
 - Follow the "before class" activities listed for next week
@@ -264,7 +264,7 @@ Week of 19 October 2020
 - Improving our debugging
 
 ## Before class
-- __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate functions.html))
+- __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
 - __Watch__ "07-2 - Introducing arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
 - __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
 - __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
@@ -275,14 +275,13 @@ Week of 19 October 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
-  - Discussion of sound, "use strict", and the project
+  - Discussion of arrays
+  - Discussion of debugging
 2. #studio time in Discord channels
   - Help with course material so far
-  - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
-  - And anything else
 
 ## Due after class
-- [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Submit on Moodle by the deadline for your section
+- ...
 
 ---
 
