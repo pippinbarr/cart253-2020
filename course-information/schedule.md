@@ -266,7 +266,7 @@ Week of 19 October 2020
 ## Before class
 - __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
 - __Watch__ "07-2 - Introducing arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
-- __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
+- __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [More arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
 - __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html)
 - __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html)
 - __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html)
