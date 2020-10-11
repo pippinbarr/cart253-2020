@@ -50,7 +50,7 @@ let food2 = {
   x: 350,
   y: 300,
   size: 50,
-  alive: false
+  eaten: false
 };
 
 function setup() {

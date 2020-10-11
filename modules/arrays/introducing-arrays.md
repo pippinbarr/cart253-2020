@@ -90,6 +90,7 @@ function displayFish(fish) {
   fill(200, 100, 100);
   noStroke();
   ellipse(fish.x, fish.y, fish.size);
+  pop();
 }
 ```
 
