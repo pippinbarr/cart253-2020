@@ -153,10 +153,24 @@ In essence, we need to be like a detective, working out the most reasonable expl
 
 There are a few basic things you can do to make your life of debugging easier:
 
-1. __Simplify__ your code
-2. Send yourself __messages__
-3. __Show it__ to someone else
-4. Take a __break__
+1. __Format__ your code
+2. __Simplify__ your code
+3. Send yourself __messages__
+4. __Show it__ to someone else
+5. Take a __break__
+6. Ask for __help__
+
+---
+
+## Format
+
+## Remember to use proper formatting
+
+It is __really__ important to make sure that when you write (and debug) code it is properly indented. This is best achieved with a package in Atom that will automatically do this for you.
+
+`atom-prettier`, which you should have installed already, has an option in its preferences called "Format files on save" which you should have __on__. This will autoformat your entire file whenever you save it, which is __very__ helpful.
+
+In particular, formatting our JavaScript files will often help to identify serious issues in the code, particularly around missing curly brackets which are the bane of our existence!
 
 ---
 
@@ -224,7 +238,7 @@ There is studio time, office hours, email, Discord, latent psychic powers. So ma
 
 ---
 
-## Call it a feature!?
+## Dark Arts Option: Call it a feature!?
 
 One of the darker arts in programming is to sometimes decide that an element of your program that doesn't work the way you wanted is actually... __what you wanted__.
 
