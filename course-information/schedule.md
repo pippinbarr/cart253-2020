@@ -264,16 +264,18 @@ Week of 19 October 2020
 - Improving our debugging
 
 ## Before class
-- __Watch__ "07-1 - Intermediate functions" (coming soon) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
-- __Watch__ "07-2 - Introducing arrays" (coming soon) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
-- __Watch__ "07-3 - More arrays" (coming soon) (and __read__ [More arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
+- __Watch__ "07-1 - Intermediate functions" (19:02) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
+- __Watch__ "07-2 - Introducing arrays" (27:39) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
+- __Watch__ "07-3 - More arrays" (29:32) (and __read__ [More arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
 - __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html)
 - __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html)
 - __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html)
 - __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html)
 - Please make sure you go to the `prettier-atom` preferences and choose the "__Format files on save__" option so that your files are automatically formatted whenever you save.
 - Consider installing `atom-beautify`, another formatting package (for cases where `prettier-atom` doesn't want to format!)
-- __Watch__ and __follow along with__ "07-4 - Debugging activity" (coming soon) (and follow along with the [Debugging activity notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html))
+
+## Activity
+- __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
 
 ## During class
 1. #start-of-class discussion in Discord channels
