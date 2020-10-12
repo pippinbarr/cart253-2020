@@ -285,7 +285,7 @@ Week of 19 October 2020
   - Help with course material so far
 
 ## Due after class
-- ...
+- [Exercise 04: The Age of Aquariums](https://pippinbarr.github.io/cart253-2020/exercises/04-the-age-of-aquariums.html). Submit on Moodle by the deadline for your section.
 
 ---
 
