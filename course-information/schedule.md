@@ -277,15 +277,25 @@ Week of 19 October 2020
 ## Activity
 - __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
 
+### Exercise
+- __Start__ [Exercise 04: The Age of Aquariums](https://pippinbarr.github.io/cart253-2020/exercises/04-the-age-of-aquariums.html). (Due after class)
+
 ## During class
 1. #start-of-class discussion in Discord channels
+  - Project 02 will be open-brief (details next week)
   - Discussion of arrays
   - Discussion of debugging
 2. #studio time in Discord channels
   - Help with course material so far
+  - Work on Exercise 04
+  - Start thinking about Project 02
 
 ## Due after class
 - [Exercise 04: The Age of Aquariums](https://pippinbarr.github.io/cart253-2020/exercises/04-the-age-of-aquariums.html). Submit on Moodle by the deadline for your section.
+
+## Homework
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in the start of class discussion
 
 ---
 
