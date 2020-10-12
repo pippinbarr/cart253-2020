@@ -272,6 +272,7 @@ Week of 19 October 2020
 - __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html)
 - __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html)
 - Please make sure you go to the `prettier-atom` preferences and choose the "__Format files on save__" option so that your files are automatically formatted whenever you save.
+- Consider installing `atom-beautify`, another formatting package (for cases where `prettier-atom` doesn't want to format!)
 - __Watch__ and __follow along with__ "07-4 - Debugging activity" (coming soon) (and follow along with the [Debugging activity notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html))
 
 ## During class
