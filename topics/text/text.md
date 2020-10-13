@@ -101,6 +101,34 @@ So template strings are __very__ useful. They are the way to go almost all the t
 
 ---
 
+## Linebreaks
+
+It's often the case that you want to store some text that should be on multiple lines, something like:
+
+```
+To be or not to be
+That is the question.
+```
+
+You could create __two__ strings, one for each line, but you can also include a linebreak in a string. There are two ways:
+
+### `\n`
+
+If you include `\n` in a string, it signifies a linebreak. The text will have a new line (hence `\n`) inserted at that point whenever it's displayed.
+
+```javascript
+let speech = `To be or not to be\nThat is the question.`;
+```
+
+Alternatively, if you're using a __template string__ you can just put the linebreak in the string itself! (Another neat feature.)
+
+```javascript
+let speech = `To be or not to be
+That is the question.`;
+```
+
+---
+
 ## Displaying strings
 
 Now that we know that text is represented in JavaScript as a __string__, let's look at the function for displaying text on the canvas in p5, `text()`. We provide `text()` with __three arguments__: the text to display, and the x and y position to display it:
