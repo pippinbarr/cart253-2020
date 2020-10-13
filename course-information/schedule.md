@@ -242,7 +242,9 @@ Week of 12 October 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
-  - Discussion of sound, "use strict", and the project
+  - Sound
+  - `"use strict";`
+  - Project 02 will be open-brief (details next week)
 2. #studio time in Discord channels
   - Help with course material so far
   - Support for [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
@@ -283,7 +285,6 @@ Week of 19 October 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
-  - Project 02 will be open-brief (details next week)
   - Discussion of arrays
   - Discussion of debugging
 2. #studio time in Discord channels
