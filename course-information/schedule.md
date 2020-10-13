@@ -43,13 +43,13 @@ Week of 7 September 2020
 - __Join__ the course Discord (invitation link will be emailed)
 - __Watch__ "01-1 - Introducing CART253" (38:33) on Moodle
 - __Read__ the [Course Outline](https://pippinbarr.github.io/cart253-2020/course-information/outline.html)  and the Course Schedule (this page)
-- __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/modules/software/software.html) text tutorial
+- __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/topics/software/software.html) text tutorial
 - Create your class repository
   - __Watch__ "01-2 - Creating a Class Repository on GitHub" (16:44) on Moodle
   - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/modulessoftware/github-repository.html) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01-3 - Basic Version Control" (32:20) on Moodle
-  - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/modules/software/basic-github-desktop.html) text tutorial
+  - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/topics/software/basic-github-desktop.html) text tutorial
 
 ## During class
 - 13:30: Introductions with everyone in #start-of-class channel on Discord (join the chat and voice channels!)
@@ -72,12 +72,12 @@ Week of 14 September 2020
 - Using Git and GitHub with code
 
 ## Before class
-- __Read__ the [Why and how to learn to code](https://pippinbarr.github.io/cart253-2020/modules/philosophy/why-and-how-to-learn-to-code.html)
-- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/software/working-with-code-in-atom.html))
-- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/drawing-shapes.html))
-- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/drawing-colors.html))
-- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/style/commenting-your-code.html))
-- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/the-javascript-console.html))
+- __Read__ the [Why and how to learn to code](https://pippinbarr.github.io/cart253-2020/topics/philosophy/why-and-how-to-learn-to-code.html)
+- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/software/working-with-code-in-atom.html))
+- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/drawing/drawing-shapes.html))
+- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/drawing/drawing-colors.html))
+- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/style/commenting-your-code.html))
+- __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/debugging/the-javascript-console.html))
 - __Complete__ [Activity 02: Draw an Alien](https://pippinbarr.github.io/cart253-2020/activities/02-draw-an-alien.html) (__watch__ "02-6 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
@@ -101,13 +101,13 @@ Week of 21 September 2020
 - Fun with random numbers and mapping numbers
 
 ## Before class
-- __Watch__ "03-1 - Introducing variables" (26:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/introducing-variables.html))
-- __Watch__ "03-2 - Creating variables" (25:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/creating-variables.html))
-- __Watch__ "03-3 - Changing variables" (20:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/changing-variables.html))
-- __Watch__ "03-4 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/introducing-javascript-objects.html))
-- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-variables.html))
-- __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/introducing-random-numbers.html))
-- __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/variables/map-and-constrain.html))
+- __Watch__ "03-1 - Introducing variables" (26:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/introducing-variables.html))
+- __Watch__ "03-2 - Creating variables" (25:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/creating-variables.html))
+- __Watch__ "03-3 - Changing variables" (20:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/changing-variables.html))
+- __Watch__ "03-4 - Introducing JavaScript Objects" (12:13) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/introducing-javascript-objects.html))
+- __Watch__ "03-5 - Debugging variables" (22:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-variables.html))
+- __Watch__ "03-6 - Introducing random numbers" (12:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/introducing-random-numbers.html))
+- __Watch__ "03-7 - Map and constrain" (16:54) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/variables/map-and-constrain.html))
 - __Complete__ [Activity 03: Moving Pictures](https://pippinbarr.github.io/cart253-2020/activities/03-moving-pictures.html) (__watch__ "03-8 - Moving Pictures" (36:34) video on Moodle to see Pippin doing it)
 - __Start__ [Exercise 01: I Like to Move It Move It](https://pippinbarr.github.io/cart253-2020/exercises/01-i-like-to-move-it-move-it.html) (due after class)
 
@@ -141,18 +141,18 @@ Week of 28 September 2020
 - Controlling repetition with loops
 
 ## Before class
-- __Watch__ "04-1 - Conditionals" (26:11) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/conditionals.html))
-- __Watch__ "04-2 - More conditionals" (20:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/elses.html))
-- __Watch__ "04-3 - Booleans" (12:06) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/booleans.html))
-- __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops.html))
-- __Watch__ "04-4b - Loops beyond counting" (14:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops-beyond-counting.html))
-- __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/mouse-input.html))
-- __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/movement/movement.html))
-- __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/intermediate-drawing.html))
+- __Watch__ "04-1 - Conditionals" (26:11) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/conditionals/conditionals.html))
+- __Watch__ "04-2 - More conditionals" (20:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/conditionals/elses.html))
+- __Watch__ "04-3 - Booleans" (12:06) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/conditionals/booleans.html))
+- __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/conditionals/loops.html))
+- __Watch__ "04-4b - Loops beyond counting" (14:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/conditionals/loops-beyond-counting.html))
+- __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/input/mouse-input.html))
+- __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/movement/movement.html))
+- __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/drawing/intermediate-drawing.html))
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
-- Extra: __Watch__ "04-10 - Time" (12:32) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/philosophy/time.html))
-- Extra: __Watch__ "04-11 - Debugging conditionals" (18:37) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
+- Extra: __Watch__ "04-10 - Time" (12:32) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/philosophy/time.html))
+- Extra: __Watch__ "04-11 - Debugging conditionals" (18:37) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-conditionals.html))
 - __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
 
 ## During class
@@ -196,13 +196,13 @@ Week of 5 October 2020
 ## Before class
 
 ### Topics
-- __Watch__ "05-1 - Functions" (29:12) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions.html))
-- __Watch__ "05-2 - Functions with parameters" (24:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-parameters.html))
-- __Watch__ "05-3 - Functions with return values" (21:01) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-return-values.html))
-- __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/text/text.html))
-- __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/structure/states.html))
-- __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/keyboard-input.html))
-- __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/movement/automated-movement.html))
+- __Watch__ "05-1 - Functions" (29:12) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/functions/functions.html))
+- __Watch__ "05-2 - Functions with parameters" (24:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/functions/functions-with-parameters.html))
+- __Watch__ "05-3 - Functions with return values" (21:01) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/functions/functions-with-return-values.html))
+- __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/text/text.html))
+- __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/structure/states.html))
+- __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/input/keyboard-input.html))
+- __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/movement/automated-movement.html))
 
 ### Activity
 - __Complete__ [Activity 05: Looking for love](https://pippinbarr.github.io/cart253-2020/activities/05-looking-for-love.html) (__watch__ "05-8 - Looking for love" (44:15) video on Moodle to see Pippin doing it)
@@ -237,8 +237,8 @@ Week of 12 October 2020
 - Completing work on [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/)
 
 ## Before class
-- __Watch__ "06-1 - Basic sound" (14:55) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/sound/basic-sound.html))
-- __Watch__ "06-2 - `"use strict;"`" (6:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/use-strict.html))
+- __Watch__ "06-1 - Basic sound" (14:55) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/sound/basic-sound.html))
+- __Watch__ "06-2 - `"use strict;"`" (6:47) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/topics/debugging/use-strict.html))
 
 ## During class
 1. #start-of-class discussion in Discord channels
@@ -266,19 +266,19 @@ Week of 19 October 2020
 - Improving our debugging
 
 ## Before class
-- __Watch__ "07-1 - Intermediate functions" (19:02) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/modules/functions/intermediate-functions.html))
-- __Watch__ "07-2 - Introducing arrays" (27:39) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html))
-- __Watch__ "07-3 - More arrays" (29:32) (and __read__ [More arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/more-arrays.html))
-- __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html)
-- __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-loops.html)
-- __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-functions.html)
-- __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html)
+- __Watch__ "07-1 - Intermediate functions" (19:02) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/topics/functions/intermediate-functions.html))
+- __Watch__ "07-2 - Introducing arrays" (27:39) (and __read__ [Introducing arrays](https://pippinbarr.github.io/cart253-2020/topics/arrays/introducing-arrays.html))
+- __Watch__ "07-3 - More arrays" (29:32) (and __read__ [More arrays](https://pippinbarr.github.io/cart253-2020/topics/arrays/more-arrays.html))
+- __Read__ [Debugging conditionals](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-conditionals.html)
+- __Read__ [Debugging loops](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-loops.html)
+- __Read__ [Debugging functions](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-functions.html)
+- __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-tactics.html)
 - Please make sure you go to the `prettier-atom` preferences and choose the "__Format files on save__" option so that your files are automatically formatted whenever you save.
 - Consider installing `atom-beautify`, another formatting package (for cases where `prettier-atom` doesn't want to format!)
-- __Read__ [Fonts](https://pippinbarr.github.io/cart253-2020/modules/text/fonts.html)
+- __Read__ [Fonts](https://pippinbarr.github.io/cart253-2020/topics/text/fonts.html)
 
 ## Activity
-- __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
+- __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/topics/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
 
 ## Exercise
 - __Start__ [Exercise 04: The Age of Aquariums](https://pippinbarr.github.io/cart253-2020/exercises/04-the-age-of-aquariums.html). (Due after class)
