@@ -242,6 +242,7 @@ Week of 12 October 2020
 
 ## During class
 1. #start-of-class discussion in Discord channels
+  - Added information on [Fonts](https://pippinbarr.github.io/cart253-2020/topics/text/fonts.html) to next week
   - Sound
   - `"use strict";`
   - Project 02 will be open-brief (details next week)
