@@ -43,13 +43,13 @@ Week of 7 September 2020
 - __Join__ the course Discord (invitation link will be emailed)
 - __Watch__ "01-1 - Introducing CART253" (38:33) on Moodle
 - __Read__ the [Course Outline](https://pippinbarr.github.io/cart253-2020/course-information/outline.html)  and the Course Schedule (this page)
-- __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/modules/hello-world/software.html) text tutorial
+- __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/modules/software/software.html) text tutorial
 - Create your class repository
   - __Watch__ "01-2 - Creating a Class Repository on GitHub" (16:44) on Moodle
-  - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/modules/hello-world/github-repository.html) text tutorial
+  - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/modulessoftware/github-repository.html) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01-3 - Basic Version Control" (32:20) on Moodle
-  - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/modules/hello-world/basic-github-desktop.html) text tutorial
+  - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/modules/software/basic-github-desktop.html) text tutorial
 
 ## During class
 - 13:30: Introductions with everyone in #start-of-class channel on Discord (join the chat and voice channels!)
@@ -72,16 +72,16 @@ Week of 14 September 2020
 - Using Git and GitHub with code
 
 ## Before class
-- __Read__ the [Why and how to learn to code](https://pippinbarr.github.io/cart253-2020/modules/instructions/why-and-how-to-learn-to-code.html)
-- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/working-with-code-in-atom.html))
-- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/drawing-shapes.html))
-- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/drawing-colors.html))
-- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/commenting-your-code.html))
+- __Read__ the [Why and how to learn to code](https://pippinbarr.github.io/cart253-2020/modules/philosophy/why-and-how-to-learn-to-code.html)
+- __Watch__ "02-1 - Working with code in Atom" (18:16) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/software/working-with-code-in-atom.html))
+- __Watch__ "02-2 - Drawing shapes" (50:44) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/drawing-shapes.html))
+- __Watch__ "02-3 - Drawing colors" (21:02) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/drawing-colors.html))
+- __Watch__ "02-4 - Commenting your code" (13:36) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/style/commenting-your-code.html))
 - __Watch__ "02-5 - The JavaScript console" (16:56) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/the-javascript-console.html))
 - __Complete__ [Activity 02: Draw an Alien](https://pippinbarr.github.io/cart253-2020/activities/02-draw-an-alien.html) (__watch__ "02-6 - Draw an alien" (41:13) video on Moodle to see Pippin doing it)
 
 ## During class
-- 13:30: Q&A with everyone in #start-of-class channel on Discord ([Discussion notes](https://pippinbarr.github.io/cart253-2020/modules/instructions/discussion.html))
+- 13:30: Q&A with everyone in #start-of-class channel on Discord
 - Afterwards: co-working with instructor and TA support
 
 ## Homework
@@ -147,11 +147,11 @@ Week of 28 September 2020
 - __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops.html))
 - __Watch__ "04-4b - Loops beyond counting" (14:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops-beyond-counting.html))
 - __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/mouse-input.html))
-- __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/movement.html))
-- __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/intermediate-drawing.html))
+- __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/movement/movement.html))
+- __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/drawing/intermediate-drawing.html))
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
 - Extra: __Watch__ "04-9 - Images" (12:11) (and __read__ the [Image](https://p5js.org/reference/#group-Image) documentation in the p5 reference as needed)
-- Extra: __Watch__ "04-10 - Time" (12:32) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/time.html))
+- Extra: __Watch__ "04-10 - Time" (12:32) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/philosophy/time.html))
 - Extra: __Watch__ "04-11 - Debugging conditionals" (18:37) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-conditionals.html))
 - __Start__ [Exercise 02: Dodge-em](https://pippinbarr.github.io/cart253-2020/exercises/02-dodge-em.html) (due after class)
 
@@ -200,9 +200,9 @@ Week of 5 October 2020
 - __Watch__ "05-2 - Functions with parameters" (24:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-parameters.html))
 - __Watch__ "05-3 - Functions with return values" (21:01) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-return-values.html))
 - __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/text/text.html))
-- __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/states.html))
+- __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/structure/states.html))
 - __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/keyboard-input.html))
-- __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/automated-movement.html))
+- __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/movement/automated-movement.html))
 
 ### Activity
 - __Complete__ [Activity 05: Looking for love](https://pippinbarr.github.io/cart253-2020/activities/05-looking-for-love.html) (__watch__ "05-8 - Looking for love" (44:15) video on Moodle to see Pippin doing it)
