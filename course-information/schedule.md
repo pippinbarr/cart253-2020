@@ -146,7 +146,7 @@ Week of 28 September 2020
 - __Watch__ "04-3 - Booleans" (12:06) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/booleans.html))
 - __Watch__ "04-4 - Loops" (25:20) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops.html))
 - __Watch__ "04-4b - Loops beyond counting" (14:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/loops-beyond-counting.html))
-- __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/mouse-input.html))
+- __Watch__ "04-5 - Mouse input" (12:00) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/mouse-input.html))
 - __Watch__ "04-6 - Movement" (16:50) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/movement.html))
 - __Watch__ "04-7 - Intermediate drawing" (22:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/conditionals/intermediate-drawing.html))
 - __Complete__ [Activity 04: Dodging COVID-19](https://pippinbarr.github.io/cart253-2020/activities/04-dodging-covid19.html) (__watch__ "04-8 - Dodging COVID-19" (37:22) video on Moodle to see Pippin doing it)
@@ -199,9 +199,9 @@ Week of 5 October 2020
 - __Watch__ "05-1 - Functions" (29:12) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions.html))
 - __Watch__ "05-2 - Functions with parameters" (24:45) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-parameters.html))
 - __Watch__ "05-3 - Functions with return values" (21:01) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/functions-with-return-values.html))
-- __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/text.html))
+- __Watch__ "05-4 - Text" (19:53) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/text/text.html))
 - __Watch__ "05-5 - States" (19:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/states.html))
-- __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/keyboard-input.html))
+- __Watch__ "05-6 - Keyboard input" (22:24) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/input/keyboard-input.html))
 - __Watch__ "05-7 - Automated movement" (14:51) (and __read__ the [Lecture notes](https://pippinbarr.github.io/cart253-2020/modules/functions/automated-movement.html))
 
 ### Activity
@@ -273,6 +273,7 @@ Week of 19 October 2020
 - __Read__ [Debugging tactics](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-tactics.html)
 - Please make sure you go to the `prettier-atom` preferences and choose the "__Format files on save__" option so that your files are automatically formatted whenever you save.
 - Consider installing `atom-beautify`, another formatting package (for cases where `prettier-atom` doesn't want to format!)
+- __Read__ [Fonts](https://pippinbarr.github.io/cart253-2020/modules/text/fonts.html)
 
 ## Activity
 - __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
