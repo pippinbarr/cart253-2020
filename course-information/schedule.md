@@ -280,7 +280,7 @@ Week of 19 October 2020
 ## Activity
 - __Complete__ the [Debugging activity](https://pippinbarr.github.io/cart253-2020/modules/debugging/debugging-activity.html) (__Follow along__ with "07-4 - Debugging activity" (50:16) if you want!)
 
-### Exercise
+## Exercise
 - __Start__ [Exercise 04: The Age of Aquariums](https://pippinbarr.github.io/cart253-2020/exercises/04-the-age-of-aquariums.html). (Due after class)
 
 ## During class
