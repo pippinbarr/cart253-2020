@@ -243,6 +243,7 @@ Week of 12 October 2020
 ## During class
 1. #start-of-class discussion in Discord channels
   - Added information on [Fonts](https://pippinbarr.github.io/cart253-2020/topics/text/fonts.html) to next week
+  - Updated [Text](https://pippinbarr.github.io/cart253-2020/topics/text/text.html) to include information about newlines/line breaks
   - Sound
   - `"use strict";`
   - Project 02 will be open-brief (details next week)
