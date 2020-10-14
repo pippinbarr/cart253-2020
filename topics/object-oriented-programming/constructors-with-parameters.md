@@ -219,14 +219,6 @@ constructor(config) {
 }
 ```
 
-random(0, width),
-,
-,
-,
-,
-random(8, 12), , , {
-
-
 `script.js`
 ```javascript
 let config = {
