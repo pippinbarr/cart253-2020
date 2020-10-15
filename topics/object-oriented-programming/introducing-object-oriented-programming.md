@@ -1,4 +1,4 @@
-# Introduction to Object-Oriented Programming (OOP) {
+# Introducing Object-Oriented Programming (OOP) {
 
 ---
 
