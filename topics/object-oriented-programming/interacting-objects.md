@@ -10,7 +10,7 @@
 
 ---
 
-## Our aquarium
+## Our garden
 
 Just to start on the same page, here is a `Flower.js` and `script.js` for the purposes of this lesson. Again, it's a garden of flowers:
 
