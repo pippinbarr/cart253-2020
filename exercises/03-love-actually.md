@@ -52,7 +52,7 @@ Grading for exercises is pass/fail. Passing requires __all__ of the following to
 
 - __Runs__ and __meets the brief__
 - Has __suitable commenting__
-- Includes a __starting commit__ and then a reasonable number of commits throughout the work that include __descriptive messages__ about what was done. Messages should be __prefixed by `E3:`__ to show they are for exercise 2
+- Includes a __starting commit__ and then a reasonable number of commits throughout the work that include __descriptive messages__ about what was done. Messages should be __prefixed by `E3:`__.
 - Uses __good naming__ for added variables
 - Is __well structured__, with new code added in sensible places in sensible orders
 

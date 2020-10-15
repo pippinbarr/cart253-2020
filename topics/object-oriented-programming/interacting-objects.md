@@ -19,7 +19,7 @@ Just to start on the same page, here is a `Flower.js` and `script.js` for the pu
 class Flower {
 
   // The constructor() sets up a flower's properties
-  constructor(x, y, size, stemLength, edgeColor) {
+  constructor(x, y, size, stemLength, petalColor) {
     // Position and size information
     this.x = x;
     this.y = y;
@@ -33,7 +33,7 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = edgeColor;
+    this.petalColor = petalColor;
     this.centreColor = {
       r: 50,
       g: 0,
@@ -52,7 +52,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -88,13 +88,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -126,7 +126,7 @@ Let's create a problem for our garden, which is that the flowers die. We'll repr
 class Flower {
 
   // The constructor() sets up a flower's properties
-  constructor(x, y, size, stemLength, edgeColor) {
+  constructor(x, y, size, stemLength, petalColor) {
     // Position and size information
     this.x = x;
     this.y = y;
@@ -140,16 +140,16 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = edgeColor;
+    this.petalColor = petalColor;
     this.centreColor = {
       r: 50,
       g: 0,
       b: 0
     };
-    this.alive = true;
+    this.alive = true; // NEW! Track whether this flower is alive
   }
 
-  // shrink()
+  // NEW! shrink()
   // Shrinks the flower
   shrink() {
     // Choose a random amount to shrink
@@ -165,7 +165,6 @@ class Flower {
     }
   }
 
-
   // display()
   // Displays the flower on the canvas
   display() {
@@ -178,7 +177,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -214,13 +213,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -236,10 +235,10 @@ function draw() {
   // Loop through all the flowers in the array and display them
   for (let i = 0; i < garden.flowers.length; i++) {
     let flower = garden.flowers[i];
-    // Check if this flower is alive
+    // NEW! Check if this flower is alive before updating it
     if (flower.alive) {
       // Update the flower by shrinking it and displaying it
-      flower.shrink();
+      flower.shrink(); // NEW! Shrink living flowers every frame
       flower.display();
     }
   }
@@ -260,7 +259,7 @@ We need some bees to come and cheer things up a bit. We'll create a __new__ clas
 
 This is an important example because we will need to solve the question of __how two objects interact__ (a bee and a flower in this case), which is something we commonly need to do in Object-Oriented Programming.
 
-Perhaps we could also make bees get smaller over time, so they also need to pollinate the flower (and collect nectar) in order to live! If a bee gets too small, it dies.
+Perhaps we could also make bees get smaller over time, so they also need to pollinate the flower (and collect nectar) in order to live! If a bee gets too small, it dies. It's a tough ol' world.
 
 Let's break this down into a set of tasks
 
@@ -409,13 +408,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -465,16 +464,16 @@ function draw() {
 }
 ```
 
-Phew! Already quite a lot of code, but now we have our desperate shrinking bees. Tragically, because the bees can't actually eat anything, they just withers and die alongside our shrinking flowers. So sad! So very much a metaphor for how real life feels sometimes!
+Phew! Already quite a lot of code, but now we have our desperate shrinking bees. Tragically, because the bees can't actually eat anything, they just wither and die alongside our shrinking flowers. So sad! So very much a metaphor for how real life feels sometimes!
 
 ---
 
 ## Let the the pollination begin!
 
-We want our bees to be able to eat pollinate flowers so that both they and the flowers can grow and not die. We'll need two things:
+We want our bees to be able to pollinate flowers so that both they and the flowers can grow and not die. We'll need two things:
 
-1. We need to check if any bee overlaps any flower (pollination)
-2. If we get an overlap the bee and the flower should get a bit bigger
+1. We need to check if any bee overlaps any flower (in which case pollination can occur)
+2. If we get an overlap the bee and the flower should get a bit bigger (pollination result)
 
 ### Update the `Bee` class to handle pollinating flowers...
 
@@ -522,14 +521,15 @@ class Bee {
     if (d < this.size / 2 + flower.size / 2) {
       // The bee should grow
       // Notice how we can call OTHER METHODS of the Bee by using "this"
-      // So this.grow() called the grow() method for THIS bee
+      // So this.grow() calls the grow() method for THIS bee
       this.grow();
-      // The flower should react to being pollinated
+      // The flower should react to being pollinated so we call its method
+      // that handles that!
       flower.pollinate();
     }
   }
 
-  // grow() causes the bee to get bigger up to a maximum (when pollinating)
+  // grow() causes the bee to get bigger up to a maximum (called by tryToPollinate())
   grow() {
     // Grow by increasing the size by a set amount
     this.size = this.size + this.growRate;
@@ -588,7 +588,7 @@ The most important observations here are as follows (echoing the comments above)
 
 1. The `Bee` class is the more active in handling the question of pollination because it's the one that can actually check whether the bee is pollinating a flower (with `tryToPollinate()`).
 2. The `Bee` class __does not directly change the flower's properties__ when it overlaps, instead it calls a __method__ on the flower so that the `Flower` class can deal with being pollinated (`pollinate()`). This is considered best practice.
-3. In the `Bee` class's method, we can call __other__ methods in the same class by using `this`, e.g. `this.grow()`.
+3. In the `Bee` class's methods, we can call __other__ methods in the same class by using `this`, e.g. `this.grow()`.
 
 ### Update the `Flower` class to handle being pollinated
 
@@ -600,7 +600,7 @@ As above, because the flower should deal with what it means to get pollinated, w
 class Flower {
 
   // The constructor() sets up a flower's properties
-  constructor(x, y, size, stemLength, edgeColor) {
+  constructor(x, y, size, stemLength, petalColor) {
     // Position and size information
     this.x = x;
     this.y = y;
@@ -616,7 +616,7 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = edgeColor;
+    this.petalColor = petalColor;
     this.centreColor = {
       r: 50,
       g: 0,
@@ -667,7 +667,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -680,7 +680,7 @@ And, finally, we need to add our `tryToPollinate()` method call into the main sc
 
 Because we're talking about __every__ bee checking __every__ flower, we actually need __another__ `for`-loop inside our `for`-loop dealing with our bees.
 
-That is, for each bee we deal with in our second `for`-loop, we will need a `for`-loop to check all the flowers to try to pollinate them.
+That is, for each bee we deal with in our `draw()` function `for`-loop, we will need another (nested) `for`-loop to check all the flowers to see if the current bee can pollinate them.
 
 `script.js`
 ```javascript
@@ -715,13 +715,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }

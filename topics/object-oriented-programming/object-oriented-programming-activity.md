@@ -165,7 +165,7 @@ The constructor should set the default properties of a `Ball` when it is created
 
 Our `Ball` will move using velocity __and__ acceleration, so we'll need to account for that with our properties.
 
-A `Ball` needs a position, size, velocity, acceleration, and maximum speed. The position can be passed as parameters. For organization, we'll also have an `active` property to track with the ball is still on the screen and part of the simulation.
+A `Ball` needs a position, size, velocity, acceleration, and maximum speed. The position can be passed as parameters. For organization, we'll also have an `active` property to track whether the ball is still on the screen and part of the simulation.
 
 `Ball.js`
 1. Define a `constructor()` method with two parameters, `x` and `y`
@@ -173,7 +173,7 @@ A `Ball` needs a position, size, velocity, acceleration, and maximum speed. The 
 3. Add properties for velocity and acceleration, defaulting to `0`
 4. Add a `maxSpeed` property, set it to something like `10`
 5. Add a `size` property to set the size of the ball (`50`?)
-6. Add an `actiev` property that defaults to `true` (balls should start out active)
+6. Add an `active` property that defaults to `true` (balls should start out active)
 
 ### Add a `move()` method
 
@@ -187,13 +187,13 @@ We want the ball to move according to its acceleration and velocity...
 
 ### Add a `gravity()` method
 
-Our ball needs to respond to gravity as well as its own current movement. This will allow it to fall downwards on its own. To do this, we'll create a method that takes a parameter specify the amount of gravity to apply to the the acceleration.
+Our ball needs to respond to gravity as well as its own current movement. This will allow it to fall downwards on its own. To do this, we'll create a method that takes a parameter specifying the amount of gravity to apply to the the acceleration.
 
 `Ball.js`
 1. Define a `gravity()` method in the class that takes one parameter, `force`
 2. Add the `force` parameter to the ball's `y` acceleration
 
-A positive force will then cause the ball to accelerate __downwards__.
+A positive force will then cause the ball to accelerate __downwards__. That's what gravity does!
 
 ### Add a `bounce()` method
 
@@ -201,7 +201,7 @@ For now, let's have our ball bounce off the bottom of the canvas. To do this, we
 
 `Ball.js`
 1. Define a `bounce()` method
-2. Write an `if`-statement that checks if this ball has gone past the bottom of the canvas
+2. Write an `if`-statement that checks if the bottom of the ball has gone past the bottom of the canvas
 3. If it has, reverse its `y` velocity (`vy`)
 
 ### Add a `display()` method
@@ -283,13 +283,13 @@ Since the ball is the thing that __bounces__ we'll still deal with bouncing ther
 2. Replace the conditional the checks if the ball touched the bottom of the screen with a conditional the checks if the ball has hit the top of the paddle. This will need to check
   - If the ball's `x` position is within the `x` range of the paddle (that is, greater than the left edge position of the paddle and less than the right edge position)
   - If the ball overlaps the paddle on the `y` axis (e.g. is the bottom position of the ball greater than the top edge of the paddle and is the top position of the ball less than the bottom edge of the paddle)
-3. (Advanced) Make the ball move horizontally based on how close to the left or right edge of the paddle it hits (we can use `map()` for this to map the distance of the ball from the centre of the paddle to a force to add to the ball's velocity)
+3. (Advanced?) Make the ball move horizontally based on how close to the left or right edge of the paddle it hits (we can use `map()` for this to map the distance of the ball from the centre of the paddle to a force to add to the ball's velocity)
 
 ---
 
 ### Modify the `Ball` class's `move()` method to check if the ball goes off the bottom
 
-We don't really want to keep simulating balls that have fallen off the bottom of the screen because they can't really do anything any more. So we should deactivate them if they pass the bottom of the canvas.
+We don't really want to keep simulating balls that have fallen off the bottom of the screen because they can't really do anything any more. So we should deactivate them if they pass the bottom of the canvas. So in the `move()` method:
 
 `Ball.js`
 1. Check if the ball has gone off the bottom of the canvas and deactivate it if it has (set `active` to `false`)

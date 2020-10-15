@@ -32,7 +32,7 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = {
+    this.petalColor = {
       r: 200,
       g: 50,
       b: 50
@@ -56,7 +56,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -81,12 +81,12 @@ Well, we've run into this problem before with __functions__ and we solved it the
 
 ## Parameters save the day
 
-In exactly the same way we can use parameters with functions to make them more powerful and flexible, we can use parameters in an `class`'s `constructor` to __configure__ an object when we create it. So if we wanted to specify position, size, stem length, and petal color, we could change our `constructor` accordingly:
+In exactly the same way we can use parameters with functions to make them more powerful and flexible, we can use parameters in a `class`'s `constructor` to __configure__ an object when we create it. So if we wanted to specify position, size, stem length, and petal color, we could change our `constructor` accordingly:
 
 `Flower.js`
 ```javascript
 // The constructor() sets up a flower's properties
-constructor(x,y,size,stemLength,edgeColor) {
+constructor(x,y,size,stemLength,petalColor) {
   // Position and size information
   this.x = x;
   this.y = y;
@@ -100,7 +100,7 @@ constructor(x,y,size,stemLength,edgeColor) {
     g: 150,
     b: 50
   };
-  this.edgeColor = edgeColor;
+  this.petalColor = petalColor;
   this.centreColor = {
     r: 50,
     g: 0,
@@ -126,13 +126,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -158,7 +158,7 @@ Whenever we use parameters, and perhaps especially when we use parameters for a 
 
 ```javascript
 // The constructor() sets up a flower's properties
-constructor(x, y, size, stemLength, stemThickness, petalThickness, stemColor, edgeColor, centreColor) {
+constructor(x, y, size, stemLength, stemThickness, petalThickness, stemColor, petalColor, centreColor) {
   // Position and size information
   this.x = x;
   this.y = y;
@@ -168,7 +168,7 @@ constructor(x, y, size, stemLength, stemThickness, petalThickness, stemColor, ed
   this.petalThickness = ptealThickness;
   // Color information
   this.stemColor = stemColor;
-  this.edgeColor = edgeColor;
+  this.petalColor = petalColor;
   this.centreColor = centreColor;
 }
 ```
@@ -214,7 +214,7 @@ constructor(config) {
   this.petalThickness = config.petalThickness;
   // Color information
   this.stemColor = config.stemColor;
-  this.edgeColor = config.edgeColor;
+  this.petalColor = config.petalColor;
   this.centreColor = config.centreColor;
 }
 ```
@@ -233,7 +233,7 @@ let config = {
     g: random(100, 255),
     b: random(0, 100)
   },
-  edgeColor: {
+  petalColor: {
     r: random(100, 255),
     g: random(100, 255),
     b: random(100, 255)
@@ -269,7 +269,7 @@ constructor({
   stemThickness,
   petalThickness,
   stemColor,
-  edgeColor,
+  petalColor,
   centreColor
 }) {
   // Position and size information
@@ -281,7 +281,7 @@ constructor({
   this.petalThickness = petalThickness;
   // Color information
   this.stemColor = stemColor;
-  this.edgeColor = edgeColor;
+  this.petalColor = petalColor;
   this.centreColor = centreColor;
 }
 ```

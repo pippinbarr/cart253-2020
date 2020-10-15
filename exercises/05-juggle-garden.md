@@ -18,7 +18,7 @@
 1. Download the `template-p5-project` and rename the folder to `exercise5`
 3. Move the `exercise5` folder to your `exercises` folder
 4. Open the `exercise5` folder in Atom
-5. Commit and push in GitHub Desktop with a message saying "E4: Started exercise 4"
+5. Commit and push in GitHub Desktop with a message saying "E5: Started exercise 5"
 
 ## Brief
 
@@ -38,7 +38,7 @@ Make your changes to the simulation with the following requirements:
 3. __Add at least two endings__
   - Currently the simulation never ends, so make it end in at least different two ways
   - As per usual, you'll need states to do this (at least for the simulation and the two endings, you can add a title and instructions too if you like)
-  - If you chose Juggling, maybe the simulation ends if all the balls fall down or if the user juggles some maximum number of balls for a set amount of time?
+  - If you chose Juggling, maybe the simulation ends if all the balls fall down or if the user juggles some maximum number of balls successfully?
   - If you chose Garden, maybe the simulation ends if all the flowers die or if the user manages to plant enough flowers?
 
 ## Submission
@@ -56,7 +56,7 @@ Grading for exercises is pass/fail. Passing requires __all__ of the following to
 
 - __Runs__ and __meets the brief__
 - Has __suitable commenting__
-- Includes a __starting commit__ and then a reasonable number of commits throughout the work that include __descriptive messages__ about what was done. Messages should be __prefixed by `E5:`__ to show they are for exercise 2
+- Includes a __starting commit__ and then a reasonable number of commits throughout the work that include __descriptive messages__ about what was done. Messages should be __prefixed by `E5:`__.
 - Uses __good naming__ for added variables
 - Is __well structured__, with new code added in sensible places in sensible orders
 

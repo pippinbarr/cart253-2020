@@ -7,8 +7,7 @@
 - A garden simulation
 - Thinking in objects
 - Creating a `class`
-- Creating a `new` object from a class
-- Creating more than one `new` object
+- Creating `new` objects from a class
 
 ---
 
@@ -76,7 +75,7 @@ function createFlower() {
       g: 150,
       b: 50
     },
-    edgeColor: {
+    petalColor: {
       r: 200,
       g: 50,
       b: 50
@@ -97,7 +96,7 @@ So now we have the idea of __creating__ a flower and getting all its __propertie
 
 ### Displaying
 
-Keeping with our nice and modular approach, we will write a `displayFlower()` function that displays a flower provided in its parameter:
+Keeping with our nice and modular approach, we will write a `displayFlower()` function that displays a flower specified as a `flower` parameter:
 
 ```javascript
 // displayFlower(flower)
@@ -111,7 +110,7 @@ function displayFlower(flower) {
   // Draw a circle with a heavy outline for the flower
   strokeWeight(flower.petalThickness);
   fill(flower.centreColor.r, flower.centreColor.g, flower.centreColor.b);
-  stroke(flower.edgeColor.r, flower.edgeColor.g, flower.edgeColor.b);
+  stroke(flower.petalColor.r, flower.petalColor.g, flower.petalColor.b);
   ellipse(flower.x, flower.y, flower.size);
   pop();
 }
@@ -132,7 +131,8 @@ function draw() {
 
   // Loop through all the flowers in the array and display them
   for (let i = 0; i < garden.flowers.length; i++) {
-    displayFlower(garden.flowers[i]);
+    let flower = garden.flowers[i];
+    displayFlower(flower);
   }
 }
 ```
@@ -147,8 +147,8 @@ We already know that each of our flowers in the `flowers` array is a __JavaScrip
 
 However, in our program there are other places that are directly related to our flowers:
 
-- In `setup()` we __create__ the flowers and store them in our array
-- In `displayFlower()` we __display__ a flower on the canvas
+- The `createFlower()` function is devoted to __creating__ a flower
+- The `displayFlower()` function is devoted to __displaying__ a flower on the canvas
 
 So those parts of our code basically "belong" to the flower objects. They're essentially things that a flower can __do__ (be created and be displayed).
 
@@ -158,7 +158,7 @@ So those parts of our code basically "belong" to the flower objects. They're ess
 
 The fact that in our program we have both __properties__ that provide information about flowers and __functions__ for dealing with flowers leads toward another way of thinking about these flowers (and JavaScript Objects in general).
 
-In particular, it might be nice to be able to __combine__ the properties and functions related to a flower into one place. This would potentially make our program even clearer.
+In particular, it might be nice to be able to __combine__ the properties and functions related to a flower into one place. This would potentially make our program even clearer, more modular, and perhaps more reusable.
 
 This is the idea behind __Object-Oriented Programming__ (OOP).
 
@@ -226,7 +226,7 @@ As a rule of thumb, you should add new scripts so that they come __before__ any 
 
 When we write a class like `Flower` we need to remember that we'll be using this class to __create new `Flower` objects__ that will be part of our running program. Our class __describes__ how these objects will work when they are created.
 
-In order to create a new `Flower` object from our class, the first thing we will need is a special function that will __construct__ (create) the Flower when asked. It's called the `constructor` and it works a lot like `setup()` in p5 in that it is called at the moment our `Flower` is created.
+In order to create a new `Flower` object from our class, the first thing we will need is a special function that will __construct__ (create) the Flower when asked. It's called the `constructor`.
 
 It looks like this:
 
@@ -251,7 +251,7 @@ A couple of notes:
 
 So, in our `constructor` we want to write code that can set up a prospective `Flower` with the properties it needs to work. In fact, this is very much the same thing that our `createFlower()` function does! Our `constructor` will be highly similar to `createFlower()`, with a couple of key differences:
 
-1. We will be using a new special word called "`this`" to refer to the flower being created in the `constructor`.
+1. We don't need to declare a variable to store the object, there is a special variable called "`this`" that "magically" refers to the flower being created in the `constructor`.
 2. We don't need to `return` the flower being created because the `constructor` just does that automatically.
 
 Here's what it looks like (notice the similarity to `createFlower()`):
@@ -275,7 +275,7 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = {
+    this.petalColor = {
       r: 200,
       g: 50,
       b: 50
@@ -334,7 +334,7 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = {
+    this.petalColor = {
       r: 200,
       g: 50,
       b: 50
@@ -358,7 +358,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -377,7 +377,7 @@ The `display()` method here is identical to the `displayFlower()` function we us
 
 So we have a complete `Flower` class defined in `Flower.js`. It replicates all the properties and functions we had written in our initial program.
 
-It sets all the the same properties in its `constructor()` that we were setting in `createFlower()`. And is does all the same things in `display()` that we were doing in `displayFlower()`.
+It sets all the the same properties in its `constructor()` that we were setting in `createFlower()`. And it does all the same things in `display()` that we were doing in `displayFlower()`.
 
 To actually use this `class`, we need to __create__ (construct) flowers with it.
 
@@ -429,10 +429,10 @@ with
 let flower = new Flower();
 ```
 
-A pretty small different. Let's look at the pieces of the `new` version...
+A pretty small difference. Let's look at the pieces of the `new` version...
 
 1. `let` tells JavaScript we're going to create a new variable
-2. `flower` is the name of the variable we're creating to temporarily store a new flower before we put it in our array
+2. `flower` is the name of the variable we're creating to temporarily store a new flower in before we put it in our array
 3. We use `=` to assign the new flower into the variable
 4. `new` tells JavaScript we are going to create a __new object using a class definition__
 5. `Flower()` tells JavaScript to use the `constructor()` of the `Flower` class to create a new object

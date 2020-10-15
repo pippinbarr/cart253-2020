@@ -18,7 +18,7 @@ Just to start on the same page, here is a `Flower.js` and `script.js` for the pu
 ```javascript
 class Flower {
   // The constructor() sets up a flower's properties
-  constructor(x, y, size, stemLength, edgeColor) {
+  constructor(x, y, size, stemLength, petalColor) {
     // Position and size information
     this.x = x;
     this.y = y;
@@ -32,13 +32,14 @@ class Flower {
       g: 150,
       b: 50
     };
-    this.edgeColor = edgeColor;
+    this.petalColor = petalColor;
     this.centreColor = {
       r: 50,
       g: 0,
       b: 0
     };
   }
+
   // display()
   // Displays the flower on the canvas
   display() {
@@ -51,7 +52,7 @@ class Flower {
     // Draw a circle with a heavy outline for the flower
     strokeWeight(this.petalThickness);
     fill(this.centreColor.r, this.centreColor.g, this.centreColor.b);
-    stroke(this.edgeColor.r, this.edgeColor.g, this.edgeColor.b);
+    stroke(this.petalColor.r, this.petalColor.g, this.petalColor.b);
     ellipse(this.x, this.y, this.size);
     pop();
   }
@@ -87,13 +88,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -118,7 +119,7 @@ function draw() {
 
 ## p5 Events
 
-As we know, and important part of programming with p5 is the ability to __respond to events__. We do this by defining __event handler functions__ that p5 already knows about like `mousePressed()` and `keyPressed()`.
+As we know, an important part of programming is the ability to __respond to events__. In p5, we do this by defining __event handler functions__ that p5 already knows about like `mousePressed()` and `keyPressed()`.
 
 Now that we're defining __classes__, how will they know about the p5 events we might want them to handle.
 
@@ -136,7 +137,7 @@ mousePressed() {
   // Calculate the distance between this flower and the mouse
   let d = dist(this.x,this.y,mouseX,mouseY);
   // Check if the distance is less than the head of the flower
-  if (d < this.size/2 + this.petalThickness/2) {
+  if (d < this.size/2 + this.petalThickness) {
     // If it is, this flower was clicked, so increase its stem length
     this.stemLength = this.stemLength + 5;
     // And also change its y position so it grows upward! (If we didn't do this
@@ -185,13 +186,13 @@ function setup() {
     let y = random(0, height);
     let size = random(50, 80);
     let stemLength = random(50, 100);
-    let edgeColor = {
+    let petalColor = {
       r: random(100, 255),
       g: random(100, 255),
       b: random(100, 255)
     }
     // Create a new flower using the arguments
-    let flower = new Flower(x, y, size, stemLength, edgeColor);
+    let flower = new Flower(x, y, size, stemLength, petalColor);
     // Add the flower to the array of flowers
     garden.flowers.push(flower);
   }
@@ -211,7 +212,7 @@ function draw() {
   }
 }
 
-// mousePressed() calls the equivalent mousePressed() method on every flower
+// NEW! mousePressed() calls the equivalent mousePressed() method on every flower
 function mousePressed() {
   // Loop through every flower in the garden
   for (let i = 0; i < garden.flowers.length; i++) {
