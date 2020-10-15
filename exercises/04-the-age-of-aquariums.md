@@ -21,7 +21,7 @@
 
 ## Brief
 
-Begin with the "Aquarium" simulation from [Introducing arrays](https://pippinbarr.github.io/cart253-2020/modules/arrays/introducing-arrays.html) in its final form with the ability to add a fish.
+Begin with the "Aquarium" simulation from [Introducing arrays](https://pippinbarr.github.io/cart253-2020/topics/arrays/introducing-arrays.html) in its final form with the ability to add a fish.
 
 Once again, think about how you want to change the meaning/nature of the simulation (instead of fish it might be chickens, or viruses, or feelings). Make it __yours__. (If you want to keep it about fish, that's okay too so long as you follow the requirements.)
 
