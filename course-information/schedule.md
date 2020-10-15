@@ -46,7 +46,7 @@ Week of 7 September 2020
 - __Complete__ the [Course Software Setup](https://pippinbarr.github.io/cart253-2020/topics/software/software.html) text tutorial
 - Create your class repository
   - __Watch__ "01-2 - Creating a Class Repository on GitHub" (16:44) on Moodle
-  - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/modulessoftware/github-repository.html) text tutorial
+  - __Read__ the [Creating a Class Repository](https://pippinbarr.github.io/cart253-2020/topics/software/github-repository.html) text tutorial
 - Get started with Git and GitHub Desktop
   - __Watch__ "01-3 - Basic Version Control" (32:20) on Moodle
   - __Read__ the [Basic Version Control with GitHub Desktop](https://pippinbarr.github.io/cart253-2020/topics/software/basic-github-desktop.html) text tutorial
