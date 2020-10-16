@@ -311,13 +311,13 @@ Week of 26 October 2020
 - Writing classes to organize your code into more complex objects
 
 ## Before class
-- __Watch__ "08-1 - Introducing Object-Oriented Programming" (coming soon) (and __read__ [Introducing Object-Oriented Programming](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/introducing-object-oriented-programming.html))
-- __Watch__ "08-2 - Constructors with parameters" (coming soon) (and __read__ [Constructors with parameters](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/constructors-with-parameters.html))
-- __Watch__ "08-3 - Object-Oriented Programming and p5 events" (coming soon) (and __read__ [Object-Oriented Programming and p5 events](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/object-oriented-programming-and-p5-events.html))
-- __Watch__ "08-4 - Interacting objects" (coming soon) (and __read__ [Interacting objects](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/interacting-objects.html))
+- __Watch__ "08-1 - Introducing Object-Oriented Programming" (27:47) (and __read__ [Introducing Object-Oriented Programming](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/introducing-object-oriented-programming.html))
+- __Watch__ "08-2 - Constructors with parameters" (9:26) (and __read__ [Constructors with parameters](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/constructors-with-parameters.html))
+- __Watch__ "08-3 - Object-Oriented Programming and p5 events" (10:01) (and __read__ [Object-Oriented Programming and p5 events](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/object-oriented-programming-and-p5-events.html))
+- __Watch__ "08-4 - Interacting objects" (36:22) (and __read__ [Interacting objects](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/interacting-objects.html))
 
 ## Activity
-- __Complete__ the [Object-Oriented Programming activity](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/object-oriented-programming-activity.html) (__Follow along__ with "07-5 - Object-Oriented Programming activity" (coming soon) if you want!)
+- __Complete__ the [Object-Oriented Programming activity](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/object-oriented-programming-activity.html) (__Follow along__ with "07-5 - Object-Oriented Programming activity" (58:43) if you want!)
 
 ## Exercise
 - __Start__ [Exercise 05: Juggle Garden](https://pippinbarr.github.io/cart253-2020/exercises/05-juggle-garden.html). (Due after class)
