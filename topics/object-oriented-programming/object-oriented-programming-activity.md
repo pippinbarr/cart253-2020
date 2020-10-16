@@ -83,8 +83,9 @@ The constructor should set the default properties of a paddle when it is created
 
 `Paddle.js`
 1. Define a `constructor()` method with two parameters, `w` and `h` (avoid `width` and `height` so they don't conflict with p5's variables of the same name)
-2. In the method, add a property `x` (defaults to `0`) and `y` (defaults to the bottom of the canvas) (remember you refer to properties with `this`, so it would be `this.x` and `this.y`)
-3. Also create properties `width` and `height` and set them to the parameters `w` and `h` (again: `this.width` and `this.height` to refer to the properties)
+2. Create properties `width` and `height` and set them to the parameters `w` and `h` (again: `this.width` and `this.height` to refer to the properties)
+3. Add a property `x` (defaults to `0`) and `y` (set this to the `height` of the canvas minus half the height of the paddle to get it perfectly at the bottom) (remember you refer to properties with `this`, so it would be `this.x` and `this.y`)
+
 
 ### Add a `move()` method
 
@@ -169,11 +170,21 @@ A `Ball` needs a position, size, velocity, acceleration, and maximum speed. The 
 
 `Ball.js`
 1. Define a `constructor()` method with two parameters, `x` and `y`
-2. In the method, add a properties for `x` and `y` using the parameters
+2. In the method, add properties for `x` and `y` and assign them the values in the parameters
 3. Add properties for velocity and acceleration, defaulting to `0`
 4. Add a `maxSpeed` property, set it to something like `10`
 5. Add a `size` property to set the size of the ball (`50`?)
 6. Add an `active` property that defaults to `true` (balls should start out active)
+
+### Add a `gravity()` method
+
+Our ball needs to respond to gravity. This will allow it to fall downwards on its own. To do this, we'll create a method that takes a parameter specifying the amount of gravity to apply to the ball's `y` acceleration.
+
+`Ball.js`
+1. Define a `gravity()` method in the class that takes one parameter, `force`
+2. Add the `force` parameter to the ball's `y` acceleration
+
+A positive force will then cause the ball to accelerate __downwards__. That's what gravity does!
 
 ### Add a `move()` method
 
@@ -185,16 +196,6 @@ We want the ball to move according to its acceleration and velocity...
 3. Constrain the velocity based on the maximum speed of the ball
 4. Add the velocity to the position to move the ball
 
-### Add a `gravity()` method
-
-Our ball needs to respond to gravity as well as its own current movement. This will allow it to fall downwards on its own. To do this, we'll create a method that takes a parameter specifying the amount of gravity to apply to the the acceleration.
-
-`Ball.js`
-1. Define a `gravity()` method in the class that takes one parameter, `force`
-2. Add the `force` parameter to the ball's `y` acceleration
-
-A positive force will then cause the ball to accelerate __downwards__. That's what gravity does!
-
 ### Add a `bounce()` method
 
 For now, let's have our ball bounce off the bottom of the canvas. To do this, we need to check if it has passed the bottom of the canvas (specified by `height`) and reverse its `y` velocity if so!
@@ -202,7 +203,9 @@ For now, let's have our ball bounce off the bottom of the canvas. To do this, we
 `Ball.js`
 1. Define a `bounce()` method
 2. Write an `if`-statement that checks if the bottom of the ball has gone past the bottom of the canvas
-3. If it has, reverse its `y` velocity (`vy`)
+3. If it has:
+  - reverse its `y` velocity (`vy`)
+  - set its `y` acceleration to `0` (`ay`) (this is technically not right in terms of physics, but it will lead to a more entertaining simulation where a ball never loses its bounce height)
 
 ### Add a `display()` method
 
@@ -252,14 +255,14 @@ Now we want to create our `Ball` objects and put them in the array. We'll do thi
 
 ### Use the `Ball` objects by calling their methods
 
-In order for the `Ball` objects in our `balls` array to do anything, we have to call their methods (`move()`, `bounce()`, `gravity()`, `display()`). We'll need another `for`-loop for this. We'll work inside `draw()`.
+In order for the `Ball` objects in our `balls` array to do anything, we have to call their methods (`gravity()`, `move()`, `bounce()`, `display()`). We'll need another `for`-loop for this. We'll work inside `draw()`.
 
 `script.js`
 1. Create a `for`-loop that counts from `0` up to `balls.length`
 2. In the loop call the `Ball` methods on each `ball` object
+  - Call `gravity()` with `gravityForce` as an argument
   - Call `move()`
   - Call `bounce()`
-  - Call `gravity()` with `gravityForce` as an argument
   - Call `display()`
 
 ### Done
@@ -293,6 +296,15 @@ We don't really want to keep simulating balls that have fallen off the bottom of
 
 `Ball.js`
 1. Check if the ball has gone off the bottom of the canvas and deactivate it if it has (set `active` to `false`)
+
+---
+
+### Only update balls in the array if they are `active`
+
+Now that we actually set out `active` property to false if a ball leaves the canvas, we should __use__ that fact. In particular there's no need to apply gravity to, move, bounce, or display any ball that isn't active, so in our `draw()` in the main script:
+
+`script.js`
+1. In the `for`-loop write an `if`-statement that only calls the `gravity()`, `move()`, `bounce()` and `display()` methods if the ball is active
 
 ### Done
 
