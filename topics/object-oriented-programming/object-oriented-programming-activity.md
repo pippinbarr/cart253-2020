@@ -290,6 +290,15 @@ Since the ball is the thing that __bounces__ we'll still deal with bouncing ther
 
 ---
 
+### Pass the `paddle` as an argument to `bounce()`
+
+Now that the `bounce` method receives a paddle as a parameter, we need to go back to the main script and make sure that we use `paddle` as an argument when we call it!
+
+`script.js`
+1. Change your `ball.bounce()` instruction to include the `paddle` as an argument
+
+---
+
 ### Modify the `Ball` class's `move()` method to check if the ball goes off the bottom
 
 We don't really want to keep simulating balls that have fallen off the bottom of the screen because they can't really do anything any more. So we should deactivate them if they pass the bottom of the canvas. So in the `move()` method:
