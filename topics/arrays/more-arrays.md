@@ -26,7 +26,7 @@ The fact that arrays store a group of elements in order allows us to use them in
 
 We can treat the array as __place to store related elements__ that we want to deal with all at the same time (by using `for`-loops).
 
-For example, if we have a bunch of fish and we want to group them together because they all need to move and be displayed, we can store them in an array to do that. We can also
+For example, if we have a bunch of fish and we want to group them together because they all need to move and be displayed, we can store them in an array to do that.
 
 Also, because arrays allow us to add elements with `push()` we can also treat this collection of related elements dynamically, adding elements when we need to.
 
