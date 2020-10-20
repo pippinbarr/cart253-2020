@@ -21,7 +21,7 @@
 
 #### Projects
 - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Assigned week of 21 September 2020. Due week of 12 October 2020. (Three weeks)
-- Project 2. Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/). Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
 - Example final projects from 2019
   - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/)) by Martin Hanses
   - [Maranta Leuconeura](https://pippinbarr.github.io/cart253-2020/examples/student-work/maranta-leuconeura/) ([code](../examples/student-work/maranta-leuconeura/)) by Anne Boutet
@@ -266,6 +266,7 @@ Week of 19 October 2020
 - Understanding how to use for-loops and arrays
 - Storing objects in arrays
 - Improving our debugging
+- Starting project 2
 
 ## Before class
 - __Watch__ "07-1 - Intermediate functions" (19:02) (and __read__ [Intermediate functions](https://pippinbarr.github.io/cart253-2020/topics/functions/intermediate-functions.html))
@@ -289,6 +290,7 @@ Week of 19 October 2020
 1. #start-of-class discussion in Discord channels
   - Discussion of arrays
   - Discussion of debugging
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 2. #studio time in Discord channels
   - Help with course material so far
   - Work on Exercise 04
@@ -300,6 +302,7 @@ Week of 19 October 2020
 ## Homework
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
@@ -323,16 +326,17 @@ Week of 26 October 2020
 - __Start__ [Exercise 05: Juggle Garden](https://pippinbarr.github.io/cart253-2020/exercises/05-juggle-garden.html). (Due after class)
 
 ## Project
-- __Start__ Project 02: Final Project
+- __Start__ [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ## During class
 1. #start-of-class discussion in Discord channels
   - Discussion of Object-Oriented Programming
-  - Discussion of Project 02
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
 2. #studio time in Discord channels
   - Help with course material so far
-  - Work on Exercise 05
-  - Help with Project 02
+  - Work on [Exercise 05: Juggle Garden](https://pippinbarr.github.io/cart253-2020/exercises/05-juggle-garden.html)
+  - Help with [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ## Due after class
 - [Exercise 05: Juggle Garden](https://pippinbarr.github.io/cart253-2020/exercises/05-juggle-garden.html). Submit on Moodle by the deadline for your section.
@@ -340,6 +344,7 @@ Week of 26 October 2020
 ## Homework
 - Follow the "before class" activities listed for next week
 - Write down your questions to discuss in the start of class discussion
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
