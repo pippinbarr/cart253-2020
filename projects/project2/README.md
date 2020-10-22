@@ -20,7 +20,7 @@
 1. Working on a large-scale program
 2. Using prototyping to explore ideas
 3. Demonstrating mastery of course material
-4. Beginning to find a voice as a creative programmer
+4. Continuing to find a voice as a creative programmer
 
 ## Brief
 
@@ -43,7 +43,7 @@ The proposal and prototype stage will require you to write a **short proposal do
 
 #### Proposal document
 
-- A document provided as a **PDF** (`.pdf`) and included in the same folder as your prototype. (**No Microsoft Word or other formats.**) ideally in the path `projects/project1/prototype/proposal.pdf`
+- A document provided as a **PDF** (`.pdf`) and included in the same folder as your prototype. (**No Microsoft Word or other formats.**) ideally in the path `projects/project2/prototype/proposal.pdf`
 - The proposal document should be at least two pages long and should include
   - a written discussion of your artistic vision for the project
   - a discussion of your plans for the technical challenges the project will present (for example you may need to work with sound manipulation, or you may decide to work with the webcam, or you may need to figure out how to simulate wind, or whatever else)
@@ -51,7 +51,7 @@ The proposal and prototype stage will require you to write a **short proposal do
 
 #### Prototype
 
-- A p5 project (ideally in a the path `projects/project1/prototype/`)
+- A p5 project (ideally in a the path `projects/project2/prototype/`)
 - The prototype should be a small experiment that explores one or more ideas that will be fully implemented in the final project
 - It might be a prototype of the style of interaction you will use, or a particular approach to sound, or a particular kind of animation, or something else
 - The key is that is should give you a chance to make progress on the project code **and** should show that you are seriously thinking about your work
@@ -73,7 +73,7 @@ The final project will be the culmination of your learning in the course and so 
 
 #### Artist's statement
 
-Your final project folder should include a `README.md` document in the main folder (`projects/project1/final/README.md`) that contains a brief artist's statement about your project. This statement should succinctly explain your artistic vision, the desired user experience, and how you believe you accomplished this both technically and artistically. This will help when evaluating the level of creativity you have brought to the project.
+Your final project folder should include a `README.md` document in the main folder (`projects/project2/final/README.md`) that contains a brief artist's statement about your project. This statement should succinctly explain your artistic vision, the desired user experience, and how you believe you accomplished this both technically and artistically. This will help when evaluating the level of creativity you have brought to the project.
 
 #### Coherent artistic direction
 
