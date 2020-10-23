@@ -1,6 +1,8 @@
 #### Contents
 - [Guides](#guides) - high level guides
-- [Projects](#projects) - projects, due dates, and examples
+- [Examples](#examples) - full examples of code
+- [Projects](#projects) - project due dates
+- ...
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
 - Week 2 - [Instructions](#drawing) - telling p5 to draw shapes and colors
 - Week 3 - [Variables](#variables) - making things change
