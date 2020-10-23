@@ -19,14 +19,12 @@
 - [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
 - [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
 
+#### [Examples](https://pippinbarr.github.io/cart253-2020/examples/)
+- Full code examples available in the [Examples](https://pippinbarr.github.io/cart253-2020/examples/) section.
+
 #### Projects
 - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Assigned week of 21 September 2020. Due week of 12 October 2020. (Three weeks)
 - [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/). Assigned week of 19 October. Due week of 7 December 2020. (Seven weeks)
-- Example final projects from 2019
-  - [Frogs in Space](https://pippinbarr.github.io/cart253-2020/examples/student-work/frogs-in-space/) ([code](../examples/student-work/frogs-in-space/)) by Martin Hanses
-  - [Maranta Leuconeura](https://pippinbarr.github.io/cart253-2020/examples/student-work/maranta-leuconeura/) ([code](../examples/student-work/maranta-leuconeura/)) by Anne Boutet
-  - [Melansuko: The Decades Day Album](https://pippinbarr.github.io/cart253-2020/examples/student-work/melansuko-the-decades-day-album/) ([code](../examples/student-work/melansuko-the-decades-day-album/)) by Sylvain Tran
-  - [Untitled geometry music](https://pippinbarr.github.io/cart253-2020/examples/student-work/untitled-geometry-music/index.html) ([code](../examples/student-work/untitled-geometry-music/)) by Amanda Clément
 
 ---
 
