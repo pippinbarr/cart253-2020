@@ -357,7 +357,40 @@ Week of 2 November 2020
 - Understanding inheritance as a way to make more complex class structures
 - Taking advantage of polymorphism
 
-__Coming soon!__
+## Before class
+- __Watch__ "09-1 - Inheritance" (coming soon) (and __read__ [Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance.html))
+- __Watch__ "09-2 - Chains of Inheritance" (coming soon) (and __read__ [Chains of Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/chains-of-inheritance.html))
+- __Watch__ "09-3 - Polymoprhism" (coming soon) (and __read__ [Polymorphism](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/polymorphism.html))
+- __Read__ [Movement with Polar Coordinates](https://pippinbarr.github.io/cart253-2020/topics/movement/movement-with-polar-coordinates.html)
+- __Example__ [OOP States](https://pippinbarr.github.io/cart253-2020/examples/#oop-states) - using Object-Oriented Programing, Inheritance, and Polymorphism to manage program states
+- __Example__ [Clown Chase](https://pippinbarr.github.io/cart253-2020/examples/#clown-chase) - using images as part of JavaScript Object literals
+
+## Activity
+- __Complete__ the [Inheritance activity](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance-activity.html) (__Follow along__ with "09-4 - Inheritance activity" (coming soon) if you want!)
+
+## Exercise
+- No exercise.
+
+## Project
+- [Proposal and Prototype](https://pippinbarr.github.io/cart253-2020/projects/project2/#part-1---proposal-and-prototype-10) are due tonight
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of Inheritance, Polymorphism, and other ideas
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+  - [Proposal and Prototype](https://pippinbarr.github.io/cart253-2020/projects/project2/#part-1---proposal-and-prototype-10) are due tonight
+
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Work on [Proposal and Prototype](https://pippinbarr.github.io/cart253-2020/projects/project2/#part-1---proposal-and-prototype-10)
+
+## Due after class
+- [Proposal and Prototype](https://pippinbarr.github.io/cart253-2020/projects/project2/#part-1---proposal-and-prototype-10). Submit on Moodle by the deadline for your section.
+
+## Homework
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in the start of class discussion
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
