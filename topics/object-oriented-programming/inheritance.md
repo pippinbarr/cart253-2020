@@ -312,11 +312,11 @@ class Vehicle {
 
 As you can see, the code for our `Vehicle` class is **very** similar to the code for both the `Car` and the `Motorcycle`, but it's **generic**.
 
-The `constructor()` is very similar. It has all the same properties, but doesn't make assumptions about dimensions or velocity because the car and motorcycle differ in on those properties.
+The `constructor()` is very similar. It has all the same properties, but doesn't make assumptions about dimensions or velocity because the car and motorcycle differ on those properties.
 
 The `move()` and `wrap()` methods are identical, because those are shared by both kinds of vehicle.
 
-The `display()` method is empty, because cars and motorcycles are displayed differently. It's still worth having the empty `display()` method because it tells us that any subclass of the vehicle **should** be able to be displayed.
+The `display()` method is empty, because cars and motorcycles are displayed differently. It's still worth having the empty `display()` method because it at least tells us that any subclass of the vehicle **should** be able to be displayed. Also, later on there might be something we want to do with displaying for **all** vehicles, in which case we would put it here.
 
 ---
 
@@ -339,7 +339,7 @@ An important thing to know is that we need to add it **before** `Car.js` and `Mo
 
 ## Updating `Car` to **extend** `Vehicle`
 
-Now that we have the definition of a `Vehicle` we can use this to simplify our `Car` class. We want to tell JavaScript that the `Car` is a kind of `Vehicle`, that is should be a **subclass** (or child) of `Vehicle`.
+Now that we have the definition of a `Vehicle` we can use this to simplify our `Car` class. We want to tell JavaScript that the `Car` is a kind of `Vehicle`, that it should be a **subclass** (or child) of `Vehicle`.
 
 To do this we will add code to `Car`:
 
@@ -374,6 +374,11 @@ class Car extends Vehicle {
   // 4. We do want to define our display() method because the car
   // has a specific visual appearance: a rectangle with four wheels
   display() {
+    // Even though the Vehicle's version of display() does nothing, we should STILL
+    // call it. The variable "super" contains a reference to the Vehicle part of this car,
+    // so we can call the Vehicle version of the display() method by writing:
+    super.display();
+
     push();
     rectMode(CENTER);
     noStroke();
@@ -415,6 +420,9 @@ class Motorcycle extends Vehicle {
 
   // Display the motorcycle as a skinny rectangle
   display() {
+    // Remember to call the superclass' version of this method!
+    super.display();
+
     push();
     rectMode(CENTER);
     noStroke();
@@ -448,100 +456,11 @@ What if we want our `Car` class to have a drunk driver? We could make the car's 
 
 But `Car` doesn't **have** `move()` or `wrap` methods anymore! What should we do?
 
----
-
-## The wrong way
-
-Our instinct might be to just define `move()` and `wrap()` in full in `Car`, replacing the `move()` and `wrap()` of the `Vehicle` class...
-
-`Car.js`
-```javascript
-class Car extends Vehicle {
-  // Create a new Car object that moves to the right
-  constructor(x, y) {
-    super(x, y);
-    this.width = 50;
-    this.height = 20;
-    this.vx = 5;
-    // NEW! We add a drunkenness property for the car
-    // that determines how likely the car is to veer each
-    // frame
-    this.drunkenness = 0.2;
-  }
-
-  // NEW! We add back the move() method, adding in our
-  // veering code
-  move() {
-    // NEW! We will call our veer() method (only in Car) to cause the car
-    // to veer. We use "this" to access other methods in THIS class
-
-    this.veer();
-
-    // OLD! This is the same code that was in Vehicle's move() method
-    this.x += this.vx;
-    this.y += this.vy;
-  }
-
-  // NEW! The veer method is specific to the Car class. It randomly causes
-  // the car to veer on the y axis
-  veer() {
-    let r = random();
-    if (r < this.drunkenness) {
-      this.vy = random(-5, 5);
-    }
-  }
-
-  // NEW! We add back the wrap() method, adding in our
-  // vertical wrapping code
-  wrap() {
-    // OLD! This is the same code that was in Vehicle's wrap() method
-    if (this.x > width) {
-      this.x -= width;
-    }
-
-    // NEW! Some code to wrap on the y axis
-    if (this.y > height) {
-      this.y -= height;
-    }
-    else if (this.y < 0) {
-      this.y += height;
-    }
-  }
-
-  // Display the car as a rectangle with four wheels
-  display() {
-    push();
-    rectMode(CENTER);
-    noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
-    fill(255, 0, 0);
-    rect(this.x, this.y, this.width, this.height);
-    pop();
-  }
-}
-```
-
-This **works** in that we get the desired behaviour now. The cars veer all over the road! We probably need a police car or something by now! (But let's leave that alone.)
-
-However, we've kind of wasted the `Vehicle` class a bit. We're **repeating** code in our `move()` and `wrap()` methods that was already handled in `Vehicle`. This means we've made the connection between `Car` and `Vehicle` weaker, which isn't great.
-
-In aprticular, if we were to change something in the `Vehicle`'s `move()` or `wrap()` methods, the `Car` wouldn't use those changes because it completely redefines the `move()` and `wrap()` methods.
-
-There must be a better way?
-
----
-
-## The right way using the `super` variable
-
 What we want is to still use `Vehicle`'s versions of `move()` and `wrap()` because they're useful! But we also want to **add** extra behaviour to those methods so we can make our `Car` behave in a specific (drunken) way.
 
 To do this, we need to know that we can call **any** of our superclass' methods by using the `super` variable. `super` contains a reference to the superclass (`Vehicle` in our case).
+
+This way we can define our own versions of `move()` and `wrap()` that can call the superclass versions, but also add extra behaviour!
 
 `Car.js`
 ```javascript
@@ -611,9 +530,7 @@ class Car extends Vehicle {
 }
 ```
 
-This is good because it reduces repeated code again!
-
-It also reconnects our `Car` and `Vehicle` more closely. Now if we were to change something in the `Vehicle`'s `move()` or `wrap()` methods, the `Car` would use those changes.
+Lovely! This idea of **overriding** methods from the superclass, but **still calling** the superclass version of those methods is central to writing well-structured object-oriented progras.
 
 ---
 

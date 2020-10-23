@@ -13,7 +13,7 @@
 
 ## What is polymorphism?
 
-In Object-Oriented Programming, **polymorphism** refers to the idea that any class that extends a specific super class can be **used like it is that superclass**. Specifically, we can assume that it has the **properties** and **methods** of the superclass.
+In Object-Oriented Programming, **polymorphism** refers to the idea that any class that extends a specific super class can be **used like it is that superclass**. Specifically, we can assume that it has the **properties** and **methods** of the superclass. Because, well, it does.
 
 This can be very useful. It'll make more sense if we have an example.
 
@@ -102,6 +102,8 @@ class Car extends Vehicle {
 
   // Display the car as a rectangle with four wheels
   display() {
+    super.display();
+
     push();
     rectMode(CENTER);
     noStroke();
@@ -132,6 +134,8 @@ class Motorcycle extends Vehicle {
 
   // Display the motorcycle as a skinny rectangle
   display() {
+    super.display();
+    
     push();
     rectMode(CENTER);
     noStroke();

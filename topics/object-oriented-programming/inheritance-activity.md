@@ -2,7 +2,8 @@
 
 ## Objectives
 
-1. Using inheritance to create multiple, similar classes
+1. Using inheritance to create and use multiple, similar classes
+
 
 ---
 
@@ -10,7 +11,7 @@
 
 Let's making a road-crossing simulator!
 
-_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving in both directions across the canvas. If the player collides with any of the vehicles, they die. If they make it to the over side, they succeeded._
+_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving left and right across the canvas. If the player collides with any of the vehicles, they die. If they make it to the over side, they succeeded. Just like life!_
 
 ---
 
@@ -56,6 +57,8 @@ For now let's
 4. Write an `if`-statement in `draw()` that checks each state and calls the appropriate function
 5. Write a `displayText()` function to display a text parameter in the center of the screen
 6. Call the `displayText()` function in the `title()` function to display your simulation's title
+7. Call the `displayText()` function in the `success()` function to display your simulation's success message ("You crossed the road!"?)
+8. Call the `displayText()` function in the `title()` function to display your simulation's death message ("You died!"?)
 
 ---
 
@@ -106,8 +109,8 @@ The pedestrian will move around using the arrow keys, so we need a method that c
 
 `Pedestrian.js`
 1. Define a `handleInput()` method
-2. Check the left and right arrow keys to set the x velocity appropriately. If neither is held down, set the x velocity to `0`. (Use `keyIsDown()` to check the key codes `LEFT_ARROW` and `RIGHT_ARROW`)
-3. Check the up and down arrow keys to set the y velocity appropriately. If neither is held down, set the y velocity to `0`. (Use `keyIsDown()` to check the key codes `UP_ARROW` and `DOWN_ARROW`)
+2. Check the left and right arrow keys to set the x velocity appropriately based on the `speed` property. If neither is held down, set the x velocity to `0`. (Use `keyIsDown()` to check the key codes `LEFT_ARROW` and `RIGHT_ARROW`)
+3. Check the up and down arrow keys to set the y velocity appropriately based on the `speed` property. If neither is held down, set the y velocity to `0`. (Use `keyIsDown()` to check the key codes `UP_ARROW` and `DOWN_ARROW`)
 
 ### Add a `move()` method
 
@@ -115,13 +118,13 @@ We want the pedestrian to move according to its velocity, so we should add its v
 
 `Pedestrian.js`
 1. Define a `move()` method
-2. Add the two velocity to properties to the two position properties
+2. Add the two velocity properties to the two position properties
 
 ### Add a `display()` method
 
 `Pedestrian.js`
 1. Define a `display()` method
-2. Use `push()` and `pop()` around drawing instructions that display an ellipse at the pedestrian's position and use its size.
+2. Use `push()` and `pop()` around drawing instructions that display an ellipse at the pedestrian's position and use its size. Or draw something super fancy if you like!
 
 ### Add a pedestrian to the main script
 
@@ -261,8 +264,8 @@ Our `Car` needs to call the `super()` constructor to set itself up as a `Vehicle
 A car should have a specific visual appearance. So we need to define the `display()` method
 
 1. Define a `display()` method
-2. Call the `super.display()` method, just in case
-3. Use `push()` and `pop()` around drawing instructions that draw a car your like, making sure to use the position and dimensions of the car
+2. Call the `super.display()` method, just in case (even though `Vehicle`'s `display()` method does nothing right now, it might later)
+3. Use `push()` and `pop()` around drawing instructions that draw a car you like, making sure to use the position and dimensions of the car
 
 ---
 
@@ -270,8 +273,8 @@ A car should have a specific visual appearance. So we need to define the `displa
 
 We should follow the same pattern to create classes representing a `Truck` and `Motorcycle`. Probably:
 
-1. The `Truck` should have a greater `width` and the same `height` as a `Car` (maybe dimensions of `80`x`20`) and should be slower than a `Car` (maybe a `speed` of `3`?)
-2. The `Motorcycle` should have a smaller `width` and `height` than a `Car` (maybe dimensions of `30`x`10`) and should be faster than a `Car` (maybe a `speed` of `10`?)
+1. The `Truck` should have larger dimensions than a `Car` (maybe dimensions of `80`x`20`) and should be slower than a `Car` (maybe a `speed` of `3`?)
+2. The `Motorcycle` should have a smaller dimensions than a `Car` (maybe dimensions of `30`x`10`) and should be faster than a `Car` (maybe a `speed` of `10`?)
 
 You can also make the `Truck` and `Motorcycle` display differently, with different colors etc. as desired.
 
@@ -285,7 +288,7 @@ Phew! Now we have classes for `Vehicle`, `Car`, `Truck` and `Motorcycle`. We can
 
 ## 5. Add cars, trucks, and motorcycles to the main script
 
-Now for a big step. We want to include some number of cars, trucks, and motorcycles in our simulation. The idea is to have some number of each moving either left to right or right to left. We can put them all together in a single array because all extend the `Vehicle` class!
+Now for a big step. We want to include some number of cars, trucks, and motorcycles in our simulation. The idea is to have some number of each moving either left to right or right to left. We can put them all together in a single array because they all extend the `Vehicle` class and we can treat them as vehicles!
 
 We will:
 
@@ -310,11 +313,11 @@ We'll need an array to store all our vehicles in, as well as variables storing t
 We need to create our different kinds of vehicles in `setup()` and add them to our `vehicles` array. There are sneaky ways of doing this more efficiently, but in this case, let's just have a `for`-loop for each kind of vehicle we need to create. So for the cars we would:
 
 1. Write a `for`-loop that counts from `0` to `numCars`. Inside:
-  1. Declare `x` and `y` variables and assign random positions (for the `y` variable, choose a random position that does not include the bottom of the canvas, to the pedestrian somewhere to stand!)
+  1. Declare `x` and `y` variables and assign random positions (for the `y` variable, choose a random position that does not include the bottom of the canvas, to the pedestrian has somewhere to stand!)
   2. Declare a `car` variable and assign a new `Car` using the `x` and `y` as arguments
   3. Push the new `car` variable into the `vehicles` array
 
-That will take care of the cars. We would do the same thing for the trucks and motorcycles.
+That will take care of the cars. Now do the same thing for the trucks and motorcycles.
 
 ---
 
@@ -322,12 +325,12 @@ That will take care of the cars. We would do the same thing for the trucks and m
 
 We want our various vehicles to be moving either right or left for some visual chaos! There are different ways to achieve this, but we'll do it in another `for`-loop at the end of `setup()`.
 
-1. Write a `for`-loop that goes through the `vehicles` array from `0` to `vehicles.length`. Inside:
-  1. Store the current vehicle (chosen with `i`) in a variable called `vehicle`
+1. Write a `for`-loop that goes through the `vehicles` array from `0` to `vehicles.length` in a variable `i`. Inside:
+  1. Store the current vehicle in the array (at index `i`) in a variable called `vehicle`
   2. Declare a variable `r` and assign it a random number between `0` and `1`
   3. Write an `if`-statement that checks if `r` is less than `0.5` (50% of the time it will be)
-  4. If it **is**, then assign `-vehicle.speed` to `vehicle.vx` (so it moves left)
-  5. If it **isn't** then assign `vehicle.speed` to `vehicle.vx` (so it moves right)
+    1. If it **is**, then assign `-vehicle.speed` to `vehicle.vx` (so it moves left)
+    2. If it **isn't** then assign `vehicle.speed` to `vehicle.vx` (so it moves right)
 
 Now our vehicles are all set up to either move to the left or the right when the program starts. Note the magic of inheritance and polymorphism that allows us to do this to all the vehicles, regardless of whether they are cars, trucks, or motorcycles!
 
@@ -335,10 +338,10 @@ Now our vehicles are all set up to either move to the left or the right when the
 
 ### Update all our vehicles in `simulation()`
 
-Finally, for our simulation to actuall show our vehicles, we need to add a `for`-loop that runs through all the vehicles and calls their `move()`, `wrap()` and `display()` methods.
+Finally, for our simulation to actually show our vehicles moving around, we need to add a `for`-loop that runs through all the vehicles and calls their `move()`, `wrap()` and `display()` methods.
 
-1. In `simulation()` write a `for`-loop that counts from `0` to `vehicles.length`. Inside:
-  1. Store the current vehicle (chosen with `i`) in a variable called `vehicle`
+1. In `simulation()` write a `for`-loop that counts from `0` to `vehicles.length` with a variable `i`. Inside:
+  1. Store the current vehicle in the array (at index `i`) in a variable called `vehicle`
   2. Call the `move()` method of the `vehicle`
   3. Call the `wrap()` method of the `vehicle`
   4. Call the `display()` method of the `vehicle`
@@ -363,11 +366,11 @@ Sadly, we should probably update our simulation one last time to make being hit 
 
 ### Add a method to `Pedestrian` to check if it was hit by a vehicle
 
-A central part of our simulation is knowing whether or not the pedestrian is hit by a vehicle in any frame. We will add a method to the `Pedestrian` class to handle this. To simplify, we will think of the pedestrian only in terms of its position, not its dimensions. This will make it easier to check for collisions. If the pedestrian gets his, it should become... dead.
+A central part of our simulation is knowing whether or not the pedestrian is hit by a vehicle in any frame. We will add a method to the `Pedestrian` class to handle this. To simplify, we will think of the pedestrian only in terms of its position, not its dimensions. This will make it easier to check for collisions. If the pedestrian gets hit, it should become... not alive.
 
 1. Define a `checkHit()` method in the `Pedestrian` class. It should have one parameter, `vehicle`, which is the vehicle to check for hitting the pedestrian
-2. In the method, check whether the position of the pedestrian is inside the vehicle. To do this we need to check if the `x` position of the pedestrian is between the left and right edges of the vehicle, and whether the `y` position of the pedestrian if between the top and bottom edges of the vehicle
-3. If it is, set the `dead` property to true
+2. In the method, check whether the position of the pedestrian is inside the vehicle's dimensions. (To do this we need to check if the `x` position of the pedestrian is between the left and right edges of the vehicle, and whether the `y` position of the pedestrian if between the top and bottom edges of the vehicle.)
+3. If it is, set the `alive` property to `false`
 
 For simplicity, if you're struggling to think about it, this particular code would look like this:
 
@@ -377,7 +380,7 @@ checkHit(vehicle) {
     this.x < vehicle.x + vehicle.width / 2 &&
     this.y > vehicle.y - vehicle.height / 2 &&
     this.y < vehicle.y + vehicle.height / 2) {
-    this.dead = true;
+    this.alive = false;
   }
 }
 ```
@@ -388,7 +391,7 @@ checkHit(vehicle) {
 
 At the bottom of the `simulation()` function we will want to check if the pedestrian is dead. If it is we should switch to the `dead` state.
 
-1. In `simulation()` write an `if`-statement that checks if the `pedestrian`'s `dead` property is true
+1. In `simulation()` write an `if`-statement that checks if the `pedestrian`'s `alive` property is `false`
 2. If it is, assign `dead` to the `state` variable
 
 ---
@@ -397,7 +400,7 @@ At the bottom of the `simulation()` function we will want to check if the pedest
 
 Also at the bottom of the `simulation()` function we will want to check if the pedestrian made it across the road. If so, we should switch to the `success` state.
 
-1. In `simulation()` write an `if`-statement that checks if the pedestrian's `y` is above the top of the canvas.
+1. In `simulation()` write an `if`-statement that checks if the pedestrian's `y` is above the top of the canvas (less than `0`).
 2. If it is, assign `success` to the `state` variable
 
 ---
@@ -420,6 +423,7 @@ We could do so many things:
 - Arrange the vehicles onto actual roads we could display to make things a bit more structures
 - Add horns to the vehicles so they toot at the pedestrian if they get too close
 - Give the pedestrian a set number of lives
+- Have vehicles crash into each other and explode!
 - And so on!
 
 ---

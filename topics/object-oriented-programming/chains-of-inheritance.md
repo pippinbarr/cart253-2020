@@ -15,9 +15,9 @@ The idea of inheritance unlocks a whole new way of thinking about our programmin
 
 A **car** is a kind of **vehicle**. A **motorcycle** is a kind of **vehicle**. And so on.
 
-But... a **sports car** is a kind of **car** that's faster, let's say... hmmmm.
+But... a **sports car** is a kind of **car** that's faster and "cooler"... hmmmm.
 
-Once we start talking about inheritance, it's clear that we don't necessarily stop at one level of inheritance. We could have a class that extends a class that extends a class!
+Once we start talking about inheritance, it's clear that we don't necessarily stop at one level. We could have a class that extends a class that extends a class!
 
 A `SportCar` would extend a `Car` which would extend a `Vehicle`.
 
@@ -82,6 +82,8 @@ class Car extends Vehicle {
 
   // Display the car as a rectangle with four wheels
   display() {
+    super.display();
+
     push();
     rectMode(CENTER);
     noStroke();
@@ -209,7 +211,7 @@ A `Testarosa` class
 ... that extends a `Car` class
 ... that extends a `Vehicle` class!
 
-In each class we could specify specific features of **that kind of thing**. And if we have a `Testarosa` object we can treat is as a `Testarosa`, a `Ferrari`, a `SportsCar`, a `Car`, and a `Vehicle`, depending on what we need to do!
+In each class we could specify specific features of **that kind of thing**. And if we have a `Testarosa` object we can treat is as a `Testarosa`, a `Ferrari`, a `SportsCar`, a `Car`, or a `Vehicle`, depending on what we need to do!
 
 ---
 
