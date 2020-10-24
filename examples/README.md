@@ -22,6 +22,18 @@ An example of combining **images** with **JavaScript Objects**. Two objects repr
 
 [Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase.zip)
 
+### Clown chase with Object Oriented Programming
+
+An example of combining **images** with **Object-Oriented Programming**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
+
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-oop) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop.zip)
+
+### Clown chase with inheritance
+
+An example of combining **images** with **Object-Oriented Programming and inheritance**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
+
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-inheritance) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance.zip)
+
 ## Final Projects from 2019
 
 Here are four **example final projects** from the 2019 edition of CART253 for you to look at and be inspired by!
