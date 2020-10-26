@@ -12,7 +12,7 @@
 
 ## A car
 
-Let's begin by creating a class that represents a car. We'll just focus on the idea of a rectangle with four wheels that can move in a straight line to the right and will wrap back to the left when it reaches the right edge of the canvas.
+Let's begin by creating a class that represents a car. We'll just focus on the idea of a rectangle that can move in a straight line to the right and will wrap back to the left when it reaches the right edge of the canvas.
 
 Recall that we need to create a new file matching the name of the class, `Car.js` and also add a `<script>` tag to our `index.html` to include it.
 
@@ -42,18 +42,11 @@ class Car {
     }
   }
 
-  // Display the car as a rectangle with four wheels
+  // Display the car as a rectangle
   display() {
     push();
     rectMode(CENTER);
     noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
     fill(255, 0, 0);
     rect(this.x, this.y, this.width, this.height);
     pop();
@@ -143,11 +136,6 @@ class Motorcycle {
     push();
     rectMode(CENTER);
     noStroke();
-    // Draw the front and back wheels
-    fill(127);
-    rect(this.x - this.width / 2, this.y, this.width, this.height / 2);
-    rect(this.x + this.width / 2, this.y, this.width, this.height / 2);
-    // Draw the body of the motorcycle
     fill(255, 255, 0);
     rect(this.x, this.y, this.width, this.height);
     pop();
@@ -243,8 +231,8 @@ The `Car` and `Motorcycle` are **the same kind of thing**. They share so many si
 We can think about our simulation this way:
 
 - A **vehicle** has a position, dimensions, and velocity. It moves to the right and it wraps around the right edge. It can be displayed on the screen.
-- A **car** is a **kind of vehicle** that is displayed as a rectangle with four wheels and moves at `5` pixels per frame.
-- A **motorcycle** is **a kind of vehicle** that is displayed as a rectangle with two wheels and moves at `10` pixels per frame.
+- A **car** is a **kind of vehicle** that is displayed as a red rectangle and moves at `5` pixels per frame.
+- A **motorcycle** is **a kind of vehicle** that is displayed as a yellow rectangle and moves at `10` pixels per frame.
 
 Because of all these shared properties and behaviours, our program would be improved if we could define what a **vehicle** is and then tell our program that both cars and motorcycles are **kinds of vehicles**.
 
@@ -382,13 +370,6 @@ class Car extends Vehicle {
     push();
     rectMode(CENTER);
     noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
     fill(255, 0, 0);
     rect(this.x, this.y, this.width, this.height);
     pop();
@@ -426,11 +407,6 @@ class Motorcycle extends Vehicle {
     push();
     rectMode(CENTER);
     noStroke();
-    // Draw the front and back wheels
-    fill(127);
-    rect(this.x - this.width / 2, this.y, this.width, this.height / 2);
-    rect(this.x + this.width / 2, this.y, this.width, this.height / 2);
-    // Draw the body of the motorcycle
     fill(255, 255, 0);
     rect(this.x, this.y, this.width, this.height);
     pop();
@@ -447,90 +423,6 @@ We don't have to change anything in `script.js` because the program just continu
 Now when we create our cars we're still using the `Car` class, but that `Car` class extends (or inherits from) the `Vehicle` class to define its properties and methods. Same thing for the motorcycles.
 
 At no point do we create a `new Vehicle()`! We don't want to create generic "vehicles" because they would have no width and height and nothing in their `display()` method. The `Vehicle` class is only there to collect together code that will be shared by the `Car` and `Motorcycle` classes.
-
----
-
-## Overriding methods
-
-What if we want our `Car` class to have a drunk driver? We could make the car's movement erratic by having it randomly change its `vy` to veer around on the screen. Perhaps we would then want to update `wrap()` to make sure that cars would also wrap on the `y` axis.
-
-But `Car` doesn't **have** `move()` or `wrap` methods anymore! What should we do?
-
-What we want is to still use `Vehicle`'s versions of `move()` and `wrap()` because they're useful! But we also want to **add** extra behaviour to those methods so we can make our `Car` behave in a specific (drunken) way.
-
-To do this, we need to know that we can call **any** of our superclass' methods by using the `super` variable. `super` contains a reference to the superclass (`Vehicle` in our case).
-
-This way we can define our own versions of `move()` and `wrap()` that can call the superclass versions, but also add extra behaviour!
-
-`Car.js`
-```javascript
-class Car extends Vehicle {
-  // Create a new Car object that moves to the right
-  constructor(x, y) {
-    super(x, y);
-    this.width = 50;
-    this.height = 20;
-    this.vx = 5;
-    this.drunkenness = 0.2;
-  }
-
-  move() {
-    // Make the car veer by calling our veer() method
-    // This is specific to the Car's version of move()
-    // We use "this" to access other methods in THIS class
-    this.veer()
-
-    // NEW! Call the superclass (Vehicle) version of move()
-    // This will handle adding velocity to position for us
-    // We use "super" to access methods in the SUPERclass (Vehicle)
-    // So this calls the Vehicle version of move()
-    super.move();
-  }
-
-  // veer() causes the car to randomly veer on the y axis
-  veer() {
-    let r = random();
-    if (r < this.drunkenness) {
-      this.vy = random(-5, 5);
-    }
-  }
-
-  wrap() {
-    // NEW! Call the superclass (Vehicle) version of wrap()
-    // This will handle wrapping on the x axis for us.
-    // We use "super" to access methods in the SUPERclass (Vehicle)
-    // So this calls the Vehicle version of wrap()
-    super.wrap();
-
-    // Our Car-specific vertical wrapping code
-    if (this.y > height) {
-      this.y -= height;
-    }
-    else if (this.y < 0) {
-      this.y += height;
-    }
-  }
-
-  // Display the car as a rectangle with four wheels
-  display() {
-    push();
-    rectMode(CENTER);
-    noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
-    fill(255, 0, 0);
-    rect(this.x, this.y, this.width, this.height);
-    pop();
-  }
-}
-```
-
-Lovely! This idea of **overriding** methods from the superclass, but **still calling** the superclass version of those methods is central to writing well-structured object-oriented progras.
 
 ---
 

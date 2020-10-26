@@ -25,21 +25,16 @@ A `SportCar` would extend a `Car` which would extend a `Vehicle`.
 
 ## A `Vehicle` class
 
-Here's a simple `Vehicle` class...
+Here's our simple `Vehicle` class...
 
 `Vehicle.js`
 ```javascript
 class Vehicle {
-  // Create a new Vehicle object
   constructor(x, y, vx) {
     this.x = x;
     this.y = y;
-    // NOTE: We don't know the dimensions of a variable
-    // so they start undefined
     this.width = undefined;
     this.height = undefined;
-    // NOTE: We don't know how a vehicle will move
-    // so we set its velocity to 0
     this.vx = 0;
     this.vy = 0;
   }
@@ -59,8 +54,12 @@ class Vehicle {
 
   // Display the vehicle
   display() {
-    // We will leave this empty because we don't display a generic
-    // vehicle! Instead, we leave this up to the subclasses.
+    push();
+    rectMode(CENTER);
+    noStroke();
+    // NOTE: We don't set a fill() because this will be handled in the subclass
+    rect(this.x, this.y, this.width, this.height);
+    pop();
   }
 }
 ```
@@ -80,22 +79,11 @@ class Car extends Vehicle {
     this.vx = 5;
   }
 
-  // Display the car as a rectangle with four wheels
+  // Display the car
   display() {
-    super.display();
-
     push();
-    rectMode(CENTER);
-    noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
     fill(255, 0, 0);
-    rect(this.x, this.y, this.width, this.height);
+    super.display();
     pop();
   }
 }
@@ -122,12 +110,13 @@ class SportsCar extends Car {
   // Display the sports car by first displaying the regular car
   // then added our racing stripes
   display() {
+    push();
+
     // Call the super class (Car) display() method to display the standard
-    // car shape
+    // car shape (note that this will also call the Vehicle version of display()!)
     super.display();
 
     // Add our racing stripes!
-    push();
     rectMode(CENTER);
     noStroke();
     fill(255, 255, 0);

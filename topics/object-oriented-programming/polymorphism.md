@@ -13,50 +13,55 @@
 
 ## What is polymorphism?
 
-In Object-Oriented Programming, **polymorphism** refers to the idea that any class that extends a specific super class can be **used like it is that superclass**. Specifically, we can assume that it has the **properties** and **methods** of the superclass. Because, well, it does.
+In Object-Oriented Programming, **polymorphism** refers to the idea that any class that extends a  superclass can be **used as if it *is* that superclass**. Specifically, we can assume that it has the **properties** and **methods** of the superclass. Because, well, it does.
 
 This can be very useful. It'll make more sense if we have an example.
 
 ---
 
-## Our vehicle classes
+## Our traffic simulation
 
-Let's return to the idea of traffic and our three classes `Vehicle`, `Car` and `Motorcycle`. Here they are to add to a new program (remember to add them in `index.html!`):
+Let's return to the idea of traffic and our three classes `Vehicle`, `Car` and `Motorcycle`. Here they are:
 
 `Vehicle.js`
 ```javascript
 class Vehicle {
-  // Create a new Vehicle object
   constructor(x, y, vx) {
     this.x = x;
     this.y = y;
-    // NOTE: We don't know the dimensions of a variable
-    // so they start undefined
+    // NOTE: We don't know the dimensions of a generic vehicle
+    // so we start them as undefined
     this.width = undefined;
     this.height = undefined;
-    // NOTE: We don't know how a vehicle will move
+    // NOTE: We don't know how a generic vehicle will move
     // so we set its velocity to 0
     this.vx = 0;
     this.vy = 0;
   }
 
   // Move the vehicle according to its velocity
+  // Just like we saw in both Car and Motorcycle!
   move() {
     this.x += this.vx;
     this.y += this.vy;
   }
 
   // Wrap the vehicle if it reaches the right edge
+  // Just like we saw in both Car and Motorcycle!
   wrap() {
     if (this.x > width) {
       this.x -= width;
     }
   }
 
-  // Display the vehicle
+  // display() draws a rectangle at the vehicle's position
   display() {
-    // We will leave this empty because we don't display a generic
-    // vehicle! Instead, we leave this up to the subclasses.
+    push();
+    rectMode(CENTER);
+    noStroke();
+    // NOTE: We don't set a fill() because this will be handled in the subclass
+    rect(this.x, this.y, this.width, this.height);
+    pop();
   }
 }
 ```
@@ -64,91 +69,50 @@ class Vehicle {
 `Car.js`
 ```javascript
 class Car extends Vehicle {
-  // Create a new Car object that moves to the right
   constructor(x, y) {
     super(x, y);
+
     this.width = 50;
     this.height = 20;
     this.vx = 5;
-    this.drunkenness = 0.2;
   }
 
-  // Make the car veer and then move like a vehicle
-  move() {
-    this.veer();
-    super.move();
-  }
-
-  // Make the car veer on the y access randomly
-  veer() {
-    let r = random();
-    if (r < this.drunkenness) {
-      this.vy = random(-5, 5);
-    }
-  }
-
-  // Make the car wrap on x (using Vehicle's wrap()) and also
-  // on the y axis
-  wrap() {
-    super.wrap();
-
-    if (this.y > height) {
-      this.y -= height;
-    }
-    else if (this.y < 0) {
-      this.y += height;
-    }
-  }
-
-  // Display the car as a rectangle with four wheels
   display() {
-    super.display();
-
     push();
-    rectMode(CENTER);
-    noStroke();
-    // Draw the wheels of the car
-    fill(127);
-    rect(this.x - this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y - this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x - this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    rect(this.x + this.width / 3, this.y + this.height / 2, this.width / 4, this.height / 2);
-    // Draw the body of the car
     fill(255, 0, 0);
-    rect(this.x, this.y, this.width, this.height);
+    super.display();
     pop();
   }
 }
 ```
 
+
 `Motorcycle.js`
 ```javascript
 class Motorcycle extends Vehicle {
-  // Create a new motorcycle object that moves to the right
   constructor(x, y) {
     super(x, y);
+
     this.width = 30;
     this.height = 10;
     this.vx = 10;
   }
 
-  // Display the motorcycle as a skinny rectangle
   display() {
-    super.display();
-    
     push();
-    rectMode(CENTER);
-    noStroke();
-    // Draw the front and back wheels
-    fill(127);
-    rect(this.x - this.width / 2, this.y, this.width, this.height / 2);
-    rect(this.x + this.width / 2, this.y, this.width, this.height / 2);
-    // Draw the body of the motorcycle
     fill(255, 255, 0);
-    rect(this.x, this.y, this.width, this.height);
+    super.display();
     pop();
   }
 }
+```
+
+`index.html`
+```html
+<!-- My script(s) -->
+<script src="js/Car.js"></script>
+<script src="js/Motorcycle.js"></script>
+<script src="js/script.js"></script>
 ```
 
 ---
@@ -211,9 +175,9 @@ function draw() {
 }
 ```
 
-An observation here is that all the `Car` objects in the `cars` array call `move()`, `wrap()`, and `display()`. And all the `Motorbike` objects in the `motorcycles` **also** call `move()`, `wrap()`, and `display()`.
+An observation here is that in `draw()` we call `move()`, `wrap()`, and `display()` on each `Car` in the `cars` array. And we **also** call `move()`, `wrap()`, and `display()` on each `Motorcycle` in the `motorcycles` array.
 
-Importantly, we know that `move()`, `wrap()` and `display()` are defined by the `Vehicle` class. That's why `Car` and `Motorcycle` **both** have those methods defined. Admittedly `Car` does **more** in `move()` and `wrap()`, but `Vehicle` **guarantees** that they both share those methods.
+Importantly, we know that `move()`, `wrap()` and `display()` are defined by the `Vehicle` class. That's why `Car` and `Motorcycle` **both** have those methods defined.
 
 By calling methods that are defined in `Vehicle` we're essentially treating both cars and motorcycles **as vehicles**. They're just doing things that vehicles can do.
 
@@ -289,7 +253,7 @@ function draw() {
 
 In going through the array, some vehicles will be **cars** and thus the methods will use the `Car`  definitions, and some vehicles will be **motorcycles** and thus the methods will use the `Motorcycle` definitions.
 
-If we had many more kinds of vehicles, like trucks, cycles, skateboards, and more, this would be even more efficient!
+If we had many more kinds of vehicles, like trucks, bicycles, skateboards, and more, this would be even more efficient!
 
 That's the beauty of polymorphism! Once we have multiple subclasses that **extend** one superclass, we can often **use** those subclasses based on the **superclass** methods, allowing us not to worry about which specific subclass any one object is from.
 
@@ -299,7 +263,7 @@ That's the beauty of polymorphism! Once we have multiple subclasses that **exten
 
 So, that's **polymorphism**!
 
-In a nutshell, we can use a **superclass**' methods and properties with its **subclasses** and this will often allow us to write more efficient programs.
+In a nutshell, we can use a **superclass**' methods and properties when working with its **subclasses** and this will often allow us to write more efficient programs.
 
 It tends to be particularly useful in simulations, where we often want to work with groups of objects that share methods and properties from a superclass.
 
