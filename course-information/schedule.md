@@ -360,7 +360,7 @@ Week of 2 November 2020
 ## Before class
 - __Watch__ "09-1 - Inheritance" (coming soon) (and __read__ [Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance.html))
 - __Watch__ "09-2 - Overriding methods" (coming soon) (and __read__ [Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/overriding-methods.html))
-- __Watch__ "09-3 - Polymoprhism" (coming soon) (and __read__ [Polymorphism](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/polymorphism.html))
+- __Watch__ "09-3 - Polymorphism" (coming soon) (and __read__ [Polymorphism](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/polymorphism.html))
 - __Watch__ "09-4 - Chains of Inheritance" (coming soon) (and __read__ [Chains of Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/chains-of-inheritance.html))
 - __Read__ [Movement with Polar Coordinates](https://pippinbarr.github.io/cart253-2020/topics/movement/movement-with-polar-coordinates.html)
 
