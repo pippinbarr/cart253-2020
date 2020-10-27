@@ -358,10 +358,10 @@ Week of 2 November 2020
 - Taking advantage of polymorphism
 
 ## Before class
-- __Watch__ "09-1 - Inheritance" (coming soon) (and __read__ [Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance.html))
-- __Watch__ "09-2 - Overriding methods" (coming soon) (and __read__ [Overriding methods](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/overriding-methods.html))
-- __Watch__ "09-3 - Polymorphism" (coming soon) (and __read__ [Polymorphism](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/polymorphism.html))
-- __Watch__ "09-4 - Chains of Inheritance" (coming soon) (and __read__ [Chains of Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/chains-of-inheritance.html))
+- __Watch__ "09-1 - Inheritance" (27:38) (and __read__ [Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance.html))
+- __Watch__ "09-2 - Overriding methods" (10:36) (and __read__ [Overriding methods](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/overriding-methods.html))
+- __Watch__ "09-3 - Polymorphism" (11:17) (and __read__ [Polymorphism](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/polymorphism.html))
+- __Watch__ "09-4 - Chains of Inheritance" (11:54) (and __read__ [Chains of Inheritance](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/chains-of-inheritance.html))
 - __Read__ [Movement with Polar Coordinates](https://pippinbarr.github.io/cart253-2020/topics/movement/movement-with-polar-coordinates.html)
 
 ## New examples
@@ -371,7 +371,7 @@ Week of 2 November 2020
 - __Example__ [Clown Chase Inheritance](https://pippinbarr.github.io/cart253-2020/examples/#clown-chase-inheritance) - using images with Object-Oriented Programming and Inheritance
 
 ## Activity
-- __Complete__ the [Inheritance activity](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance-activity.html) (__Follow along__ with "09-5 - Inheritance activity" (coming soon) if you want!)
+- __Complete__ the [Inheritance activity](https://pippinbarr.github.io/cart253-2020/topics/object-oriented-programming/inheritance-activity.html) (__Follow along__ with "09-5 - Inheritance activity" (54:08) if you want!)
 
 ## Exercise
 - No exercise.
