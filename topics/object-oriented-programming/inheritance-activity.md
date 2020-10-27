@@ -11,7 +11,7 @@
 
 Let's making a road-crossing simulator!
 
-_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving left and right across the canvas. If the player collides with any of the vehicles, they die. If they make it to the other side, they succeeded. Just like life!_
+_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving left and right across the canvas. If the pedestrian collides with any of the vehicles, they die. If they make it to the other side, they succeeded. Just like life!_
 
 ---
 
