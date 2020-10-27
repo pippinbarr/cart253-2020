@@ -11,7 +11,7 @@
 
 Let's making a road-crossing simulator!
 
-_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving left and right across the canvas. If the player collides with any of the vehicles, they die. If they make it to the over side, they succeeded. Just like life!_
+_The user will control a circular pedestrian at the bottom of the canvas. Cars, trucks, and motorcycles will be moving left and right across the canvas. If the player collides with any of the vehicles, they die. If they make it to the other side, they succeeded. Just like life!_
 
 ---
 
@@ -59,6 +59,9 @@ For now let's
 6. Call the `displayText()` function in the `title()` function to display your simulation's title
 7. Call the `displayText()` function in the `success()` function to display your simulation's success message ("You crossed the road!"?)
 8. Call the `displayText()` function in the `title()` function to display your simulation's death message ("You died!"?)
+9. Add a `keyPressed()` function that checks if the state is `title` and switches to `simulation` if it is
+
+When we run the program we should see the title! We should then be able to press a key to switch to the simulation state, which will be blank.
 
 ---
 
@@ -122,13 +125,15 @@ We want the pedestrian to move according to its velocity, so we should add its v
 
 ### Add a `display()` method
 
+It would be sensible is we could, you know, **see** the pedestrian, so let's write a `display()` method to display it on the canvas.
+
 `Pedestrian.js`
 1. Define a `display()` method
 2. Use `push()` and `pop()` around drawing instructions that display an ellipse at the pedestrian's position and use its size. Or draw something super fancy if you like!
 
 ### Add a pedestrian to the main script
 
-Now we have a `Pedestrian` class that tells our program how a pedestrian works we need to create one in our main script. We should also switch out active state to `simulation` so we can see what's happening.
+Now we have a `Pedestrian` class that tells our program how a pedestrian works we need to create one in our main script. It's probably smart to switch the default state to `simulation` so we can see what's happening.
 
 1. Change the `state` variable to start as `simulation`
 2. Add a `pedestrian` variable to the top of the program (leave it undefined)
@@ -155,6 +160,8 @@ We will need to:
 4. Add a `move()` method
 5. Add a `wrap()` method
 6. Add an empty `display()` method
+
+Yes, these are things we covered in the videos/lectures so it shouldn't be too complex to get this going again hopefully!
 
 ---
 
@@ -195,7 +202,7 @@ We want the vehicle to move according to its velocity, so we should add its velo
 
 `Vehicle.js`
 1. Define a `move()` method
-2. Add the two velocity to properties to the two position properties
+2. Add the two velocity properties to the two position properties
 
 ---
 
@@ -244,7 +251,7 @@ You know how to do this by now. Make sure that you link to the `Car.js` file **a
 ### Add the class structure, making sure to extend the Vehicle class
 
 `Car.js`
-1. Add the standard `class` definition structure to the file to define a `Car` but include `extends Vehicle` after the class name.
+1. Add the standard `class` definition structure to the file to define a `Car` but include `extends Vehicle` after the class name to make it inherit its properties and methods from the `Vehicle` class.
 
 ---
 
@@ -317,7 +324,7 @@ We need to create our different kinds of vehicles in `setup()` and add them to o
   2. Declare a `car` variable and assign a new `Car` using the `x` and `y` as arguments
   3. Push the new `car` variable into the `vehicles` array
 
-That will take care of the cars. Now do the same thing for the trucks and motorcycles.
+That will take care of the cars. Now **do the same thing for the trucks and motorcycles**.
 
 ---
 
@@ -329,8 +336,8 @@ We want our various vehicles to be moving either right or left for some visual c
   1. Store the current vehicle in the array (at index `i`) in a variable called `vehicle`
   2. Declare a variable `r` and assign it a random number between `0` and `1`
   3. Write an `if`-statement that checks if `r` is less than `0.5` (50% of the time it will be)
-    1. If it **is**, then assign `-vehicle.speed` to `vehicle.vx` (so it moves left)
-    2. If it **isn't** then assign `vehicle.speed` to `vehicle.vx` (so it moves right)
+    1. If it is `true`, then assign `-vehicle.speed` to `vehicle.vx` (so it moves to the left)
+    2. If it is `false` then assign `vehicle.speed` to `vehicle.vx` (so it moves to the right)
 
 Now our vehicles are all set up to either move to the left or the right when the program starts. Note the magic of inheritance and polymorphism that allows us to do this to all the vehicles, regardless of whether they are cars, trucks, or motorcycles!
 
@@ -374,6 +381,7 @@ A central part of our simulation is knowing whether or not the pedestrian is hit
 
 For simplicity, if you're struggling to think about it, this particular code would look like this:
 
+`Pedestrian.js`
 ```javascript
 checkHit(vehicle) {
   if (this.x > vehicle.x - vehicle.width / 2 &&
@@ -392,7 +400,7 @@ checkHit(vehicle) {
 At the bottom of the `simulation()` function we will want to check if the pedestrian is dead. If it is we should switch to the `dead` state.
 
 1. In `simulation()` write an `if`-statement that checks if the `pedestrian`'s `alive` property is `false`
-2. If it is, assign `dead` to the `state` variable
+2. If it is, switch to the `dead` state
 
 ---
 
@@ -401,7 +409,7 @@ At the bottom of the `simulation()` function we will want to check if the pedest
 Also at the bottom of the `simulation()` function we will want to check if the pedestrian made it across the road. If so, we should switch to the `success` state.
 
 1. In `simulation()` write an `if`-statement that checks if the pedestrian's `y` is above the top of the canvas (less than `0`).
-2. If it is, assign `success` to the `state` variable
+2. If it is, switch to the `success` state
 
 ---
 
