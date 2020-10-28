@@ -1,6 +1,6 @@
 #### Contents
 - [Guides](#guides) - high level guides
-- [Examples](#examples) - full examples of code
+- [Examples](../examples/) - full examples of code
 - [Projects](#projects) - project due dates
 - ...
 - Week 1 - [Hello, World!](#hello-world) - introductions, course curriculum, course software
@@ -20,9 +20,6 @@
 #### Guides
 - [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
 - [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
-
-#### [Examples](https://pippinbarr.github.io/cart253-2020/examples/)
-- Full code examples available in the [Examples](https://pippinbarr.github.io/cart253-2020/examples/) section.
 
 #### Projects
 - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Assigned week of 21 September 2020. Due week of 12 October 2020. (Three weeks)
