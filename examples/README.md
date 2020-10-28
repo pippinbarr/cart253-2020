@@ -13,7 +13,7 @@
 
 An example of representing your program's states using **Object-Oriented Programming** with **inheritance** and **polymorphism**. Reworks an earlier example of a simulation with a title, simulation, and ending. Probably the ideal way to represent your states.
 
-[Running program](https://pippinbarr.github.io/cart253-2020/examples/structure/oop-states/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/structure/oop-states) / [Download](https//pippinbarr.github.io/cart253-2020/examples/structure/oop-states.zip)
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/structure/oop-states/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/structure/oop-states) / [Download](https://pippinbarr.github.io/cart253-2020/examples/structure/oop-states.zip)
 
 ---
 
@@ -23,7 +23,7 @@ An example of representing your program's states using **Object-Oriented Program
 
 An example of using `setTimeout()` in the context of a class definition specifically. Sadly, it doesn't "just work" the way you would expect because when `setTimeout()` calls a function it changes the meaning of `this` in that function. This example shows how to avoid this with the `bind()` method.
 
-[Running program](https://pippinbarr.github.io/cart253-2020/examples/time/oop-and-timers/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/time/oop-and-timers) / [Download](https//pippinbarr.github.io/cart253-2020/examples/time/oop-and-timers.zip)
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/time/oop-and-timers/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/time/oop-and-timers) / [Download](https://pippinbarr.github.io/cart253-2020/examples/time/oop-and-timers.zip)
 
 ---
 
@@ -33,19 +33,19 @@ An example of using `setTimeout()` in the context of a class definition specific
 
 An example of combining **images** with **JavaScript Objects**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
 
-[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase.zip)
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase) / [Download](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase.zip)
 
 ### Clown chase with Object Oriented Programming
 
 An example of combining **images** with **Object-Oriented Programming**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
 
-[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-oop) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop.zip)
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-oop) / [Download](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-oop.zip)
 
 ### Clown chase with inheritance
 
 An example of combining **images** with **Object-Oriented Programming and inheritance**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
 
-[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-inheritance) / [Download](https//pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance.zip)
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-inheritance) / [Download](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance.zip)
 
 ---
 
