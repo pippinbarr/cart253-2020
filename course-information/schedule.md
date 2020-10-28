@@ -19,7 +19,7 @@
 
 #### Guides
 - [Style Guide](https://pippinbarr.github.io/cart253-2020/guides/style-guide.html)
-- [Debugging Guide](https://pippinbarr.github.io/cart253-2020/guides/debugging-guide.html)
+- [Debugging Guide](../topics/debugging/)
 
 #### Projects
 - [Project 01: Simulation](https://pippinbarr.github.io/cart253-2020/projects/project1/). Assigned week of 21 September 2020. Due week of 12 October 2020. (Three weeks)
