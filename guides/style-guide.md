@@ -2,8 +2,10 @@
 
 1. [Formatting](#formatting)
 2. [Commenting](#commenting)
-3. [Variables](#variable-naming)
-4. [Version control](#version-control)
+3. [README.md](#readme-md)
+4. [Variables](#variables)
+5. [Functions](#functions)
+6. [Version control](#version-control)
 
 ---
 
@@ -139,7 +141,7 @@ function setup() {
 
 ### Rule: Comment your files
 
-At the top of every JavaScript file (`.js`) you should have a comment that describes the file. This is most important for your main screen (usually `script.js`), which should have a description of your project at the top.
+At the top of every JavaScript file (`.js`) you should have a comment that describes the file. This is most important for your main screen (usually `script.js`), which should have a description of your project at the top. Your description should be fairly detailed and give an overview of anything relevant to the project's implementation and purpose.
 
 It is common to use a "multi-line comment" for these kinds of descriptions (and sometimes for functions too), which we write by starting with `/*` and ending with `*/`.
 
@@ -163,6 +165,25 @@ function setup() {
   // Draw the mouth
   ellipse(250,300,50,50);
 }
+```
+
+---
+
+## `README.md`
+
+Any formally submitted project should include a file titled `README.md` in the main project folder. This document should explain your project and should provide any information someone interested in it might need to understand the implementation and also how to interact with it. It should clearly state the title of the project as well as your authorship.
+
+The `README.md` is also a good place for attribution if you are using code and/or media from other sources that you need to credit.
+
+Example:
+
+```
+# Aquarium Simulation
+## Pippin Barr
+
+This is an aquarium simulation in which fish of different kinds swim around on the canvas. The user can interact with the fish by clicking on them to make them grow (as if feeding them). Over time the fish shrink, so the user will need to keep busy clicking to keep them alive!
+
+The fish images were sourced from the [Creative Commons image "Georgia Aquarium Fish"](https://search.creativecommons.org/photos/96f6f770-eac1-488c-8abb-16bee7bcc874) by Mike Johnston which is licensed with CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.
 ```
 
 ---
@@ -198,6 +219,21 @@ let circleY = 0;
 let circleSize = 100;
 let circleSpeed = 1;
 ```
+
+---
+
+## Functions
+
+### Naming functions
+
+Naming functions follows the same essential rules as variables.
+
+1. Your function name must clearly __describe__ or __explain__ the purpose of the function (`displayFish()` to display a fish, not `df()`, `fishRay()`)
+2. You function name should be written using __camel case__, starting with a lowercase letter and capitalizing each new word (`displayFish()`, now `DisplayFish()`, not `displayfish()`, not `display_fish()`)
+3. Function names can only contain __letters and numbers__ (and `$` and `_`, but avoid them). (`displayFish()`, not `displayFish!()`)
+4. Function names must be __unique__. You cannot reuse function names from your own code, from p5, or key words from JavaScript. (`displayImage()`, not `image()` because it is used by p5; `create()`, but not `new()` because `new` it is a JavaScript reserved word)
+5. Function names are __case sensitive__. (`displayFish()` is not the same as `displayfish()`)
+
 
 ---
 
