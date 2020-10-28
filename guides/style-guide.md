@@ -6,6 +6,7 @@
 4. [Variables](#variables)
 5. [Functions](#functions)
 6. [Version control](#version-control)
+7. [Attribution](#attribution)]
 
 ---
 
@@ -234,7 +235,6 @@ Naming functions follows the same essential rules as variables.
 4. Function names must be __unique__. You cannot reuse function names from your own code, from p5, or key words from JavaScript. (`displayImage()`, not `image()` because it is used by p5; `create()`, but not `new()` because `new` it is a JavaScript reserved word)
 5. Function names are __case sensitive__. (`displayFish()` is not the same as `displayfish()`)
 
-
 ---
 
 ## Version control
@@ -262,3 +262,36 @@ Your commit messages should be fairly brief, but they should concisely describe 
 ### Don't forget to push
 
 It's important to __push__ your work to the remote server to keep it extra safe. Don't forget. You don't have to push after every commit, but you should certainly push when you're stopping work for a while.
+
+---
+
+## Attribution
+
+### The general idea
+
+Whenever you use code or media from somewhere else you must **attribute** it to give credit, this includes:
+
+- Code/media found online
+- Code/media drawn from the course examples
+- Code drawn from your own previous work
+
+The general idea is to make it very clear what about your project was "pre-made" versus what it completely new.
+
+To attribute, make sure to include the place you found the code/media and the original author.
+
+### Licenses
+
+Much code and media online comes with a specific **license** (e.g. the Creative Commons) which you must respect. Make sure you read the licensing agreement and follow it.
+
+### Where to attribute
+
+For media, you can attribute
+
+- In your comment at the top of your main program file
+- In your `README.md` file in your project folder
+
+For code, you can attribute
+
+- In the location you are **using** the code (this is usually best for specific snippets of code)
+- In your comment at the top of your main program file (this may be better if you are using an entire framework of code from somewhere else)
+- In your README.md (as above, this is better when using a large amount of pre-existing code)
