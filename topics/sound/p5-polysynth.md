@@ -100,9 +100,9 @@ let synth;
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   synth = new p5.PolySynth();
-  userStartAudio();
 }
 
 function draw() {
@@ -138,11 +138,10 @@ let notes = [`F4`, `G4`, `Ab4`, `Bb4`, `C4`, `Db4`, `Eb4`, `F5`]; // The scale f
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create the synthesizer
   synth = new p5.PolySynth();
-  // Nicely start the audio context
-  userStartAudio();
 }
 
 function draw() {
@@ -183,11 +182,10 @@ let interval;
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create the synthesizer
   synth = new p5.PolySynth();
-  // Nicely start the audio context
-  userStartAudio();
 }
 
 function draw() {
@@ -248,11 +246,10 @@ let interval;
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create the synthesizer
   synth = new p5.PolySynth();
-  // Nicely start the audio context
-  userStartAudio();
 }
 
 function draw() {

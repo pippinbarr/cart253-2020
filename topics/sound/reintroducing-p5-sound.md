@@ -5,6 +5,7 @@
 ## In this module...
 
 - The p5.sound we know
+- `userStartAudio()`
 - p5.sound the iceberg
 - p5.SoundFile
 - A Dog in the Red Room
@@ -86,13 +87,55 @@ When we arrive on that page, we can immediately see that there is a **lot** more
 
 **Terminology note:** You will most often find people referring to the kind of documentation we're looking at here, listing the possibilities a library offers, as its **API** documentation. API stands for Application Programming Interface.
 
-As we can see, `p5.SoundFile` is one part of the `p5.sound` API, available so we can "load and play sound files", which is what we've been doing with it.
+---
 
-However, let's delve into the documentation of `p5.SoundFile` specifically for a moment, just to get a sense of scale...
+## `userStartAudio()`
+
+Before we delve further into the depths of the p5.sound library, let's take note of a nice "housekeeping" function we can start using, called `userStartAudio()`.
+
+We already know that we can't play sounds until the user interacts with our program in some way (notably via a mouse click or a key press), and so we avoid trying to play audio until then.
+
+A nice addition to our programs is to include `userStartAudio()` in our `setup()` which tells p5.sound to some behind the scenes work to make this smoother. In the end, it doesn't change a lot in terms of the behaviour, but it's a good idea to include it anyway.
+
+```javascript
+"use strict";
+
+let barkSFX;
+
+function preload() {
+  barkSFX = loadSound(`assets/sounds/bark.wav`);
+}
+
+function setup() {
+  createCanvas(600, 600);
+  // Tell p5.sound to work on starting the audio for this page as soon as
+  // the user interacts with it
+  userStartAudio()
+}
+
+function draw() {
+  // Just to be cute, let's also change the background color
+  // based on whether the dog bark is currently playing
+  if (barkSFX.isPlaying()) {
+    background(255);
+  }
+  else {
+    background(0);
+  }
+}
+
+function mousePressed() {
+  barkSFX.play();
+}
+```
 
 ---
 
 ## `p5.SoundFile`
+
+As we can see from the main documentation, `p5.SoundFile` is one part of the `p5.sound` API, available so we can "load and play sound files", which is what we've been doing with it.
+
+However, let's delve into the documentation of `p5.SoundFile` specifically for a moment, just to get a sense of scale...
 
 To view the documentation for this part of `p5.sound`'s API we just click on its name on the main reference for the library, arriving at this page:
 
@@ -155,6 +198,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 }
 
 function draw() {
@@ -190,6 +234,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 }
 
 function draw() {
@@ -255,6 +300,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Use getPeaks() to get the peaks in our sound file
   // We specify "width" as the size of the array of peaks
@@ -318,6 +364,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Add cues to our sound at specific times (in seconds)
   // which will call either showBark() or hideBark() in order

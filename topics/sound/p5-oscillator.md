@@ -80,6 +80,7 @@ let oscillator; // To store our oscillator
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator at 440Hz with a sine waveform
   oscillator = new p5.Oscillator(440, `sine`);
@@ -129,6 +130,7 @@ let oscillator; // To store our oscillator
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator at 440Hz with a sine waveform
   oscillator = new p5.Oscillator(440, `sine`);
@@ -172,6 +174,7 @@ let theramin; // To store our oscillator
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator
   theramin = new p5.Oscillator(0, `sine`);
@@ -217,6 +220,7 @@ let oscillator; // To store our oscillator
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator
   oscillator = new p5.Oscillator(0, `sine`);
@@ -271,6 +275,7 @@ let angleIncrease = 0.1; // How much to increase the angle each frame
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator
   siren = new p5.Oscillator(0, `sine`);
@@ -323,6 +328,7 @@ let oscillator; // To store our oscillator
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator
   oscillator = new p5.Oscillator(0, `sine`);
@@ -365,6 +371,7 @@ let tIncrease = 0.075; // How much to increase t each frame
 
 function setup() {
   createCanvas(600, 600);
+  userStartAudio();
 
   // Create a new oscillator
   oscillator = new p5.Oscillator(0, `sine`);
