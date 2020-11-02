@@ -12,7 +12,7 @@
 - Week 7 - [Arrays](#arrays) - storing data in little boxes
 - Week 8 - [Object-Oriented Programming](#object-oriented-programming) - thinking of code as a collection of objects
 - Week 9 - [Inheritance](#inheritance) - creating objects based on other objects
-- Week 10 - [p5.sound](#p5.sound) - the p5.sound library
+- Week 10 - [p5.sound](#p5sound) - the p5.sound library
 - Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
 - Week 12 - [Project 2 Studio II](#project-2-studio-ii) - support for project 2
 - Week 13 - [Project 2 Studio III](#project-2-studio-iii) - support for project 2
