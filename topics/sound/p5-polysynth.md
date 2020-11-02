@@ -287,7 +287,7 @@ function playNextNote() {
 }
 ```
 
-And so we achieve the profound experience of listening to a robot practicing the A-minor scale forever and ever and ever. The horror, the horror.
+And so we achieve the profound experience of listening to a robot practicing the F-minor scale forever and ever and ever. The horror, the horror.
 
 ---
 
