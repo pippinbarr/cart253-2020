@@ -12,7 +12,7 @@
 - Week 7 - [Arrays](#arrays) - storing data in little boxes
 - Week 8 - [Object-Oriented Programming](#object-oriented-programming) - thinking of code as a collection of objects
 - Week 9 - [Inheritance](#inheritance) - creating objects based on other objects
-- Week 10 - [Libraries](#libraries) - using other people's amazing code
+- Week 10 - [p5.sound](#p5.sound) - the p5.sound library
 - Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
 - Week 12 - [Project 2 Studio II](#project-2-studio-ii) - support for project 2
 - Week 13 - [Project 2 Studio III](#project-2-studio-iii) - support for project 2
@@ -396,16 +396,47 @@ Week of 2 November 2020
 
 ---
 
-# Libraries
+# p5.sound
 
 Week of 9 November 2020
 
 ## Objectives
-- Knowing the difference between JavaScript and its libraries
-- Discovering new libraries to use with p5
-- Learning how to encounter a new library
+- Getting to know a new library
+- Getting comfortable reading documentation
+- Experimenting with library features
 
-__Coming soon!__
+## Before class
+- __Watch__ "p5.sound 01 - Reintroducing p5.sound" (coming soon) (and __read__ [Reintroducing p5.sound](https://pippinbarr.github.io/cart253-2020/topics/sound/reintroducing-p5-sound.html))
+- __Watch__ "p5.sound 02 - p5.Oscillator" (coming soon) (and __read__ [p5.Oscillator](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-oscillator.html))
+- __Watch__ "p5.sound 03 - p5.PolySynth" (coming soon) (and __read__ [p5.PolySynth](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-polysynth.html))
+- __Watch__ "p5.sound 04 - p5.AudioIn" (coming soon) (and __read__ [p5.AudioIn](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-audioin.html))
+
+## Activity
+- __Complete__ the [Sound activity](https://pippinbarr.github.io/cart253-2020/topics/sound/sound-activity.html) (__Follow along__ with "p5.sound 05 - Sound activity" (coming soon) if you want!)
+
+## Exercise
+- __Start__ [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html). (Due after class)
+
+## Project
+- __Continue__ [Project 02](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of p5.sound
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+2. #studio time in Discord channels
+  - Help with course material so far
+  - Work on [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html)
+  - Work on [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+## Due after class
+- [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html). Submit on Moodle by the deadline for your section.
+
+## Homework
+- Follow the "before class" activities listed for next week
+- Write down your questions to discuss in the start of class discussion
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
