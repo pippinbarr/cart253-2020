@@ -8,11 +8,10 @@
 - `userStartAudio()`
 - p5.sound the iceberg
 - p5.SoundFile
-- A Dog in the Red Room
-
-
-- TMI? `getPeaks()`
-- TMI? `addCue()`
+- Backwards dog
+- TMI?
+  - `getPeaks()`
+  - `addCue()`
 
 ---
 
@@ -67,7 +66,7 @@ p5.sound is actually a **big** thing. In particular, p5.sound is a **completely 
 
 This is because p5.sound is **big and complex** and full of its own detail. It made sense to the developers to separate it out into a **separate library**.
 
-A **library** is effectively a collection of functions and variables that deal with some specific kind of task or idea. p5 is a library focused on making visually creative programs in JavaScript. p5.sound is a library focused on making sonically creative programs alongside the p5 library.
+A **library** is effectively a collection of functions (or methods) and variables (or properties) that deal with some specific kind of task or idea. p5 is a library focused on making visually creative programs in JavaScript. p5.sound is a library focused on making sonically creative programs alongside the p5 library.
 
 As you might image, then, p5.sound can do more than just play sound files.
 
@@ -95,7 +94,7 @@ Before we delve further into the depths of the p5.sound library, let's take note
 
 We already know that we can't play sounds until the user interacts with our program in some way (notably via a mouse click or a key press), and so we avoid trying to play audio until then.
 
-A nice addition to our programs is to include `userStartAudio()` in our `setup()` which tells p5.sound to some behind the scenes work to make this smoother. In the end, it doesn't change a lot in terms of the behaviour, but it's a good idea to include it anyway.
+A nice addition to our programs is to include `userStartAudio()` in our `setup()` which tells p5.sound to do some behind-the-scenes work to make this smoother. In the end, it doesn't change a lot in terms of the behaviour, but it's a good idea to include it anyway.
 
 ```javascript
 "use strict";
@@ -137,31 +136,33 @@ As we can see from the main documentation, `p5.SoundFile` is one part of the `p5
 
 However, let's delve into the documentation of `p5.SoundFile` specifically for a moment, just to get a sense of scale...
 
-To view the documentation for this part of `p5.sound`'s API we just click on its name on the main reference for the library, arriving at this page:
+To view the documentation for this part of `p5.sound`'s API we click on its name on the main reference for the library, arriving at this page:
 
 https://p5js.org/reference/#/p5.SoundFile
 
+Let's decipher it...
+
 ### Example
 
-This page begins with a fairly simple example of loading a sound file and playing it when the user clicks, much as we did above. That's the fundamental use of `p5.SoundFile`.
+This page begins with a conventional example of loading a sound file and playing it when the user clicks, much as we did above. That's the fundamental use of `p5.SoundFile`.
 
 ### Description
 
-If we keep scrolling, however, we'll get more and more detail. There's a **Description** which explains the idea of loading files in `preload()` as well as providing multiple file formats for cross-browser compatability.
+If we keep scrolling, however, we'll get more and more detail. There's a **Description** which explains the idea of loading files in `preload()` as well as providing multiple file formats for cross-browser compatibility.
 
 ### Syntax
 
-We also run into a **Syntax** section that might be a little surprising because it discusses creating new `SoundFile` objects in our program in order to load a sound, unlike our usual use of `loadSound()`. For one thing, this tells us that `p5.SoundFile` is a **class** and that, overall, `p5.sound` is implemented as a set of classes that deal with sound.
+We also run into a **Syntax** section that might be a little surprising because it discusses creating new `SoundFile` objects in our program in order to load a sound, unlike our usual use of `loadSound()`. This tells us that `p5.SoundFile` is a **class** and that, overall, `p5.sound` is implemented as a set of classes that deal with sound.
 
 ### Methods
 
-This is emphasized when we get to the next section, **Methods**, which tells us all the different things a `p5.SoundFile` can do.
+The OOP-ness of p5.sound is emphasized when we get to the next section, called **Methods**, which tells us all the different things a `p5.SoundFile` can do.
 
-It's also here that the iceberg begins to reveal itself, because the list of **Methods** is **much longer** than just `play()` and `loop()`! There are more than 30 different methods we can use with a `p5.SoundFile`.
+It's also here that the iceberg begins to reveal itself, because the list of **Methods** is **much longer** than just `loadSound()`, `play()` and `loop()`! There are more than 30 different methods we can use with a `p5.SoundFile`.
 
 For each method there is a separate documentation page that we can access by clicking on the method's name.
 
-So, let's learn something new...
+So, let's learn something newish...
 
 ---
 
@@ -179,11 +180,11 @@ The **description** repeats what we know, that `rate()` allows us to change the 
 
 ### Syntax
 
-The information on the syntax is pretty simple - we call `rate()` with a single argument that specifies the playback rate. `1` is normal playback, `2` is double speed, and `-1` would be reverse at the normal speed.
+The information on the syntax is pretty simple - we call `rate()` with a single argument that specifies the playback rate. `1` is normal playback, `2` is double speed, and `-1` would be reverse playback at the normal rate.
 
 ---
 
-## Mapping the rate to the mouse
+## Backwards dog
 
 Often, reading the documentation can lead to some kind of idea! In this case, it sees like it would be very fun to make our dog bark **backwards**! To do this we still need to load and trigger our sound file as per usual, but before we play the sound we can set its playback rate with `rate()`...
 
@@ -242,7 +243,7 @@ function draw() {
 
   // We can calculate the rate we should set the sound to by mapping
   // the mouse's x position to our desired range..
-  let newRate = map(mouseX,0,width,-3,3);
+  let newRate = map(mouseX, 0, width, -3, 3);
   // And then set the rate of our sound file to the new rate
   // Note how we can do this while the sound is still playing!
   barkSFX.rate(newRate);
@@ -265,7 +266,7 @@ And indeed this is a lot of the fun of exploring a new library, a new API - we c
 
 So, we've seen that p5.sound is quite enormous, with all kinds of possibilities hidden within it. Even something as simple as dealing with a single sound file (in `p5.SoundFile`) turns out to have a huge number of interesting opportunities.
 
-It can of course be easy to get overwhelmed, but the key is to remember you don't have to do **everything** that a library can do, just the things that **you find interesting**. The process is to browse through the documentation, looking for fun things to experiment with, and then taking those things and using the documentation to implement them in your own project.
+It can of course be easy to get overwhelmed, but the key is to remember you don't have to do **everything** that a library can do, just the things that **you find interesting**. The process is to browse through the documentation, looking for fun things to experiment with, and then take those things and use the documentation to implement them in your own project.
 
 Reading documentation is certainly something we need to **practice**, however, as it can feel like a lot to deal with. Just remember to take it piece by piece.
 

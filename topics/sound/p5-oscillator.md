@@ -17,7 +17,7 @@
 
 ## What is an oscillator?
 
-In a general sense, an **oscillator** is anything that varies in a repetitive way over time. An object hanging off a spring that bounces up and down is **oscillating**. Our hearts **oscillate** (beat) to circulate our blood. Guitar strings **oscillate** (vibrate) to generate sound. Sine waves **oscillate** between a value of `-1` and `1` over time.
+In a general sense, an **oscillator** is anything that varies in a repetitive way over time. An object hanging off a spring **oscillates** (bounces) up and down. Our hearts **oscillate** (beat) to circulate our blood. Guitar strings **oscillate** (vibrate) to generate sound. Sine waves **oscillate** between a value of `-1` and `1` over time.
 
 Given that we're talking about sound here, we're particularly interested in the connection between oscillation and sound.
 
@@ -47,7 +47,7 @@ https://p5js.org/reference/#/p5.Oscillator
 
 The first thing we see in the documentation for `p5.Oscillator` is a pretty complex example that allows us to play neat tones that fade in and fade out.
 
-It's sufficiently complicated that it might not be our greatest starting point, though it's fun to play around with the interactive nature of the example itself for a while.
+It's sufficiently complicated that it might not be our greatest starting point, though it's fun to play around with the interactive nature of the example itself for a while and at least **hear** the possibilities.
 
 ### Description
 
@@ -107,7 +107,7 @@ There we go - the tone starts when we press down on our mouse and stops when we 
 
 ## Playing around
 
-Note that we could now play around by changing either the frequency from `440` to something else, and/or change the waveform from `sine` to something else (`triangle`, `sawtooth`, `square`). Playing around like this is a great idea because it gives us more of a sense of the possibilities.
+Note that we could now play around by changing either the frequency from `440` to something else, and/or changing the waveform from `sine` to something else (`triangle`, `sawtooth`, `square`). Playing around like this is a great idea because it gives us more of a sense of the possibilities.
 
 At a certain point, though, we might well think about making this interactive by allowing the user to control the frequency. We could turn to our good friend `map()` to convert the mouse position to the frequency the oscillator should play at.
 
@@ -165,7 +165,7 @@ A theramin is the ultimate instrument for spooky, ethereal music. It makes you t
 
 The theramin allows its player to control both the pitch (frequency) of a tone as well as its volume (amplitude). Specifically, you play a theramin by moving your hands near to it! One hand controls frequency (pitch) and the other controls amplitude (volume).
 
-So if we want a theramin program, we can play with `freq()`, mapping it to the y axis as above, but also `amp()` which allows us to control amplitude, mapping it to the x axis...
+So if we want a theramin program, we could play with `freq()`, mapping it to the y axis as above, but also `amp()` which allows us to control amplitude, mapping it to the x axis...
 
 ```javascript
 "use strict";
@@ -190,8 +190,9 @@ function draw() {
   // Set the frequency of the theramin based on the mouse position
   theramin.freq(newFreq);
 
-  // Calculate an amplitude based on the mouse's posiiton on the x axis
+  // Calculate an amplitude based on the mouse's position on the x axis
   let newAmp = map(mouseX, 0, width, 0, 0.5);
+  // Set the amplitude
   theramin.amp(newAmp);
 }
 
@@ -262,7 +263,7 @@ Be gentle to your ears.
 
 ## Oscillating an oscillator
 
-Let's continue to play around with the frequency of an oscillator. One interesting thing to think about is the idea of changing the frequency of an oscillator based on something else the oscillates! Rather than changing frequency with our mouse, what if we changed it based on a `sin()` function?
+Let's continue to play around with the frequency of an oscillator. One interesting thing to think about is the idea of changing the frequency of an oscillator based on something else that oscillates! Rather than changing frequency with our mouse, what if we changed it based on a `sin()` function?
 
 The `sin()` function oscillates between -1 and 1 as the angle provided changes. We can use that to map the output of a `sin()` function with a changing angle to the frequency of an oscillator...
 
@@ -309,7 +310,7 @@ Again, playing around with the different elements like the `angleIncrease` or th
 
 What if you set the angle increase much higher, like `1.5`? What if you `map()` the mouse position to set the `angleIncrease`?
 
-What if you set a much wide frequency range, like between `0` and `4000`?
+What if you set a much wider frequency range, like between `0` and `4000`?
 
 What if you use `tan()` instead of `sin()`?
 

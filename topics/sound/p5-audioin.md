@@ -8,7 +8,7 @@
 - Seeing the level
 - Visualizing the level
 - Scaring away a ghost
-- The red circle
+- The red "recording" circle
 
 ---
 
@@ -22,13 +22,13 @@ https://p5js.org/reference/#/p5.AudioIn
 
 ### Example
 
-The example here shows us perhaps the most useful idea that we can easily take from the class, which is obtaining the **amplitude** of the audio coming into the microphone. As you can see from the example, it's surprisingly simple!
+The example here shows us perhaps the most useful idea that we can easily take from the class, which is obtaining the **level** (volume) of the audio coming into the microphone. As you can see from the example, it's surprisingly simple!
 
 ### Description
 
-There are a couple of things of note in the description. First we see the emphasis on getting the amplitude of the sound coming from the microphone, which is good. Second, we see that we don't **hear** the microphone input by default because it can create horrible feedback loops if you aren't using headphones. Third, we see that different browsers handle microphone input differently, which is always worth taking note of.
+There are a couple of things of note in the description. First we see the emphasis on getting the level of the sound coming from the microphone, which is good. Second, we see that we don't **hear** the microphone input by default because it can create horrible feedback loops if you aren't using headphones. Third, we see that different browsers handle microphone input differently, which is always worth taking note of.
 
-Because the microphone is a bit of a sensitive subject, your program can't just access it immediately. Instead, when you try to start access to the microphone, the user will see a message asking them whether they want to allow access. If they do, your program can go ahead listening to the microphone input. If not... sorry.
+Because the microphone is a bit of a sensitive device privacy-wise, your program can't just access it immediately. Instead, when you try to start access to the microphone, the user will see a message asking them whether they want to allow access. If they do, your program can go ahead listening to the microphone input. If not... sorry.
 
 ### Syntax
 
@@ -36,7 +36,7 @@ The base syntax is fairly straightforward: we create a new `p5.AudioIn` object! 
 
 ### Fields (Properties)
 
-There are a few fields that give us information about the microphone input, perhaps most importantly the `enabled` property, which tells us whether the user has authorized the use of their microphone. We could use this to allow our program to react dynamically to whether the user has authorized use of the microphone or not.
+There are a few fields that give us information about the microphone input, perhaps most importantly the `enabled` property, which tells us whether the user has authorized the use of their microphone. We could use this to allow our program to react dynamically to whether the user has authorized use of the microphone or not. Maybe it could have hurt feelings if they won't let it listen!
 
 ### Methods
 
@@ -95,7 +95,7 @@ function draw() {
 }
 ```
 
-So, looking at this we can see that the level is generally a very **small** number. When things are quiet it's around `0.0001` or so. When you make a fairly loud noise it can get up to around `0.8` or so. Quite a funny range.
+So, looking at this we can see that the level is generally a very **small** number. When things are quiet it's around `0.0001` or so. When you make a fairly loud noise it can get up to around `0.8` or so. So, pretty clearly based on a range of `0`-`1`.
 
 ---
 
@@ -240,7 +240,7 @@ A quick note. You probably noticed that when you're using the microphone a littl
 
 However, it can sometimes be the case that if you have **more than one tab** that is trying to listen to the microphone, things can go wrong. So it's best to limit things to just one tab that's using the microphone.
 
-Further, things can just go wrong in other ways. When in doubt, close your program tab and restart `atom-live-server`.
+Further, things can just go wrong in other ways. When in doubt, close your program tab and restart your local server.
 
 ---
 

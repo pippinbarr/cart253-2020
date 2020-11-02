@@ -4,7 +4,7 @@
 
 1. Use oscillators to add sound to movement
 2. Use a synth to add sound to collision
-
+3. Marvel at the majesty of physics-music
 
 ---
 
@@ -110,7 +110,9 @@ Display the circle as a circle on the canvas. Use its `fill` property.
 
 ## 2. Integrate the class into the main script
 
-Okay. Now we have a class that defines a ball that can move and bounce around on the canvas. Clearly our program doesn't yet do anything because we haven't got any of these objects in our main program, so let's get to that. That plan is that the user can click to add new balls to the screen, so we'll need an array to store them in, we'll need to move and display the balls in the array in `draw()` and we'll need to add new balls when the user clicks.
+Okay. Now we have a class that defines a ball that can move and bounce around on the canvas. Clearly our program doesn't yet do anything because we haven't got any of these objects in our main program, so let's get to that.
+
+The plan is that the user can click to add new balls to the canvas, so we'll need an array to store them in, we'll need to move and display the balls in the array in `draw()` and we'll need to add new balls when the user clicks.
 
 ---
 
@@ -142,6 +144,7 @@ Now that we've got our core simulation running, it's time to integrate our audio
 
 1. Add an oscillator to the `constructor()`
 2. Change the oscillator's frequency in `move()`
+3. Add `userStartAudio()` to the main script
 
 ---
 
@@ -167,6 +170,15 @@ We want the ball's oscillator's frequency to be determined by its proximity to t
 1. Calculate the distance between the ball and the center of the canvas
 2. Calculate the maximum distance between the ball and the center of the canvas (you can either do this by getting the distance from `0,0` to the center, or do it with Pythagoras yourself!)
 3. Create a `newFreq` variable and assign it the `map()` of the distance from the ball to the center of the canvas, which has a range `0` to the maximum you calculate, and should be mapped to the range specified by the `nearFreq` and `farFreq` properties
+
+---
+
+### Add `userStartAudio()` to the main script
+
+To be professional, let's call `userStartAudio()` in `setup()` since we're doing sound stuff now
+
+`script.js`
+1. Call `userStartAudio()` in `setup()`
 
 ---
 
@@ -201,14 +213,14 @@ First of all we need each `Ball` to have a synthesizer object it can use to play
 Now we need to play the note **if** the ball bounces.
 
 `Ball.js`
-1. Define a `playNote()` method that plays the ball's note using its synthesizer (you use the velocity, delay, and sustain parameters as desired, maybe `0.2,0,0.1`?)
+1. Define a `playNote()` method that plays the ball's note using its synthesizer (you can choose the velocity, delay, and sustain parameters as desired, maybe `0.2,0,0.1`?)
 2. In `bounce()` call the `playNote()` method if the ball bounces (don't forget to use `this` when calling the method)
 
 ---
 
 ### Integrate notes into the main script
 
-Our notes don't play yet because we haven't specified which note to play in the `constructor()`. We'll need a scale of notes to choose from (for music!) and we'll need to provide a random note to each new `Ball` as we create it.
+Our notes don't play yet because we haven't specified which note to play in the `constructor()`. We'll need a scale of notes to choose from (for musicality!) and we'll need to provide a random note to each new `Ball` as we create it.
 
 `script.js`
 1. Add a `notes` variable to the top of the program and assign an array containing a scale of notes (each note should be in a string). For example, F-minor is `F4`, `G4`, `Ab4`, `Bb4`, `C4`, `Db4`, `Eb4`, `F5`.
@@ -230,6 +242,8 @@ We have a musical generation toy. John Cage and Brian Eno are so proud of us.
 
 We could do many other things:
 - Add more physics so the balls bounce off each other and play notes
+- Make balls deletable so the user can tweak their toy's sound further
+- Make balls draggable and throwable to give a little more finesse to the user's input
 - Calculate a ball's frequency in a more sophisticated way rather than just the distance from the centre
 - Change a ball's fill based on its frequency
 - Make a ball flash when it plays a note for visual feedback

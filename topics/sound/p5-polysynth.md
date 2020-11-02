@@ -32,15 +32,15 @@ The description is a little complex if you're not a serious synthesizer person, 
 
 ### Syntax
 
-The main page shows us the syntax for creating a `new` `p5.PolySynth` object, pointing out that we can provide two arguments: the specific type of voice (which defaults to the `p5.MonoSynth` and the number of voices (which defaults to `8`).
+The main page shows us the syntax for creating a `new` `p5.PolySynth` object, pointing out that we can provide two arguments: the specific type of voice (which defaults to the `p5.MonoSynth`) and the number of voices (which defaults to `8`). Unless you really need to change them, we can probably leave those ideas alone.
 
 ### Fields (Properties)
 
-The fields section tells us some key properties of a `p5.PolySynth` object which might be worth exploring down the line.
+The fields section tells us some key properties of a `p5.PolySynth` object which might be worth exploring down the line. Note they use the word "fields" where we would say "properties", this is just a terminology thing.
 
 ### Methods
 
-The methods section is, as is usually the case, the place where the action is. Here is where we can see how to `play()` a note with our synthesizer object as well as to work with its **envelope**. In terms of sound, an **envelope** describes how a sound changes over time, perhaps referring to its amplitude (volume) or frequency (pitch).
+The methods section is, as is usually the case, the place where the action is. Here is where we can see how to `play()` a note with our synthesizer object as well as to work with its **envelope**. In terms of sound, an **envelope** describes how a sound changes over time, in terms of its amplitude (volume) most often, but perhaps frequency (pitch) or other properties.
 
 An envelope is frequently described in terms of ADSR, and in terms of the `p5.PolySynth` it controls amplitude (volume):
 
@@ -116,7 +116,7 @@ function mousePressed() {
 
 Houston, we have a synthesizer working.
 
-And that's really the main thing we can do! It's just that musical notes have a lot of **meaning** potentially, and we could play with that idea in our program. Let's try a couple of things.
+And that's really the main thing we can do! It's just that musical notes have a lot of **meaning** potentially, and we could play with that idea in our program. Let's try a couple of things...
 
 ---
 
