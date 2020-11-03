@@ -415,7 +415,7 @@ Week of 9 November 2020
 - __Complete__ the [Sound activity](https://pippinbarr.github.io/cart253-2020/topics/sound/sound-activity.html) (__Follow along__ with "p5.sound 05 - Sound activity" (42:13) if you want!)
 
 ## Exercise
-- __Start__ [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html). (Due after class)
+- __Start__ [Exercise 06: Make Some Noise](https://pippinbarr.github.io/cart253-2020/exercises/06-make-some-noise.html). (Due after class)
 
 ## Project
 - __Continue__ [Project 02](https://pippinbarr.github.io/cart253-2020/projects/project2/)
@@ -427,11 +427,11 @@ Week of 9 November 2020
 
 2. #studio time in Discord channels
   - Help with course material so far
-  - Work on [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html)
+  - Work on [Exercise 06: Make Some Noise](https://pippinbarr.github.io/cart253-2020/exercises/06-make-some-noise.html)
   - Work on [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ## Due after class
-- [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html). Submit on Moodle by the deadline for your section.
+- [Exercise 06: Make Some Noise](https://pippinbarr.github.io/cart253-2020/exercises/06-make-some-noise.html). Submit on Moodle by the deadline for your section.
 
 ## Homework
 - Follow the "before class" activities listed for next week
