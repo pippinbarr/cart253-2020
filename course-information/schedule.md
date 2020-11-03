@@ -406,13 +406,13 @@ Week of 9 November 2020
 - Experimenting with library features
 
 ## Before class
-- __Watch__ "p5.sound 01 - Reintroducing p5.sound" (coming soon) (and __read__ [Reintroducing p5.sound](https://pippinbarr.github.io/cart253-2020/topics/sound/reintroducing-p5-sound.html))
-- __Watch__ "p5.sound 02 - p5.Oscillator" (coming soon) (and __read__ [p5.Oscillator](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-oscillator.html))
-- __Watch__ "p5.sound 03 - p5.PolySynth" (coming soon) (and __read__ [p5.PolySynth](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-polysynth.html))
-- __Watch__ "p5.sound 04 - p5.AudioIn" (coming soon) (and __read__ [p5.AudioIn](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-audioin.html))
+- __Watch__ "p5.sound 01 - Reintroducing p5.sound" (29:30) (and __read__ [Reintroducing p5.sound](https://pippinbarr.github.io/cart253-2020/topics/sound/reintroducing-p5-sound.html))
+- __Watch__ "p5.sound 02 - p5.Oscillator" (43:55) (and __read__ [p5.Oscillator](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-oscillator.html))
+- __Watch__ "p5.sound 03 - p5.PolySynth" (24:51) (and __read__ [p5.PolySynth](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-polysynth.html))
+- __Watch__ "p5.sound 04 - p5.AudioIn" (29:21) (and __read__ [p5.AudioIn](https://pippinbarr.github.io/cart253-2020/topics/sound/p5-audioin.html))
 
 ## Activity
-- __Complete__ the [Sound activity](https://pippinbarr.github.io/cart253-2020/topics/sound/sound-activity.html) (__Follow along__ with "p5.sound 05 - Sound activity" (coming soon) if you want!)
+- __Complete__ the [Sound activity](https://pippinbarr.github.io/cart253-2020/topics/sound/sound-activity.html) (__Follow along__ with "p5.sound 05 - Sound activity" (42:13) if you want!)
 
 ## Exercise
 - __Start__ [Exercise 06: Sound Prototype](https://pippinbarr.github.io/cart253-2020/exercises/06-sound-prototype.html). (Due after class)

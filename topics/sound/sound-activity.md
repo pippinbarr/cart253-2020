@@ -100,7 +100,7 @@ If we want to make the bouncing look nice, we should take account of the ball's 
 
 ### Add a `display()` method
 
-Display the circle as a circle on the canvas. Use its `fill` property.
+Display the ball as a circle on the canvas. Use its `fill` property.
 
 ---
 
@@ -170,6 +170,7 @@ We want the ball's oscillator's frequency to be determined by its proximity to t
 1. Calculate the distance between the ball and the center of the canvas
 2. Calculate the maximum distance between the ball and the center of the canvas (you can either do this by getting the distance from `0,0` to the center, or do it with Pythagoras yourself!)
 3. Create a `newFreq` variable and assign it the `map()` of the distance from the ball to the center of the canvas, which has a range `0` to the maximum you calculate, and should be mapped to the range specified by the `nearFreq` and `farFreq` properties
+4. Set the frequency of the oscillator to `newFreq` using the `freq()` method
 
 ---
 
@@ -223,7 +224,7 @@ Now we need to play the note **if** the ball bounces.
 Our notes don't play yet because we haven't specified which note to play in the `constructor()`. We'll need a scale of notes to choose from (for musicality!) and we'll need to provide a random note to each new `Ball` as we create it.
 
 `script.js`
-1. Add a `notes` variable to the top of the program and assign an array containing a scale of notes (each note should be in a string). For example, F-minor is `F4`, `G4`, `Ab4`, `Bb4`, `C4`, `Db4`, `Eb4`, `F5`.
+1. Add a `notes` variable to the top of the program and assign an array containing a scale of notes (each note should be in a string). For example, F-minor is `F3`, `G3`, `Ab4`, `Bb4`, `C4`, `Db4`, `Eb4`, `F4`.
 2. In the `createBall()` method:
   1. Choose a random note from the `notes` array
   2. Pass the note as an argument to `Ball`'s constructor when it is created (after its position)
