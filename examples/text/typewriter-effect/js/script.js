@@ -28,5 +28,5 @@ function draw() {
 // keyPressed()
 // Typewrite some text!
 function keyPressed() {
-  typewriter.typewrite(`Friends, Romans, Countrymen...`, 100, 100);
+  typewriter.typewrite(`Friends, Romans, Countryfolk...`, 100, 100);
 }
