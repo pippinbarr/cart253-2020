@@ -5,7 +5,10 @@
 - [Structure](#structure)
 - [Time](#time)
 - [Graphics](#graphics)
+- [Text](#text)
 - [Final Projects from 2019](#final-projects-from-2019)
+
+---
 
 ## Structure
 
@@ -46,6 +49,16 @@ An example of combining **images** with **Object-Oriented Programming**. Two obj
 An example of combining **images** with **Object-Oriented Programming and inheritance**. Two objects represented as different clown face images. The user controls one with the keyboard and the other one chases the user.
 
 [Running program](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/graphics/clown-chase-inheritance) / [Download](https://pippinbarr.github.io/cart253-2020/examples/graphics/clown-chase-inheritance.zip)
+
+---
+
+## Text
+
+### Typewriter effect
+
+A class that mimics a typewriter for displaying a specified text. With a simple example script showing a basic usage. Could be more complicated, but just tries to show the basic idea.
+
+[Running program](https://pippinbarr.github.io/cart253-2020/examples/text/typewriter-effect/) / [Source Code](https://github.com/pippinbarr/cart253-2020/tree/master/examples/text/typewriter-effect) / [Download](https://pippinbarr.github.io/cart253-2020/text/typewriter-effect.zip)
 
 ---
 
