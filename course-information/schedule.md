@@ -450,6 +450,14 @@ Week of 16 November 2020
 ## Exercise
 - __Start__ [Exercise 07: Progress Report](https://pippinbarr.github.io/cart253-2020/exercises/07-progress-report.html). (Due after class)
 
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+2. #studio time in Discord channels
+  - Work on [Exercise 07: Progress Report](https://pippinbarr.github.io/cart253-2020/exercises/07-progress-report.html)
+  - Work on [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
 ## Due after class
 - [Exercise 07: Progress Report](https://pippinbarr.github.io/cart253-2020/exercises/07-progress-report.html). Submit on Moodle by the deadline for your section.
 
