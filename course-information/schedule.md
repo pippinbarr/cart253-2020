@@ -444,7 +444,18 @@ Week of 9 November 2020
 
 Week of 16 November 2020
 
-__Coming soon!__
+## Objectives
+- Continue making progress on the final project
+
+## Exercise
+- __Start__ [Exercise 07: Progress Report](https://pippinbarr.github.io/cart253-2020/exercises/07-progress-report.html). (Due after class)
+
+## Due after class
+- [Exercise 07: Progress Report](https://pippinbarr.github.io/cart253-2020/exercises/07-progress-report.html). Submit on Moodle by the deadline for your section.
+
+## Homework
+- Write down your questions to discuss in the start of class discussion
+- [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
