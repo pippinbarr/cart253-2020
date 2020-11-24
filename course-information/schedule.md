@@ -471,7 +471,16 @@ Week of 16 November 2020
 
 Week of 23 November 2020
 
-__Coming soon!__
+## Objectives
+- Continue making progress on the final project
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+2. #studio time in Discord channels
+  - Work on [Exercise 08: Reflection](https://pippinbarr.github.io/cart253-2020/exercises/08-reflection.html)
+  - Work on [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
 
@@ -479,6 +488,18 @@ __Coming soon!__
 
 Week of 30 November 2020
 
-__Coming soon!__
+## Objectives
+- Continue making progress on the final project
+
+## Exercise
+-   - Work on [Exercise 08: Reflection](https://pippinbarr.github.io/cart253-2020/exercises/08-reflection.html) (Due after class)
+
+## During class
+1. #start-of-class discussion in Discord channels
+  - Discussion of [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
+
+2. #studio time in Discord channels
+  - Work on [Exercise 08: Reflection](https://pippinbarr.github.io/cart253-2020/exercises/08-reflection.html). Due after class, submit on the Moodle.
+  - Work on [Project 02: Anything](https://pippinbarr.github.io/cart253-2020/projects/project2/)
 
 ---
